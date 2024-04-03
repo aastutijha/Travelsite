@@ -1,4 +1,4 @@
-import React from 'react' ;
+/*import React from 'react' ;
 //import {
   //Carousel
 //}
@@ -45,7 +45,7 @@ const Achievements=()=> {
       }
       className="description-container"> <div className="first"></div> {
           /* <h2>{achievement.title}</h2> */
-      }
+     /* }
       <img className="image-class" src= {
           achievement.img
       }
@@ -54,11 +54,11 @@ const Achievements=()=> {
       }
       /> {
           /* <p>{achievement.description}</p> */
-      }
+     /* }
       <div className="second"></div> </div> // </div>
       ))
   }
   </Carousel> </div> </div>)
 }
 
-export default Achievements
+export default Achievements*/

@@ -60,10 +60,11 @@ const Contact = () => {
   <div className="contactBottomLeft">
     <div className="bottomHeading">
     {/* <img src={logo} alt="Logo" /> */}
-      <span>Housetechnologies.in</span>
+      <span>Travel Hoildays.np</span>
       </div>
       <div className='contact-us'>Contact Us</div>
-      <div className='phone-no'>Phone: 8595340682</div>
+      <div className='phone-no'>Phone: 9851243326</div>
+      <div className='phone-no'>Address: Kathmandu, Nepal</div>
       <div className="socialHandles">
         <div className="icon">
           {/* Linkedin icon */}

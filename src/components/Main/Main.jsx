@@ -31,22 +31,18 @@ const Main = () => {
     <div className='main' id='main'>
       <div className="center-main">
         <div className="text1">
-          Wonders are waiting for .....
+          Wonders are waiting.....
         </div>
         <div className="text2">
-          Discover the world with over 50,000+ unforgettable travel experiences.
+          Discover the world with unforgettable travel experiences.
         </div>
         <div className="buttonContainer">
-          <div className="text3">
-            <button className="contactButton" onClick={handleSearchButtonClick}>
-              Search
-            </button>
-          </div>
+          
         </div>
         <div className="searchButtonContainer">
           {/* Add the search button here */}
           <button className="searchButton" onClick={handleSearchButtonClick}>
-            Search
+            Any where you want to go...
           </button>
         </div>
       </div>
