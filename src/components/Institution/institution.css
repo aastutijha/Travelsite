@@ -1,0 +1,70 @@
+.institutes {
+    background: var(--body-background);
+}
+
+.instiHeading {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem 0;
+    font-size: 2.25rem;
+    color: var(--font-color);
+    background-color: var(--body-background);
+    margin-bottom: 3rem;
+}
+
+.table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    height: 50vh;
+}
+
+.table>table {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+td {
+    border: none;
+    text-align: center;
+    height: 33.33%;
+    width: 33.33%;
+}
+
+td>img {
+    height: auto;
+    width: 40%;
+    border-radius: 1.25rem;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .instiHeading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .table>table {
+        width: 90%;
+    }
+    td {
+        height: auto;
+        margin-bottom: 0;
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+    td>img {
+        width: 80%;
+        margin: 0.25rem;
+        /* padding-bottom: 0; */
+    }
+}

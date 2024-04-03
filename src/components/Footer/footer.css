@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-background);
+    height: 4rem;
+}
+
+.footerItem {
+    margin: 0.5rem 1rem;
+    color: var(--font-color);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        /* Stack the items vertically */
+        height: auto;
+        /* Adjust the height to fit the content */
+        padding: 1rem 0;
+        /* Add some padding to the top and bottom */
+    }
+    .footerItem {
+        margin: 0.5rem 0;
+        /* Adjust the margin to create space between the items vertically */
+    }
+}

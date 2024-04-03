@@ -1,0 +1,11 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+* {
+    font-family: 'Aldrich', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

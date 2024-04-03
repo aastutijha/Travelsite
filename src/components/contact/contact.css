@@ -1,0 +1,282 @@
+.body {
+    margin-top: 0;
+}
+
+.contactTop {
+    background-color: #875cff;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactBottom {
+    /* background-color: #875CFF; */
+    background-color: var(--body-background);
+    height: 40vh;
+    /* border: 3px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactBottomMiddle>iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    /* Curve the edges of the map */
+}
+
+.contactLeft {
+    width: 35%;
+    /* border: 1px solid grey; */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.contactRight {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.queryForm {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width: 100%;
+}
+
+.anyQueries {
+    margin: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    color: var(--font-color);
+}
+
+.queryForm>input {
+    width: 30%;
+    height: 2rem;
+    background: rgb(150, 46, 255);
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-align: center;
+}
+
+.queryForm>button {
+    width: 14%;
+    height: 3rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: rgb(150, 46, 255);
+    margin-left: -3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+ ::placeholder {
+    /* Most modern browsers support this now. */
+    color: white;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+.bottomHeading>img {
+    margin-top: 5rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.bottomHeading>span {
+    /* height:4rem; */
+    margin-top: 5rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+.bottomHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactBottomLeft {
+    width: 30%;
+    /* Adjust the width as needed */
+}
+
+.contactBottomMiddle {
+    width: 50%;
+    /* Adjust the width as needed */
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactBottomMiddle>iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.socialHandles {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.contact-us {
+    /* Reduce the top and bottom margin */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5 rem;
+}
+
+.phone-no {
+    /* margin: 1rem 0; Reduce the top and bottom margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 0;
+        /* Reduce margin-top on the body */
+    }
+    .bottomHeading>span {
+        display: none;
+    }
+    .contactBottom {
+        /* background-color: #875CFF; */
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .contactLeft {
+        width: 100%;
+        /* Change the width to 100% */
+        height: auto;
+        /* Change the height to auto */
+        display: flex;
+        /* Add this line */
+        justify-content: center;
+        /* Add this line */
+        align-items: center;
+        /* Add this line */
+        flex-direction: column;
+        /* Add this line */
+        text-align: center;
+        /* Add this line */
+    }
+    .contactBottomLeft {
+        width: 100%;
+    }
+    a {
+        color: var(--font-color);
+    }
+    .contactBottomMiddle {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        /* Add this line */
+        justify-content: center;
+        /* Add this line */
+        align-items: center;
+        /* Add this line */
+        /* Adjust the height as needed */
+    }
+    .contactTop {
+        flex-direction: column;
+        height: auto;
+        /* Adjust the height as needed */
+        /* padding: 10px; */
+    }
+    .queryForm {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .queryForm>input,
+    .queryForm>button {
+        margin: 1rem 0;
+    }
+    .queryForm>input {
+        width: 80%;
+        /* Adjust the width as needed */
+    }
+    .queryForm>button {
+        width: 80%;
+        /* Adjust the width as needed */
+        margin-left: 0;
+    }
+    .anyQueries {
+        width: 90%;
+        /* Adjust the width as needed */
+        padding: 1rem;
+        /* Add padding to improve spacing */
+        font-size: 1.5rem;
+        /* Adjust the font size as needed */
+        text-align: center;
+        word-wrap: break-word;
+        /* Ensure text wraps */
+        overflow-wrap: break-word;
+        /* Handle word overflow */
+    }
+    .contactBottomMiddle>iframe {
+        height: 100%;
+        width: 100%;
+    }
+    .contactBottomMiddle>iframe {
+        height: 150px;
+        width: 300px;
+        align-items: center;
+        border-radius: 15px;
+        /* Curve the edges of the map */
+    }
+    .bottomHeading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottomHeading>span {
+        color: var(--font-color);
+    }
+    .bottomHeading>img {
+        height: 4rem;
+        width: 4rem;
+        margin-bottom: 1rem;
+        /* Add margin at the bottom */
+    }
+    .contactBottomLeft,
+    .contactBottomMiddle,
+    .contactTop {
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        /* Add margin at the bottom */
+    }
+}
