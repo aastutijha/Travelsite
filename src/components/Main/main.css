@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url('C:\Users\Astuti\OneDrive\Desktop\Travel-Hoildays\Travelsite\src\components\bgphoto.jpeg');
-    /* Replace 'your-image-url.jpg' with the path to your image */
+    /* background-image: url('../../assets/bgphoto.jpeg'); */
+    /* Replace 'your-image-url.jpg' with the pat
     background-size: contain;
     /* or cover or specify dimensions */
     background-position: center;

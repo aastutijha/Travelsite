@@ -1,34 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './main.css';
-// Import any necessary assets or components for the search functionality
+import background from '../../assets/bgphoto.jpeg';
 
 const Main = () => {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    video.playbackRate = 1.25;
-  }, []);
-
-  const handleVideoClick = () => {
-    const video = videoRef.current;
-    if (video.paused) {
-      video.play();
-      setIsPlaying(true);
-    } else {
-      video.pause();
-      setIsPlaying(false);
-    }
-  }
-
   const handleSearchButtonClick = () => {
     // Implement the functionality for the search button
     // This could include opening a search bar, navigating to a search page, etc.
   };
 
   return (
-    <div className='main' id='main'>
+    <div className='main' id='main' style={{ backgroundImage: `url(${background})` }}>
       <div className="center-main">
         <div className="text1">
           Wonders are waiting.....
@@ -46,22 +27,8 @@ const Main = () => {
           </button>
         </div>
       </div>
-      <div className="right-main">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          id="myVideo" 
-          className="video-background" 
-          onClick={handleVideoClick} 
-          ref={videoRef}
-        >
-          {/* <source src={videoSource} type="video/mp4" /> */}
-        </video>
-        {/* {!isPlaying && <img src={pauseImage} alt="Pause" className="pause-image" onClick={handleVideoClick} />} */}
-      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Main;
