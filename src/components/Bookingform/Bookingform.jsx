@@ -10,6 +10,8 @@ const BookingForm = ({ onClose, onSubmit }) => {
     days: '',
   });
 
+  const [isCloseClicked, setIsCloseClicked] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -18,6 +20,11 @@ const BookingForm = ({ onClose, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(formData);
+  };
+
+  const handleCloseClick = () => {
+    setIsCloseClicked(true);
+    onClose();
   };
 
   return (
@@ -76,10 +83,10 @@ const BookingForm = ({ onClose, onSubmit }) => {
             required
           />
           <div className="button-group">
-            <button className="close-button" onClick={onClose}>
+            <button type="submit">Book Now</button>
+            <button className={isCloseClicked ? "close-button-red" : "close-button"} onClick={handleCloseClick}>
               Close
             </button>
-            <button type="submit">Book Now</button>
           </div>
         </form>
       </div>

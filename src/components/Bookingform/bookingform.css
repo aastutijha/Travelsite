@@ -75,3 +75,13 @@
 .close-button:hover {
     background-color: #fe3535;
 }
+
+.close-button-red {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: red;
+    /* Change the color to red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

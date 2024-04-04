@@ -24,7 +24,7 @@ const Main = () => {
     <div className='main' id='main' style={{ backgroundImage: `url(${background})` }}>
       <div className="center-main">
         <div className="text1">
-          Wonders are waiting.....
+          Wonders are waiting....
         </div>
         <div className="text2">
           Discover the world with unforgettable travel experiences.
