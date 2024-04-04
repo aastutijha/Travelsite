@@ -4,10 +4,10 @@ import './bookingform.css'; // Import your CSS file for styling the form
 const BookingForm = ({ onClose, onSubmit }) => {
   const [formData, setFormData] = useState({
     name: '',
-    Email: '',
+    email: '',
     destination: '', 
-    Person: '',
-    Days: '',
+    person: '',
+    days: '',
   });
 
   const handleChange = (e) => {
@@ -25,52 +25,63 @@ const BookingForm = ({ onClose, onSubmit }) => {
       <div className="booking-form">
         <h2>Book a Tour</h2>
         <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
             required
           />
+          <label htmlFor="email">Email</label>
           <input
             type="text"
             name="email"
+            id="email"
             placeholder="Your Email"
-            value={formData.address}
+            value={formData.email}
             onChange={handleChange}
             required
           />
-           <input
+          <label htmlFor="destination">Destination</label>
+          <input
             type="text"
             name="destination"
+            id="destination"
             placeholder="Destination"
             value={formData.destination}
             onChange={handleChange}
             required
           />
+          <label htmlFor="person">How Many Person?</label>
           <input
             type="number"
-            name="Person"
+            name="person"
+            id="person"
             placeholder="How Many Person?"
-            value={formData.Person}
+            value={formData.person}
             onChange={handleChange}
             required
           />
+          <label htmlFor="days">How Many Days?</label>
           <input
             type="number"
-            name="Days"
+            name="days"
+            id="days"
             placeholder="How Many Days?"
-            value={formData.Days}
+            value={formData.days}
             onChange={handleChange}
             required
           />
-         
-          <button type="submit">Book Now</button>
+          <div className="button-group">
+            <button className="close-button" onClick={onClose}>
+              Close
+            </button>
+            <button type="submit">Book Now</button>
+          </div>
         </form>
-        <button className="close-button" onClick={onClose}>
-          Close
-        </button>
       </div>
     </div>
   );

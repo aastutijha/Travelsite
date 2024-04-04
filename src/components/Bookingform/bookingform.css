@@ -1,9 +1,10 @@
 .booking-form-container {
     position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 110%;
     background-color: rgba(0, 0, 0, 0.5);
     /* Semi-transparent background */
     display: flex;
@@ -12,10 +13,14 @@
 }
 
 .booking-form {
-    background-color: #fff;
+    background-color: #8c6af0;
+    color: #f3fafb;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    /* Adjust max-width as needed */
+    width: 100%;
 }
 
 .booking-form h2 {
@@ -28,17 +33,27 @@
     flex-direction: column;
 }
 
+.booking-form label {
+    margin-bottom: 5px;
+}
+
 .booking-form input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ae4564;
     border-radius: 5px;
+}
+
+.booking-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .booking-form button {
     padding: 10px 20px;
-    background-color: #875CFF;
-    color: #fff;
+    background-color: #0e0e0e;
+    color: #f4f3f3;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -49,16 +64,14 @@
 }
 
 .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f46320;
     border: none;
-    font-size: 1.2rem;
+    border-radius: 5px;
     cursor: pointer;
-    color: #888;
 }
 
 .close-button:hover {
-    color: #555;
+    background-color: #fe3535;
 }

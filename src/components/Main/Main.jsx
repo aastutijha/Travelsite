@@ -32,7 +32,7 @@ const Main = () => {
         <div className="searchButtonContainer">
           {/* Change the button text and onClick event */}
           <button className="searchButton" onClick={handleSearchButtonClick}>
-            Book Now
+            Book a Tour
           </button>
         </div>
       </div>
