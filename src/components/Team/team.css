@@ -1,128 +1,128 @@
-.team {
-    height: 60vh;
-    background-color: var(--body-background);
-    color: var(--font-color);
-}
-
-.teamHeading {
-    text-align: center;
-    padding: 1 rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 1rem;
-    color: var(--font-color);
-}
-
-.teamHeading h1 {
-    font-size: 2.5rem;
-    color: var(--font-color);
-    /* Set heading color */
-}
-
-.teamMembers {
-    display: flex;
-    justify-content: start;
-    /* Align items at the start */
-    align-items: center;
-    flex-wrap: nowrap;
-    /* Prevent items from wrapping */
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    scroll-snap-type: x mandatory;
-    /* Enable snap scrolling along x axis */
-    height: calc(80vh - 6rem);
-}
-
-.member {
-    display: flex;
-    flex: 0 0 auto;
-    width: 25%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--body-background);
-    text-align: center;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    /* Snap to the start of the next item */
-    margin-bottom: 1rem;
-}
-
-
-/* .member > img {
-    height: 10rem;
-    width: auto; /* Make the images squarish 
-    object-fit: cover;
-  } */
-
-.member>img {
-    height: 10rem;
-    width: auto;
-    /* Keep the images squarish */
-    object-fit: cover;
-    border-radius: 15px;
-    /* Make the images square */
-    /* border: 1px solid #875cff; Keep the border */
-}
-
-.name {
-    font-size: 1.2rem;
-    margin: 0.4rem 0;
-    color: var(--font-color);
-}
-
-.designation {
-    text-align: center;
-    margin-top: 1px;
-    color: var(--font-color);
-}
-
-.socialHandles {
-    display: flex;
-    justify-content: center;
-}
-
-.socialHandles a {
-    margin-right: 10px;
-}
-
-.socialHandles img {
-    width: 35px;
-    height: 35px;
-    border-radius: 15%;
-    /* Make social icons circular */
-    transition: transform 0.3s ease-in-out;
-}
-
-.socialHandles img:hover {
-    transform: scale(1.5);
-    /* Add hover effect to social icons */
-}
-
-@media (max-width: 768px) {
     .team {
         height: 60vh;
+        background-color: var(--body-background);
+        color: var(--font-color);
     }
+    
     .teamHeading {
-        margin-bottom: 0px;
+        text-align: center;
+        padding: 1 rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+        color: var(--font-color);
     }
-    .member {
-        margin-top: 0px;
-        width: 50%;
-        /* Adjust width to occupy full width on smaller screens */
+    
+    .teamHeading h1 {
+        font-size: 2.5rem;
+        color: var(--font-color);
+        /* Set heading color */
     }
-    .socialIcon {
-        width: 25px;
-        /* Set the width of the icons on smaller screens */
-        height: 25px;
-        /* Set the height of the icons on smaller screens */
+    
+    .teamMembers {
+        display: flex;
+        text-align: center;
+        justify-content: start;
+        /* Align items at the start */
         align-items: center;
-        /* Center align items */
-        justify-content: center;
-        /* Center align items vertically */
+        flex-wrap: nowrap;
+        /* Prevent items from wrapping */
+        overflow-x: auto;
+        /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory;
+        /* Enable snap scrolling along x axis */
+        height: calc(80vh - 6rem);
     }
+    
+    .member {
+        display: flex;
+        flex: 0 0 auto;
+        width: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--body-background);
+        text-align: center;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        /* Snap to the start of the next item */
+        margin-bottom: 1rem;
+    }
+    
+    .member>img {
+        height: 10rem;
+        width: auto;
+        object-fit: cover;
+    }
+    
+    .member>img {
+        height: 10rem;
+        width: auto;
+        /* Keep the images squarish */
+        object-fit: cover;
+        border-radius: 15px;
+        /* Make the images square */
+        /* border: 1px solid #875cff; Keep the border */
+    }
+    
+    .name {
+        font-size: 1.2rem;
+        margin: 0.4rem 0;
+        color: var(--font-color);
+    }
+    
+    .designation {
+        text-align: center;
+        margin-top: 1px;
+        color: var(--font-color);
+    }
+    
+    .socialHandles {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .socialHandles a {
+        margin-right: 10px;
+    }
+    
+    .socialHandles img {
+        width: 35px;
+        height: 35px;
+        border-radius: 15%;
+        /* Make social icons circular */
+        transition: transform 0.3s ease-in-out;
+    }
+    
     .socialHandles img:hover {
         transform: scale(1.5);
         /* Add hover effect to social icons */
     }
-}
+    
+    @media (max-width: 768px) {
+        .team {
+            height: 60vh;
+        }
+        .teamHeading {
+            margin-bottom: 0px;
+        }
+        .member {
+            margin-top: 0px;
+            width: 50%;
+            /* Adjust width to occupy full width on smaller screens */
+        }
+        .socialIcon {
+            width: 25px;
+            /* Set the width of the icons on smaller screens */
+            height: 25px;
+            /* Set the height of the icons on smaller screens */
+            align-items: center;
+            /* Center align items */
+            justify-content: center;
+            /* Center align items vertically */
+        }
+        .socialHandles img:hover {
+            transform: scale(1.5);
+            /* Add hover effect to social icons */
+        }
+    }

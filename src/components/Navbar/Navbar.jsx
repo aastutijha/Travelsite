@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.css';
-//import HamburgerIcon from '../../assets/hamburger.svg'; // import hamburger icon
+import HamburgerIcon from '../../assets/hamburger.svg';
 //import company from '../../assets/logo.png';
 //import companyInv from '../../assets/logoInv.png';
 
   const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [theme, setTheme] = useState('dark-mode');
+    const [theme, setTheme] = useState('light-mode');
     const [showMenu, setShowMenu] = useState(false); // Set initial state to false
     const menuRef = useRef();
 
@@ -60,24 +60,22 @@ import './navbar.css';
       <div className="middle">
         <div className={`navItems ${showMenu ? 'show' : ''}`}>
           <Link activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="navItem"><span className='navLink'>Home</span></Link>
-          <Link activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="navItem">About</Link>
-          <Link activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Products</Link>
+          <Link activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</Link>
+          <Link activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="navItem">About Us</Link>
           <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Clients</Link>
-          <Link activeClass='active' to='achievements' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Achievements</Link>
           <Link activeClass='active' to='team' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Team</Link>
           <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Contact</Link>
         </div>
         </div>
         <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
-        {/* <img src={HamburgerIcon} alt="Hamburger icon" /> */}
+        { <img src={HamburgerIcon.svg} alt="Hamburger icon" /> }
         <div className={` ${showMenu?'showMobMenu':'myMobMenu'} `}>
           {/* this is mobile view navbar */}
           <Link onClick={toggleMenu} activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem"><span className='navLink'>Home</span></Link>
-          <Link onClick={toggleMenu} activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">About</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Products</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Clients</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='achievements' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Achievements</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='team' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Team</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Places</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">About Us </Link>
+          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Cilents</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Team</Link>
           <Link onClick={toggleMenu} activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Contact</Link>
         </div>
       </div>

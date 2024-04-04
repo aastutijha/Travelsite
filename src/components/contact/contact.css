@@ -12,8 +12,8 @@
 
 .contactBottom {
     /* background-color: #875CFF; */
-    background-color: var(--body-background);
-    height: 40vh;
+    background-color: white;
+    height: 45vh;
     /* border: 3px solid white; */
     display: flex;
     align-items: center;
@@ -75,10 +75,10 @@
 .queryForm>button {
     width: 14%;
     height: 3rem;
-    background: white;
+    background: rgb(254, 253, 253);
     padding: 0.5rem 1rem;
     border: none;
-    color: rgb(150, 46, 255);
+    color: rgb(158, 41, 230);
     margin-left: -3rem;
     cursor: pointer;
     display: flex;
@@ -90,7 +90,7 @@
 
  ::placeholder {
     /* Most modern browsers support this now. */
-    color: white;
+    color: rgb(248, 247, 247);
 }
 
 
@@ -105,9 +105,11 @@
 .bottomHeading>span {
     /* height:4rem; */
     margin-top: 5rem;
+    margin-left: 5rem;
     width: 100%;
     font-size: 1.4rem;
-    color: var(--font-color);
+    align-items: center;
+    color: rgb(150, 46, 255);
     font-weight: 500;
 }
 
@@ -147,17 +149,21 @@
 .contact-us {
     /* Reduce the top and bottom margin */
     font-weight: 500;
+    color: rgb(150, 46, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0.5 rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .phone-no {
     /* margin: 1rem 0; Reduce the top and bottom margin */
     display: flex;
+    color: rgb(150, 46, 255);
     justify-content: center;
     align-items: center;
+    margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {

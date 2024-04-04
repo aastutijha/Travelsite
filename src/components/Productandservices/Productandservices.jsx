@@ -58,7 +58,7 @@ const Productandservices = () => {
   return (
     <div className="container" id="products">
       <section className='title'>
-      <h1> Our product and services </h1>
+      <h1> Travel info </h1>
       </section>
       {/* <section className="product-section">
         <h2>Products</h2>

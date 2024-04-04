@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--body-background);
+    background-color: rgb(105, 45, 208);
     height: 4rem;
 }
 

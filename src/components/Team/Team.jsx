@@ -12,14 +12,14 @@ const Team = () => {
   return (
     <div className='team' id='team'>
      <div className="teamHeading">
-      <h1>Our Team</h1>
+      <h1>Professional Team</h1>
      </div>
      <div className="teamMembers">
 
      <div className="member">
         {/* <img src={img2} alt="" /> Use the imported image */}
         <div className="name">
-          Shivam Gupta
+        Nirmal dongal
         </div>
         <div className="designation">
           CEO
@@ -33,34 +33,18 @@ const Team = () => {
 
       </div>
 
-      <div className="member">
-        {/* <img src={img1} alt="" /> Use the imported image */}
-        <div className="name">
-        Abhinav Raj Singh
-        </div>
-        <div className="designation">
-        COO
-        </div>
-        <hr />
-        <div className="socialHandles">
-  <a href="https://linkedin.com/in/abhinav-raj-singh-378b57179" target="_blank" rel="noreferrer">
-    {/* <img src={linkedinIcon} alt="LinkedIn" className="socialIcon" /> Add class here */}
-  </a>
-</div>
-
-
-      </div>
+      
       <div className="member">
         {/* <img src={img3} alt="" /> Use the imported image */}
         <div className="name">
-        AnshuGupta
+          Astuti Jha
         </div>
         <div className="designation">
-          CFO
+          Web deginer
         </div>
         <hr />
         <div className="socialHandles">
-        <a href="https://www.linkedin.com/in/aastutijha/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/AstutiJha/" target="_blank" rel="noreferrer">
     {/* <img src={linkedinIcon} alt="LinkedIn" className="socialIcon" /> Add class here */}
   </a>
 </div>
@@ -68,7 +52,7 @@ const Team = () => {
 <div className="member">
   {/* <img src={img4} alt="" /> Use the imported image */}
   <div className="name">
-    Aditya Jain
+    Anusha khadka
   </div>
   <div className="designation">
   Strategic Officer

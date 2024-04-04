@@ -40,7 +40,7 @@ const Clientsection = () => {
 
   return (
     <div className="clients-section" id="clients">
-      <h2>Our Companies</h2>
+      <h2>Happy Clients</h2>
       <h3><u>Other servies we offer</u></h3>
       {renderLogos()}
     </div>

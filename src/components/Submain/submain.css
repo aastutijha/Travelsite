@@ -6,9 +6,12 @@
     height: 30vh;
     padding: 2.5rem 1rem;
     text-align: center;
-    background-color: var(--body-background);
-    color: var(--font-color);
+    background-color: #ffffff;
+    color: rgb(5, 4, 4);
     position: relative;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .subMainTop {
@@ -16,14 +19,27 @@
     color: #875CFF;
     margin-bottom: 1.5rem;
     text-align: center;
-    /* adjust as needed */
 }
 
-.subMainMiddle {
+.text2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    /* adjust as needed */
+}
+
+.packageBox {
+    width: 80%;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #875CFF;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.packageBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -36,20 +52,16 @@
         text-align: center;
         height: auto;
         background-color: var(--body-background);
-        color: var(--font-color);
-        /* border-bottom: 3px solid grey; */
+        color: rgb(255, 253, 253);
         position: relative;
     }
     .subMainTop {
         font-size: 2rem;
-        /* adjust as needed */
         margin-bottom: 1rem;
         text-align: center;
     }
-    .subMainMiddle {
+    .text2 {
         font-size: 1.0rem;
-        /* adjust as needed */
-        /* margin-bottom: 1rem;  */
         text-align: center;
     }
 }

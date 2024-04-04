@@ -9,7 +9,7 @@
     /* or cover or specify dimensions */
     background-position: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .center-main {
@@ -24,7 +24,7 @@
 }
 
 .text1 {
-    color: #fff45c;
+    color: #903af9;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
@@ -54,7 +54,7 @@
     /* Increase padding for wider button */
     border-radius: 2rem;
     border: none;
-    background-color: #cdc8db;
+    background-color: #a489ed;
     cursor: pointer;
     font-size: 1.1rem;
     /* Increase font size for better visibility */

@@ -43,7 +43,7 @@ const Contact = () => {
             Stay in the loop
           </div> */}
           <div className="anyQueries">
-            Do you have any queries for Us ?
+            <u><b>FAQ section</b></u>
           </div>
         </div>
         <div className="contactRight">
@@ -60,7 +60,7 @@ const Contact = () => {
   <div className="contactBottomLeft">
     <div className="bottomHeading">
     {/* <img src={logo} alt="Logo" /> */}
-      <span>Travel Hoildays.np</span>
+      
       </div>
       <div className='contact-us'>Contact Us</div>
       <div className='phone-no'>Phone: 9851243326</div>
