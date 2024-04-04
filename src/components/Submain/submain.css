@@ -21,47 +21,23 @@
     text-align: center;
 }
 
-.text2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+.subMainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.packageBox {
-    width: 80%;
-    padding: 20px;
-    margin: 20px 0;
-    border: 2px solid #875CFF;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.subsection {
+    margin: 10px 0;
 }
 
-.packageBox:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.subsection h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-    .subMain {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        padding: 1.5rem 0.5rem;
-        text-align: center;
-        height: auto;
-        background-color: var(--body-background);
-        color: rgb(255, 253, 253);
-        position: relative;
-    }
-    .subMainTop {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-    .text2 {
-        font-size: 1.0rem;
-        text-align: center;
-    }
+.subsection p {
+    font-size: 1rem;
+    color: #555;
 }

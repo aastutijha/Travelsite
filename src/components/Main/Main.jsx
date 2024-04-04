@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './main.css';
 import background from '../../assets/bgphoto.jpeg';
+import Bookingform from '../Bookingform/Bookingform'; // Import the BookingForm component
 
 const Main = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   const handleSearchButtonClick = () => {
-    // Implement the functionality for the search button
-    // This could include opening a search bar, navigating to a search page, etc.
+    setIsFormOpen(true);
+  };
+
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
+
+  const handleSubmitForm = (formData) => {
+    // Implement the functionality to handle form submission (e.g., sending data to backend)
+    console.log(formData);
+    setIsFormOpen(false);
   };
 
   return (
@@ -17,16 +29,15 @@ const Main = () => {
         <div className="text2">
           Discover the world with unforgettable travel experiences.
         </div>
-        <div className="buttonContainer">
-          
-        </div>
         <div className="searchButtonContainer">
-          {/* Add the search button here */}
+          {/* Change the button text and onClick event */}
           <button className="searchButton" onClick={handleSearchButtonClick}>
-            Any where you want to go...
+            Book Now
           </button>
         </div>
       </div>
+      {/* Conditionally render the BookingForm component */}
+      {isFormOpen && <Bookingform onClose={handleCloseForm} onSubmit={handleSubmitForm} />}
     </div>
   );
 };
