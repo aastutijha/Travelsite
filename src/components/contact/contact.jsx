@@ -68,19 +68,19 @@ const Contact = () => {
       <div className="socialHandles">
         <div className="icon">
           {/* Linkedin icon */}
-          <a href="https://www.linkedin.com/company/house-technologies/" target="_a">
+          <a href="https://www.linkedin.com/company/TravelHoildays/" target="_a">
             {/* <img src={linkedinIcon} alt="LinkedIn" height="45rem" /> */}
           </a>
         </div>
         <div className="icon">
           {/* Instagram icon */}
-          <a href="https://www.instagram.com/housetechnologiesindia/" target="_a">
+          <a href="https://www.instagram.com/TravelHoildays/" target="_a">
             {/* <img src={instagramIcon} alt="Instagram" height="60rem" /> */}
           </a>
         </div>
         <div className="icon">
           {/* Facebook icon */}
-          <a href="https://www.facebook.com/housetechnologiesIndia/" target="_a">
+          <a href="https://www.facebook.com/TravelHoildays/" target="_a">
             {/* <img src={facebookIcon} alt="Facebook" height="60rem" /> */}
           </a>
         </div>
@@ -88,7 +88,7 @@ const Contact = () => {
       </div>
   <div className="contactBottomMiddle">
   {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.957600888368!2d77.11047831373133!3d28.750049901995723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0138a74f7da7%3A0xf09fad683c23bd5d!2sDelhi%20Technological%20University!5e0!3m2!1sen!2sin!4v1698581400889!5m2!1sen!2sin" frameborder="0" allowFullScreen> </iframe> */}
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1749.0012636719644!2d77.1150908!3d28.7493415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01067c5dae05%3A0xf184f68786576801!2sA3%20Block%2C%20Dept.%20of%20Information%20Technology%20%26%20Applied%20Mathematics!5e0!3m2!1sen!2sin!4v1699884211393!5m2!1sen!2sin" allowfullscreen></iframe>
+  <iframe src="https://maps.app.goo.gl/kMYrx2viPC1GC4cC8" allowfullscreen></iframe>
   </div>
   {/* <div className="contactBottomRight">
     Visit Our Office

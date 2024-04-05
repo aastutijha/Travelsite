@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.css';
 import HamburgerIcon from '../../assets/hamburger.svg';
-//import company from '../../assets/logo.png';
+import company from '../../assets/logo.png';
 //import companyInv from '../../assets/logoInv.png';
 
   const Navbar = () => {
@@ -49,9 +49,9 @@ import HamburgerIcon from '../../assets/hamburger.svg';
    
     <div className='navbar'>
          <div className="left">
-        {/* <div className="company">
+        { <div className="company">
           <img src={theme=='light-mode'?company:companyInv} alt="Logo" className='logoImage' />
-        </div> */}
+        </div> }
         <div className="name">
           Travel holidays
         </div>

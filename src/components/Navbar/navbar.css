@@ -11,13 +11,9 @@ html {
     background-color: var(--body-background);
     color: var(--font-color);
     padding: 0 1rem;
-    /* Add padding to the sides of the navbar */
     position: fixed;
-    /* Add this line */
     top: 0;
-    /* Add this line */
     width: 100%;
-    /* Add this line */
     z-index: 100;
 }
 
@@ -26,38 +22,25 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 10%; */
     flex-wrap: nowrap;
 }
 
 .left {
     justify-content: flex-start;
-    /* Align logo and text to the start */
-    /* flex-grow: 1; */
 }
 
 .right {
     justify-content: flex-end;
-    /* Align hamburger icon to the end */
-    /* align-items: center; */
     margin-right: 25px;
 }
 
 .navItem:hover {
     color: #875cff;
-    /* Change the color on hover */
-}
-
-.logo,
-.text,
-.button,
-.hamburger {
-    margin: 0.5rem;
 }
 
 .logoImage {
-    height: 2rem;
-    width: 2rem;
+    height: 5rem;
+    width: 5.5rem;
     margin-right: 1rem;
 }
 
@@ -92,7 +75,7 @@ html {
 }
 
 
-/* this is weird af */
+/* Media Queries */
 
 @media (max-width: 1200px) {
     .navbar {
@@ -110,7 +93,6 @@ html {
         display: flex;
         background-color: var(--body-background);
         color: var(--font-background);
-        /* Text color */
         width: 8rem;
         height: 25rem;
         flex-direction: column;
@@ -145,17 +127,14 @@ html {
         backdrop-filter: blur(5px);
         z-index: 100;
         display: block;
-        /* Change from none to block */
     }
     body.showMenu .navbar {
         backdrop-filter: blur(5px);
-        /* Add this line to blur the navbar */
     }
     .hamburger,
     .container {
         display: flex;
         align-items: center;
-        /* Align items vertically */
         justify-content: space-between;
     }
     .mobItem {
@@ -165,7 +144,6 @@ html {
     .right {
         display: flex;
         align-items: center;
-        /* flex-wrap: nowrap; */
     }
     .navItems {
         display: none;
@@ -186,7 +164,6 @@ html {
     }
     .myMobMenu:hover {
         color: #bb70d8;
-        /* Change the text color when hovered over */
     }
     .container {
         order: 1;
@@ -214,7 +191,6 @@ html {
     }
     .navbar {
         padding-right: 2rem;
-        /* Create space on the right side */
     }
     .container {
         display: flex;
