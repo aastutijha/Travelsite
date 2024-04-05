@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './submain.css';
 // Import your image
-import historicalImage from '../../assets/historical.jpeg';
+import historicalImage from '../../assets/historical.jpg';
 import naturalImage from '../../assets/natural.jpg';
 import culturalImage from '../../assets/cultural.jpg';
 import adventureImage from '../../assets/adventure.jpeg';
