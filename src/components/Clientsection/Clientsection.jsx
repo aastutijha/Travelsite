@@ -16,33 +16,48 @@ const Clientsection = () => {
     };
   }, []);
 
-  const renderLogos = () => {
-    const logos = ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Maharashtra_Police_Insignia_%28India%29.svg/690px-Maharashtra_Police_Insignia_%28India%29.svg.png", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/157th_Air_Operations_Group.PNG/300px-157th_Air_Operations_Group.PNG " , "https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Aditya_Birla_Grasim_Logo.svg/480px-Aditya_Birla_Grasim_Logo.svg.png?20200711124633" , " https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/ADGPI_Indian_Army.svg/1185px-ADGPI_Indian_Army.svg.png", "https://upload.wikimedia.org/wikipedia/commons/e/ea/Koning_Soldaat.%2C_item_60.jpg" , "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/IIT_Guwahati_Logo.svg/1200px-IIT_Guwahati_Logo.svg.png" , "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/1200px-Indian_Institute_of_Technology_Delhi_Logo.svg.png", "https://static.theprint.in/wp-content/uploads/2022/03/Defence_Ministry_logo20220303111535.jpg" , "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6jMciFkMAj5Kr1PKN8LnzToEhUjvJw7HRCxjE2vJUFehDeLIZ_g_FADHIg2Y5Y7xo5gA&usqp=CAU"];
+  const renderFeedback = () => {
+    const feedbacks = [
+      {
+        id: 1,
+        name: "John Doe",
+        comment: "Excellent service! The tour was well-organized and enjoyable.",
+      },
+      {
+        id: 2,
+        name: "Jane Smith",
+        comment: "Great experience! The guides were knowledgeable and friendly.",
+      },
+      {
+        id: 3,
+        name: "Alice Johnson",
+        comment: "Highly recommended! I had an amazing time exploring new places.",
+      },
+      {
+        id: 4,
+        name: "Rim Johnson",
+        comment: "Outstanding service! The team went above and beyond to ensure a memorable experience.",
+      },
+     
+    ];
 
-    if (windowWidth < 576) {
-      return (
-        <div className="clients-section-logos mobile">
-          {logos.map((logo) => (
-            <img src={logo} alt="Logo" key={logo} />
-          ))}
-        </div>
-      );
-    } else {
-      return (
-        <div className="clients-section-logos desktop">
-          {logos.map((logo) => (
-            <img src={logo} alt="Logo" key={logo} />
-          ))}
-        </div>
-      );
-    }
+    return (
+      <div className="feedback-container">
+        {feedbacks.map((feedback) => (
+          <div className="feedback-box" key={feedback.id}>
+            <p>{feedback.comment}</p>
+            <span>- {feedback.name}</span>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   return (
     <div className="clients-section" id="clients">
-      <h2>Happy Customers</h2>
-      <h3><u>Other servies we offer</u></h3>
-      {renderLogos()}
+      <h2> Happy Customer </h2>
+      <h3><u>See what our customers say about us</u></h3>
+      {renderFeedback()}
     </div>
   );
 };

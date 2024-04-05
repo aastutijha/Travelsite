@@ -37,11 +37,6 @@ function App() {
     <Team/>
     <Contact />
     <Footer />
-
-
-    
-    
-   
     </>
   )
 }
