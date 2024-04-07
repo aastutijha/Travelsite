@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './submain.css';
-// Import your image
 import historicalImage from '../../assets/historical.jpg';
 import naturalImage from '../../assets/natural.jpg';
 import culturalImage from '../../assets/cultural.jpg';
@@ -8,28 +7,23 @@ import adventureImage from '../../assets/adventure.jpeg';
 import beachImage from '../../assets/beach.jpeg';
 import culinaryImage from '../../assets/culinary.jpg';
 
+
 const Submain = () => {
-  // State to track if a package is clicked
   const [inboundClicked, setInboundClicked] = useState(false);
   const [outboundClicked, setOutboundClicked] = useState(false);
-
-  // Function to toggle the clicked state for inbound tours
+  
   const handleInboundClick = () => {
     setInboundClicked(!inboundClicked);
-    // Close outbound tours content when inbound tours clicked
     setOutboundClicked(false);
   };
 
-  // Function to toggle the clicked state for outbound tours
   const handleOutboundClick = () => {
     setOutboundClicked(!outboundClicked);
-    // Close inbound tours content when outbound tours clicked
     setInboundClicked(false);
   };
 
   return (
     <div className='subMain' id='sub-main'>
-      {/* Box for TOP INBOUND TOURS */}
       <div className='packageBox' onClick={handleInboundClick}>
         <div className="subMainTop">
           TOP INBOUND TOURS
@@ -37,7 +31,6 @@ const Submain = () => {
         <div className="text2">
           Spots at the top of our domestic must-go list
         </div>
-        {/* Conditionally render content when box is clicked */}
         {inboundClicked && (
           <div className="subMainContent">
             <div className="subsection" onClick={() => console.log('Historical Sites Clicked')} style={{ backgroundImage: `url(${historicalImage})` }}>
@@ -55,7 +48,6 @@ const Submain = () => {
           </div>
         )}
       </div>
-      {/* Box for TOP OUTBOUND TOURS */}
       <div className='packageBox' onClick={handleOutboundClick}>
         <div className="subMainTop">
           TOP OUTBOUND TOURS
@@ -63,7 +55,6 @@ const Submain = () => {
         <div className="text2">
           Spots at the top of our outbound must-go list
         </div>
-        {/* Conditionally render content when box is clicked */}
         {outboundClicked && (
           <div className="subMainContent">
             <div className="subsection" onClick={() => console.log('Adventure Destinations Clicked')} style={{ backgroundImage: `url(${adventureImage})` }}>
