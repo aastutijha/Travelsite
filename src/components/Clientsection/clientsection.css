@@ -38,9 +38,18 @@
     /* Ensure padding is included in the width */
     text-align: left;
     /* Align text to the left */
+    transition: transform 0.3s ease;
 }
 
-.feedback-box p {
+.feedback-box.hidden {
+    transform: translateX(-100%);
+    /* Move the feedback box out of view */
+    opacity: 0;
+    /* Hide the feedback box */
+}
+
+
+/*.feedback-box p {
     font-size: 1.4rem;
     margin-bottom: 10px;
 }

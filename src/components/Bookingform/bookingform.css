@@ -4,9 +4,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 110%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +18,6 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 400px;
-    /* Adjust max-width as needed */
     width: 100%;
 }
 
@@ -42,34 +40,53 @@
     margin-bottom: 15px;
     border: 1px solid #ae4564;
     border-radius: 5px;
+    width: 100%;
 }
 
 .booking-form .button-group {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .booking-form button {
     padding: 10px 20px;
-    background-color: #0e0e0e;
-    color: #f4f3f3;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
-.booking-form button:hover {
-    background-color: #48f46e;
+.booking-form button.book-now-clicked {
+    background-color: green;
+    /* Green color for book now button when clicked */
 }
 
 .close-button {
     padding: 10px 20px;
-    color: #fff;
-    background-color: #f46320;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 20px;
+    /* Increased margin-bottom for more space */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .booking-form-container {
+        height: 110%;
+    }
+    .booking-form {
+        max-width: 400px;
+        width: 90%;
+    }
+    .booking-form .button-group {
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-trim: 50px;
+        /* Increased margin-bottom for more space */
+    }
+}
+
+.booking-form button:hover {
+    background-color: #48f46e;
 }
 
 .close-button:hover {
@@ -80,8 +97,12 @@
     padding: 10px 20px;
     color: #fff;
     background-color: red;
-    /* Change the color to red */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.close-button-red.clicked {
+    background-color: red;
+    /* Red color for close button when clicked */
 }

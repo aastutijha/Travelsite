@@ -11,6 +11,8 @@ const BookingForm = ({ onClose, onSubmit }) => {
   });
 
   const [isCloseClicked, setIsCloseClicked] = useState(false);
+  const [isBookNowClicked, setIsBookNowClicked] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,6 +22,7 @@ const BookingForm = ({ onClose, onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(formData);
+    setIsBookNowClicked(true); // Set book now button clicked
   };
 
   const handleCloseClick = () => {
@@ -83,7 +86,9 @@ const BookingForm = ({ onClose, onSubmit }) => {
             required
           />
           <div className="button-group">
-            <button type="submit">Book Now</button>
+          <button type="submit" className={isBookNowClicked ? 'book-now-clicked' : ''}>
+              Book Now
+            </button>
             <button className={isCloseClicked ? "close-button-red" : "close-button"} onClick={handleCloseClick}>
               Close
             </button>

@@ -1,9 +1,11 @@
+/* productandservices.css */
+
 body {
     border-top: 0;
     background-color: white;
     /* Change background color to white */
     color: #875CFF;
-    /* Change text color to red */
+    /* Change text color to purple */
     margin-bottom: 0;
 }
 
@@ -28,18 +30,40 @@ body {
     font-weight: 600;
     margin-bottom: 20px;
     color: #875CFF;
+    /* Change text color to purple */
     height: 40vh;
-    /* Change text color to red */
 }
 
 .card-details h3 {
     margin: 5px 0;
-    color: #875CFF;
-    /* Adjust title color as needed */
+    color: #060115;
+    /* Adjust title color to purple */
 }
 
 .card-details p {
     font-size: 14px;
     color: #875CFF;
-    /* Change text color to red */
+    /* Change text color to purple */
+}
+
+
+/* Styles for the image container */
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Align the image to the left side of the paragraph */
+    margin-top: 20px;
+    /* Adjust the margin as needed */
+}
+
+.image-container img {
+    max-width: 800px;
+    /* Set the maximum width of the image */
+    max-height: 500px;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    /* Add border-radius for rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
 }

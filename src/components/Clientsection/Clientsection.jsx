@@ -3,7 +3,7 @@ import './clientsection.css'
 
 const Clientsection = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-
+  const [showFeedback, setShowFeedback] = React.useState(true);
   React.useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -15,6 +15,9 @@ const Clientsection = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const toggleFeedback = () => {
+    setShowFeedback(!showFeedback); // Toggle the visibility state
+  };
 
   const renderFeedback = () => {
     const feedbacks = [
@@ -57,6 +60,7 @@ const Clientsection = () => {
     <div className="clients-section" id="clients">
       <h2> Happy Customer </h2>
       <h3><u>See what our customers say about us</u></h3>
+      <button onClick={toggleFeedback}>Toggle Feedback</button> {/* Button to toggle feedback visibility */}
       {renderFeedback()}
     </div>
   );

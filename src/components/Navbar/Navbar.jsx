@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import './navbar.css';
-import HamburgerIcon from '../../assets/hamburger.svg';
+import HamburgerIcon from '../../assets/HamburgerIcon.svg';
 import company from '../../assets/logo.png';
 //import companyInv from '../../assets/logoInv.png';
 
