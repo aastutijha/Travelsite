@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 30vh;
-    padding: 2.5rem 1rem;
+    padding: 1.5rem 1rem;
+    /* Reduce vertical padding */
     text-align: center;
     background-color: #ffffff;
     color: rgb(5, 4, 4);
@@ -17,14 +17,16 @@
 .subMainTop {
     font-size: 2.5rem;
     color: #875cff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    /* Reduce bottom margin */
     text-align: center;
 }
 
 .text2 {
     font-size: 1.5rem;
     color: #333;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    /* Reduce bottom margin */
 }
 
 .subMainContent {
@@ -33,6 +35,8 @@
     align-items: center;
     justify-content: space-around;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* Reduce bottom margin */
 }
 
 .subsection {

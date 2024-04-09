@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import imgPlaceholder from '../../assets/group.jpeg';
+import imgPlaceholder from '../../assets/group.jpg';
 
 const Productandservices = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -40,18 +40,15 @@ const Productandservices = () => {
     <div className="container" id="products">
       <section className="title">
         <h1>Who Are We?</h1>
-        <p>We Are Travel Experts</p>
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when
-          looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop
-          publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-          'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the
-          years, sometimes by accident, sometimes on purpose.
-        </p>
+       
         <div className="image-container">
           <img src={imgPlaceholder} alt="Image Description" />
         </div>
+        <p>We Are Travel Experts</p>
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
+        </p>
+       
       </section>
       {showPopup && (
         <div className="popup" onClick={closePopup}>
@@ -62,12 +59,7 @@ const Productandservices = () => {
             <div className="popup-details">
               <h3>Popup Title</h3>
               <p>
-                Popup Description. It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it
-                look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
+                Popup Description. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
               </p>
             </div>
           </div>

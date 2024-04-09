@@ -1,67 +1,33 @@
 import React from "react";
-import './clientsection.css'
+import "./clientsection.css";
 
 const Clientsection = () => {
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-  const [showFeedback, setShowFeedback] = React.useState(true);
-  React.useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  const toggleFeedback = () => {
-    setShowFeedback(!showFeedback); // Toggle the visibility state
-  };
-
-  const renderFeedback = () => {
-    const feedbacks = [
-      {
-        id: 1,
-        name: "John Doe",
-        comment: "Excellent service! The tour was well-organized and enjoyable.",
-      },
-      {
-        id: 2,
-        name: "Jane Smith",
-        comment: "Great experience! The guides were knowledgeable and friendly.",
-      },
-      {
-        id: 3,
-        name: "Alice Johnson",
-        comment: "Highly recommended! I had an amazing time exploring new places.",
-      },
-      {
-        id: 4,
-        name: "Rim Johnson",
-        comment: "Outstanding service! The team went above and beyond to ensure a memorable experience.",
-      },
-     
-    ];
-
-    return (
-      <div className="feedback-container">
-        {feedbacks.map((feedback) => (
-          <div className="feedback-box" key={feedback.id}>
-            <p>{feedback.comment}</p>
-            <span>- {feedback.name}</span>
-          </div>
-        ))}
-      </div>
-    );
-  };
-
   return (
     <div className="clients-section" id="clients">
-      <h2> Happy Customer </h2>
-      <h3><u>See what our customers say about us</u></h3>
-      <button onClick={toggleFeedback}>Toggle Feedback</button> {/* Button to toggle feedback visibility */}
-      {renderFeedback()}
+      <h2>Happy Clients</h2>
+      <div className="feedback-container">
+        <div className="feedback-box">
+          <p>
+          I recently booked a holiday through Travel Holidays and I must say, it was an exceptional experience from start to finish. The website was easy to navigate, allowing me to explore various destinations and packages effortlessly.
+          </p>
+          <span>Jhonathon Doe</span>
+          <span>Officer</span>
+        </div>
+        <div className="feedback-box">
+          <p>
+          Overall, Travel Holidays exceeded my expectations, and I highly recommend them to anyone looking for a hassle-free and memorable travel experience. I'll definitely be booking with them again for my future vacations
+          </p>
+          <span>Katrina Kaif</span>
+          <span>Actress</span>
+        </div>
+        <div className="feedback-box">
+          <p>
+          During my trip, everything was arranged seamlessly, from airport transfers to hotel check-ins. The itinerary was well-planned, ensuring that I got the most out of my vacation without feeling rushed.
+          </p>
+          <span>Zaire Aktar</span>
+          <span>Business Men</span>
+        </div>
+      </div>
     </div>
   );
 };

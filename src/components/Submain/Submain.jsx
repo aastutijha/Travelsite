@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './submain.css';
+
 import historicalImage from '../../assets/historical.jpg';
 import naturalImage from '../../assets/natural.jpg';
 import culturalImage from '../../assets/cultural.jpg';
