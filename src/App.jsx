@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Main from './components/Main/Main.jsx'
 import SubMain from './components/Submain/Submain.jsx'
+import Recomandation from './components/Recomandation/Recomandation.jsx'
 import Productandservices from './components/Productandservices/Productandservices.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 // import AchivementsCarousel from './Components/AchievementsCarousel/AchievementsCarousel'
@@ -32,6 +33,7 @@ function App() {
     <Navbar />
     <Main />
     <SubMain />
+    <Recomandation/>
     <Productandservices />
     <Clientsection />
     <Team/>

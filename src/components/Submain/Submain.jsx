@@ -3,7 +3,7 @@ import './submain.css';
 import underwaterImage from '../../assets/underwater.jpg';
 import londonImage from '../../assets/london.jpg';
 import australiaImage from '../../assets/australia.jpg';
-import adventureImage from '../../assets/adventure.jpeg';
+import parisImage from '../../assets/paris.jpeg';
 
 const Submain = () => {
   return (
@@ -33,13 +33,13 @@ const Submain = () => {
           </div>
         </div>
         <div className="tourPlace">
-          <img src={adventureImage} alt="Adventures ride" />
+          <img src={parisImage} alt="Adventures ride" />
           <div className="tourPlaceDetails">
-            <h3>Adventures ride in the rivers</h3>
-            <p>Sindhupal chowk, Nepal</p>
+            <h3>City of Romance</h3>
+            <p>Paris</p>
             <div className="price">
-              <span className="discountedPrice">$2344</span>
-              <span className="originalPrice">$3200</span>
+              <span className="discountedPrice">$3344</span>
+              <span className="originalPrice">$5200</span>
             </div>
           </div>
         </div>

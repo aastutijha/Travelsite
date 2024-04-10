@@ -61,7 +61,7 @@ const Team = () => {
         <div className="member">
           {/* Add image source here */}
           <div className="name">
-            Binita shrestha 
+            Binita Shrestha 
           </div>
           <div className="designation">
            Web Designation
