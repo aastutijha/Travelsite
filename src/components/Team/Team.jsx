@@ -22,7 +22,7 @@ const Team = () => {
         Nirmal dongal
         </div>
         <div className="designation">
-          CEO
+          CTO
         </div>
         <hr />
         <div className="socialHandles">

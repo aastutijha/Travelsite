@@ -1,102 +1,61 @@
-import React, { useRef } from 'react'
-import './contact.css'
-//import logo from '../../assets/logoInv.png'; 
-//import logoInv from '../../assets/logoInv.png'; 
-//import emailjs from '@emailjs/browser';
-//import facebookIcon from '../../assets/team/facebook.png';
-//import instagramIcon from '../../assets/team/instagram.png';
-//import linkedinIcon from '../../assets/team/linkedin.png';
-
+import React, { useRef } from 'react';
+import './contact.css';
+import locationIcon from '../../assets/location.png';
+import phoneIcon from '../../assets/phone.png';
+import emailIcon from '../../assets/gmail.png';
 
 const Contact = () => {
-  console.log(document.body.classList);
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
-
-// This is the basic template for emailJs 
-  //   emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
-
-  // Set the environment variables prefixed with VITE_ to use in the website
-
-    // emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
-    //   .then((result) => {
-    //       e.target.reset();
-    //       alert("Message Sent Successfully")
-    //   }, (error) => {
-    //     console.log(error);
-    //       alert("Error while sending message!!!! Try Resending")
-    //   });
-  }
+    // Implement email sending logic here
+  };
 
   return (
-    <div className='contact' id='contact'>
-      <div className="contactTop"> 
+    <div className="contact" id="contact">
+      <div className="contactTop">
         <div className="contactLeft">
-          {/* <div className="stayInLoop">
-            Stay in the loop
-          </div> */}
-          <div className="anyQueries">
-            <u><b>FAQ section</b></u>
-          </div>
+          <div className="anyQueries">FAQ section</div>
         </div>
         <div className="contactRight">
-          <form ref={form} onSubmit={sendEmail} className='queryForm'>
-            <input type="text" name="message" id="" placeholder='Your Query'/>
-            <input type="email" name="from_email" id="" placeholder='Your Email' />
+          <div className="officeBg">
+            <div className="officeDetails">
+              <div className="office">
+                <span className="detailIcon">
+                  <img src={locationIcon} alt="Location Icon" />
+                </span>
+                <span>Baneshwor,kathmandu</span>
+              </div>
+              <div className="contactNumber">
+                <span className="detailIcon">
+                  <img src={phoneIcon} alt="Phone Icon" />
+                </span>
+                <span>9851243326</span>
+              </div>
+              <div className="emailAddress">
+                <span className="detailIcon">
+                  <img src={emailIcon} alt="Email Icon" />
+                </span>
+                <span>TravelHolidays@mail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="contactBottom">
+        <div className="formContainer">
+          <form ref={form} onSubmit={sendEmail} className="queryForm">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
       </div>
-
-<div className="contactBottom">
- 
-  <div className="contactBottomLeft">
-    <div className="bottomHeading">
-    {/* <img src={logo} alt="Logo" /> */}
-      
-      </div>
-      <div className='contact-us'>Contact Us</div>
-      <div className='phone-no'>Phone: 9851243326</div>
-      <div className='phone-no'>Address: Kathmandu, Nepal</div>
-      <div className="socialHandles">
-        <div className="icon">
-          {/* Linkedin icon */}
-          <a href="https://www.linkedin.com/company/TravelHoildays/" target="_a">
-            {/* <img src={linkedinIcon} alt="LinkedIn" height="45rem" /> */}
-          </a>
-        </div>
-        <div className="icon">
-          {/* Instagram icon */}
-          <a href="https://www.instagram.com/TravelHoildays/" target="_a">
-            {/* <img src={instagramIcon} alt="Instagram" height="60rem" /> */}
-          </a>
-        </div>
-        <div className="icon">
-          {/* Facebook icon */}
-          <a href="https://www.facebook.com/TravelHoildays/" target="_a">
-            {/* <img src={facebookIcon} alt="Facebook" height="60rem" /> */}
-          </a>
-        </div>
-      </div>
-      </div>
-  <div className="contactBottomMiddle">
-  {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.957600888368!2d77.11047831373133!3d28.750049901995723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0138a74f7da7%3A0xf09fad683c23bd5d!2sDelhi%20Technological%20University!5e0!3m2!1sen!2sin!4v1698581400889!5m2!1sen!2sin" frameborder="0" allowFullScreen> </iframe> */}
-  <iframe src="https://maps.app.goo.gl/kMYrx2viPC1GC4cC8" allowfullscreen></iframe>
-  </div>
-  {/* <div className="contactBottomRight">
-    Visit Our Office
- 
-  </div> */}
-</div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
