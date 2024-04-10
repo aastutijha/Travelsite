@@ -15,6 +15,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contactTop">
+      <div className="Company name">"Travel holidays"</div>
         <div className="contactLeft">
           <div className="anyQueries">FAQ section</div>
         </div>

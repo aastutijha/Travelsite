@@ -2,12 +2,25 @@
     margin-top: 0;
 }
 
+.contact {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 2rem 0;
+}
+
 .contactTop {
     background-color: #875cff;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 2rem;
+}
+
+.Company {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
 }
 
 .contactLeft {

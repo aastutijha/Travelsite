@@ -18,7 +18,8 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 400px;
-    width: 100%;
+    width: 80%;
+    margin-top: 50px;
 }
 
 .booking-form h2 {
@@ -55,6 +56,7 @@
     padding: 10px 10px;
     margin-bottom: 10px;
     margin-right: 20px;
+    margin-left: 20px;
     width: 100%;
 }
 
@@ -67,6 +69,7 @@
     padding: 10px 10px;
     margin-bottom: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     /* Increased margin-bottom for more space */
     width: 100%;
 }
@@ -87,12 +90,11 @@
     }
 }
 
-
-/*.booking-form button:hover {
+.booking-form button:hover {
     background-color: #48f46e;
-}*/
+}
 
-.close-button:hover {
+*/ .close-button:hover {
     background-color: #fe3535;
 }
 
