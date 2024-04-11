@@ -10,7 +10,6 @@ const Team = () => {
       </div>
       <div className="teamMembers">
         <div className="member">
-          {/* Add image source here */}
           <div className="name">
             Nirmal Dongal
           </div>
@@ -26,7 +25,6 @@ const Team = () => {
         </div>
 
         <div className="member">
-          {/* Add image source here */}
           <div className="name">
             Astuti Jha
           </div>
@@ -42,7 +40,6 @@ const Team = () => {
         </div>
 
         <div className="member">
-          {/* Add image source here */}
           <div className="name">
             Anusha Khadka
           </div>
@@ -52,23 +49,6 @@ const Team = () => {
           <hr />
           <div className="socialHandles">
             <a href="https://www.linkedin.com/in/anushakhadka/" target="_blank" rel="noreferrer">
-              {/* Add social icon */}
-            </a>
-          </div>
-        </div>
-
-        {/* Add the new member here */}
-        <div className="member">
-          {/* Add image source here */}
-          <div className="name">
-            Binita Shrestha 
-          </div>
-          <div className="designation">
-           Web Designation
-          </div>
-          <hr />
-          <div className="socialHandles">
-            <a href="https://www.linkedin.com/in/bintashrestha/" target="_blank" rel="noreferrer">
               {/* Add social icon */}
             </a>
           </div>

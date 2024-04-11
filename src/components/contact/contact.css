@@ -15,6 +15,9 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
 }
 
 .Company {

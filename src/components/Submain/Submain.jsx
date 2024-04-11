@@ -4,6 +4,7 @@ import underwaterImage from '../../assets/underwater.jpg';
 import londonImage from '../../assets/london.jpg';
 import australiaImage from '../../assets/australia.jpg';
 import parisImage from '../../assets/paris.jpeg';
+import tokyoImage from '../../assets/tokyo.jpg';
 
 const Submain = () => {
   return (
@@ -51,6 +52,17 @@ const Submain = () => {
             <div className="price">
               <span className="discountedPrice">$2290</span>
               <span className="originalPrice">$3200</span>
+            </div>
+          </div>
+        </div>
+        <div className="tourPlace">
+          <img src={tokyoImage} alt="Sundorban Bromon" />
+          <div className="tourPlaceDetails">
+            <h3>Life of Animation</h3>
+            <p>Tokyo</p>
+            <div className="price">
+              <span className="discountedPrice">$4290</span>
+              <span className="originalPrice">$6200</span>
             </div>
           </div>
         </div>

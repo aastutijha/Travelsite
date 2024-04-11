@@ -1,128 +1,88 @@
-    .team {
-        height: 60vh;
-        background-color: var(--body-background);
-        color: var(--font-color);
-    }
-    
-    .teamHeading {
-        text-align: center;
-        padding: 1 rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        font-size: 1rem;
-        color: var(--font-color);
-    }
-    
-    .teamHeading h1 {
-        font-size: 2.5rem;
-        color: var(--font-color);
-        /* Set heading color */
-    }
-    
-    .teamMembers {
-        display: flex;
-        text-align: center;
-        justify-content: start;
-        /* Align items at the start */
-        align-items: center;
-        flex-wrap: nowrap;
-        /* Prevent items from wrapping */
-        overflow-x: auto;
-        /* Enable horizontal scrolling */
-        scroll-snap-type: x mandatory;
-        /* Enable snap scrolling along x axis */
-        height: calc(80vh - 6rem);
-    }
-    
-    .member {
-        display: flex;
-        flex: 0 0 auto;
-        width: 25%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--body-background);
-        text-align: center;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-        /* Snap to the start of the next item */
-        margin-bottom: 1rem;
-    }
-    
-    .member>img {
-        height: 10rem;
-        width: auto;
-        object-fit: cover;
-    }
-    
-    .member>img {
-        height: 10rem;
-        width: auto;
-        /* Keep the images squarish */
-        object-fit: cover;
-        border-radius: 15px;
-        /* Make the images square */
-        /* border: 1px solid #875cff; Keep the border */
-    }
-    
-    .name {
-        font-size: 1.2rem;
-        margin: 0.4rem 0;
-        color: var(--font-color);
-    }
-    
-    .designation {
-        text-align: center;
-        margin-top: 1px;
-        color: var(--font-color);
-    }
-    
-    .socialHandles {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .socialHandles a {
-        margin-right: 10px;
-    }
-    
-    .socialHandles img {
-        width: 35px;
-        height: 35px;
-        border-radius: 15%;
-        /* Make social icons circular */
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .socialHandles img:hover {
-        transform: scale(1.5);
-        /* Add hover effect to social icons */
-    }
-    
-    @media (max-width: 768px) {
-        .team {
-            height: 60vh;
-        }
-        .teamHeading {
-            margin-bottom: 0px;
-        }
-        .member {
-            margin-top: 0px;
-            width: 50%;
-            /* Adjust width to occupy full width on smaller screens */
-        }
-        .socialIcon {
-            width: 25px;
-            /* Set the width of the icons on smaller screens */
-            height: 25px;
-            /* Set the height of the icons on smaller screens */
-            align-items: center;
-            /* Center align items */
-            justify-content: center;
-            /* Center align items vertically */
-        }
-        .socialHandles img:hover {
-            transform: scale(1.5);
-            /* Add hover effect to social icons */
-        }
-    }
+.team {
+    height: 80vh;
+    background-color: var(--body-background);
+    color: var(--font-color);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* Add space at the top */
+}
+
+.teamHeading {
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+.teamHeading h1 {
+    font-size: 2.5rem;
+    color: var(--font-color);
+}
+
+.teamMembers {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: calc(80vh - 6rem);
+    gap: 20px;
+    /* Add space between members */
+}
+
+.member {
+    flex-basis: calc(25% - 20px);
+    /* Adjust the size of each member */
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd27f;
+    /* Red background color */
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-left: 1rem;
+    border-radius: 8px;
+    margin-bottom: 5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.name {
+    font-size: 1.2rem;
+    margin: 0.4rem 0;
+    color: var(--font-color);
+}
+
+.designation {
+    text-align: center;
+    margin-top: 1px;
+    color: var(--font-color);
+}
+
+.socialHandles {
+    display: flex;
+    justify-content: center;
+}
+
+.socialHandles a {
+    margin-right: 10px;
+}
+
+.socialHandles img {
+    width: 35px;
+    height: 35px;
+    border-radius: 15%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialHandles img:hover {
+    transform: scale(1.5);
+}

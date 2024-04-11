@@ -15,10 +15,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .tourPlace {
     width: calc(50% - 10px);
+    margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 8px;
     position: relative;
@@ -70,6 +73,7 @@
 @media (max-width: 768px) {
     .tourPlaces {
         flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
     .tourPlace {
         width: 100%;
