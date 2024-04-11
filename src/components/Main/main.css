@@ -66,6 +66,8 @@
     height: auto;
     object-fit: cover;
     border-radius: 15px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .pause-image {

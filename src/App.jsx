@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar.jsx'
 import Main from './components/Main/Main.jsx'
 import SubMain from './components/Submain/Submain.jsx'
 import Productandservices from './components/Productandservices/Productandservices.jsx'
+import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 // import AchivementsCarousel from './Components/AchievementsCarousel/AchievementsCarousel'
 // import Achivements from './components/Achivements/Achivement.jsx'
@@ -33,6 +34,7 @@ function App() {
     <Main />
     <SubMain />
     <Productandservices />
+    <OurFacilities/>
     <Clientsection />
     <Team/>
     <Contact />

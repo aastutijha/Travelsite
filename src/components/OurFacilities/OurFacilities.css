@@ -1,0 +1,52 @@
+.our-facilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.facility {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffd27f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.facility-icon {
+    font-size: 36px;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.facility h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.facility p {
+    font-size: 14px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .our-facilities {
+        flex-direction: column;
+        align-items: center;
+    }
+    .facility {
+        width: 80%;
+    }
+}
