@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './submain.css';
 import underwaterImage from '../../assets/underwater.jpg';
 import londonImage from '../../assets/london.jpg';
@@ -7,6 +7,16 @@ import parisImage from '../../assets/paris.jpeg';
 import tokyoImage from '../../assets/tokyo.jpg';
 
 const Submain = () => {
+  const [showForm, setShowForm] = useState(false);
+
+  const handleOpenForm = () => {
+    setShowForm(true);
+  };
+
+  const handleCloseForm = () => {
+    setShowForm(false);
+  };
+
   return (
     <div className="subMain" id="sub-main">
       <h2 className="subMainTop">Popular Tour Places</h2>
@@ -20,6 +30,19 @@ const Submain = () => {
               <span className="discountedPrice">$1290</span>
               <span className="originalPrice">$2200</span>
             </div>
+            <button className="openButton" onClick={handleOpenForm}>Open</button>
+            {showForm && (
+              <div className="bookingForm">
+                <h3>Booking Information</h3>
+                <label htmlFor="price">Price: $1290</label>
+                <label htmlFor="person">Number of Person:</label>
+                <input type="number" id="person" />
+                <label htmlFor="days">Number of Days:</label>
+                <input type="number" id="days" />
+                <button className="bookNowButton">Book Now</button>
+                <button className="closeButton" onClick={handleCloseForm}>Close</button>
+              </div>
+            )}
           </div>
         </div>
         <div className="tourPlace">
@@ -31,6 +54,19 @@ const Submain = () => {
               <span className="discountedPrice">$3344</span>
               <span className="originalPrice">$4200</span>
             </div>
+            <button className="openButton" onClick={handleOpenForm}>Open</button>
+            {showForm && (
+              <div className="bookingForm">
+                <h3>Booking Information</h3>
+                <label htmlFor="price">Price: $3344</label>
+                <label htmlFor="price">Number of Person:</label>
+                <input type="number" id="person" />
+                <label htmlFor="days">Number of Days:</label>
+                <input type="number" id="days" />
+                <button className="bookNowButton">Book Now</button>
+                <button className="closeButton" onClick={handleCloseForm}>Close</button>
+              </div>
+            )}
           </div>
         </div>
         <div className="tourPlace">
@@ -42,6 +78,19 @@ const Submain = () => {
               <span className="discountedPrice">$3344</span>
               <span className="originalPrice">$5200</span>
             </div>
+            <button className="openButton" onClick={handleOpenForm}>Open</button>
+            {showForm && (
+              <div className="bookingForm">
+                <h3>Booking Information</h3>
+                <label htmlFor="price">Price: $3344</label>
+                <label htmlFor="person">Number of Person:</label>
+                <input type="number" id="person" />
+                <label htmlFor="days">Number of Days:</label>
+                <input type="number" id="days" />
+                <button className="bookNowButton">Book Now</button>
+                <button className="closeButton" onClick={handleCloseForm}>Close</button>
+              </div>
+            )}
           </div>
         </div>
         <div className="tourPlace">
@@ -53,6 +102,19 @@ const Submain = () => {
               <span className="discountedPrice">$2290</span>
               <span className="originalPrice">$3200</span>
             </div>
+            <button className="openButton" onClick={handleOpenForm}>Open</button>
+            {showForm && (
+              <div className="bookingForm">
+                <h3>Booking Information</h3>
+                <label htmlFor="price">Price: $2290</label>
+                <label htmlFor="person">Number of Person:</label>
+                <input type="number" id="person" />
+                <label htmlFor="days">Number of Days:</label>
+                <input type="number" id="days" />
+                <button className="bookNowButton">Book Now</button>
+                <button className="closeButton" onClick={handleCloseForm}>Close</button>
+              </div>
+            )}
           </div>
         </div>
         <div className="tourPlace">
@@ -64,6 +126,19 @@ const Submain = () => {
               <span className="discountedPrice">$4290</span>
               <span className="originalPrice">$6200</span>
             </div>
+            <button className="openButton" onClick={handleOpenForm}>Open</button>
+            {showForm && (
+              <div className="bookingForm">
+                <h3>Booking Information</h3>
+                <label htmlFor="price">Price: $4290</label>
+                <label htmlFor="person">Number of Person:</label>
+                <input type="number" id="person" />
+                <label htmlFor="days">Number of Days:</label>
+                <input type="number" id="days" />
+                <button className="bookNowButton">Book Now</button>
+                <button className="closeButton" onClick={handleCloseForm}>Close</button>
+              </div>
+            )}
           </div>
         </div>
         

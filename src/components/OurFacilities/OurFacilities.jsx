@@ -3,8 +3,9 @@ import './OurFacilities.css';
 
 const OurFacilities = () => {
   return (
-    <div className="our-facilities">
+    <div>
         <h1 className="title">Our Facilities</h1>
+    <div className="our-facilities">
       <div className="facility">
         <div className="facility-icon">
           <i className="fa fa-bookmark"></i>
@@ -44,6 +45,7 @@ const OurFacilities = () => {
         <h3>24/7 Support</h3>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
       </div>
+    </div>
     </div>
   );
 };

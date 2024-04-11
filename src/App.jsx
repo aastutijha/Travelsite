@@ -9,6 +9,7 @@ import Clientsection from './components/Clientsection/Clientsection.jsx'
 // import AchivementsCarousel from './Components/AchievementsCarousel/AchievementsCarousel'
 // import Achivements from './components/Achivements/Achivement.jsx'
 import Team from './components/Team/Team.jsx'
+import TourInterest from './components/TourInterest/TourInterest.jsx'
 import Contact from './components/contact/contact.jsx'
 import Footer from './components/Footer/Footer.jsx'
 // import Institution from './components/Institution/Institution.jsx'
@@ -37,6 +38,7 @@ function App() {
     <OurFacilities/>
     <Clientsection />
     <Team/>
+    <TourInterest/>
     <Contact />
     <Footer />
     </>
