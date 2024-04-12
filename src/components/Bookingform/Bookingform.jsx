@@ -35,16 +35,6 @@ const BookingForm = ({ onClose, onSubmit }) => {
       <div className="booking-form">
         <h2>Book a Tour</h2>
         <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
           <label htmlFor="email">Email</label>
           <input
             type="text"
@@ -65,21 +55,31 @@ const BookingForm = ({ onClose, onSubmit }) => {
             onChange={handleChange}
             required
           />
-          <label htmlFor="person">How Many Person?</label>
+          <label htmlFor="person">Adults?</label>
           <input
             type="number"
             name="person"
             id="person"
-            placeholder="How Many Person?"
+            placeholder="How Many Adults?"
             value={formData.person}
             onChange={handleChange}
             required
           />
-          <label htmlFor="days">How Many Days?</label>
+           <label htmlFor="person">Children</label>
           <input
             type="number"
-            name="days"
-            id="days"
+            name="person"
+            id="person"
+            placeholder="How Many Children?"
+            value={formData.person}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="days">Tour dates</label>
+          <input
+            type="date"
+            name="date"
+            id="date"
             placeholder="How Many Days?"
             value={formData.days}
             onChange={handleChange}

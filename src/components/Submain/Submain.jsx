@@ -5,6 +5,8 @@ import londonImage from '../../assets/london.jpg';
 import australiaImage from '../../assets/australia.jpg';
 import parisImage from '../../assets/paris.jpeg';
 import tokyoImage from '../../assets/tokyo.jpg';
+import InboundTours from './InboundTours';
+import OutboundPlaces from './OutboundPlaces';
 
 const Submain = () => {
   const [showForm, setShowForm] = useState(false);
@@ -19,7 +21,7 @@ const Submain = () => {
 
   return (
     <div className="subMain" id="sub-main">
-      <h2 className="subMainTop">Popular Tour Places</h2>
+      <h2 className="subMainTop">Popular OutBound Tour Places</h2>
       <div className="tourPlaces">
         <div className="tourPlace">
           <img src={underwaterImage} alt="Cox's Bazar Sea Beach" />
@@ -37,8 +39,8 @@ const Submain = () => {
                 <label htmlFor="price">Price: $1290</label>
                 <label htmlFor="person">Number of Person:</label>
                 <input type="number" id="person" />
-                <label htmlFor="days">Number of Days:</label>
-                <input type="number" id="days" />
+                <label htmlFor="date">Tour Dates :</label>
+                <input type="date" id="date" />
                 <button className="bookNowButton">Book Now</button>
                 <button className="closeButton" onClick={handleCloseForm}>Close</button>
               </div>
@@ -61,8 +63,8 @@ const Submain = () => {
                 <label htmlFor="price">Price: $3344</label>
                 <label htmlFor="price">Number of Person:</label>
                 <input type="number" id="person" />
-                <label htmlFor="days">Number of Days:</label>
-                <input type="number" id="days" />
+                <label htmlFor="date">Tour Dates:</label>
+                <input type="date" id="date" />
                 <button className="bookNowButton">Book Now</button>
                 <button className="closeButton" onClick={handleCloseForm}>Close</button>
               </div>
@@ -85,8 +87,8 @@ const Submain = () => {
                 <label htmlFor="price">Price: $3344</label>
                 <label htmlFor="person">Number of Person:</label>
                 <input type="number" id="person" />
-                <label htmlFor="days">Number of Days:</label>
-                <input type="number" id="days" />
+                <label htmlFor="date">Tour Dates:</label>
+                <input type="date" id="date" />
                 <button className="bookNowButton">Book Now</button>
                 <button className="closeButton" onClick={handleCloseForm}>Close</button>
               </div>
@@ -109,8 +111,8 @@ const Submain = () => {
                 <label htmlFor="price">Price: $2290</label>
                 <label htmlFor="person">Number of Person:</label>
                 <input type="number" id="person" />
-                <label htmlFor="days">Number of Days:</label>
-                <input type="number" id="days" />
+                <label htmlFor="date">Tour Dates:</label>
+                <input type="date" id="date" />
                 <button className="bookNowButton">Book Now</button>
                 <button className="closeButton" onClick={handleCloseForm}>Close</button>
               </div>
@@ -133,17 +135,19 @@ const Submain = () => {
                 <label htmlFor="price">Price: $4290</label>
                 <label htmlFor="person">Number of Person:</label>
                 <input type="number" id="person" />
-                <label htmlFor="days">Number of Days:</label>
-                <input type="number" id="days" />
+                <label htmlFor="date">Tour Dates:</label>
+                <input type="date" id="date" />
                 <button className="bookNowButton">Book Now</button>
                 <button className="closeButton" onClick={handleCloseForm}>Close</button>
               </div>
             )}
           </div>
         </div>
-        
       </div>
+      <InboundTours />
+      <OutboundPlaces/>
     </div>
+    
   );
 };
 
