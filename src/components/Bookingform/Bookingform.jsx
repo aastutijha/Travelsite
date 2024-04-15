@@ -7,7 +7,7 @@ const BookingForm = ({ onClose, onSubmit }) => {
     email: '',
     destination: '', 
     person: '',
-    days: '',
+    date: '',
   });
 
   const [isCloseClicked, setIsCloseClicked] = useState(false);
@@ -75,7 +75,7 @@ const BookingForm = ({ onClose, onSubmit }) => {
             onChange={handleChange}
             required
           />
-          <label htmlFor="days">Tour dates</label>
+          <label htmlFor="date">Tour dates</label>
           <input
             type="date"
             name="date"

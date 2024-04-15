@@ -8,10 +8,17 @@
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     padding: 2rem 0;
+    background-image: url("../../assets/contact.jpg");
+    background-size: cover;
+    /* Ensure the background covers the entire element */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
 }
 
 .contactTop {
-    background-color: ;
+    background-color: none;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
