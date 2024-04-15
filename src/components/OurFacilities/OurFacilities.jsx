@@ -1,9 +1,10 @@
 import React from 'react';
 import './OurFacilities.css';
+import backgroundImage from "../../assets/background-image.jpeg";
 
 const OurFacilities = () => {
   return (
-    <div>
+     <div className="our-facilities-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="title">Our Facilities</h1>
     <div className="our-facilities">
       <div className="facility">

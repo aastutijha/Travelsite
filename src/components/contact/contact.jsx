@@ -3,6 +3,7 @@ import './contact.css';
 import locationIcon from '../../assets/location.png';
 import phoneIcon from '../../assets/phone.png';
 import emailIcon from '../../assets/gmail.png';
+import backgroundImage from "../../assets/contact.jpg"; 
 
 const Contact = () => {
   const form = useRef();
@@ -13,7 +14,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
+    <div className="contact"  style={{ backgroundImage: `url(${backgroundImage})` }}  id="contact">
       <div className="contactTop">
       <div className="Company name">"Travel holidays"</div>
         <div className="contactLeft">

@@ -9,7 +9,7 @@
 }
 
 .contactTop {
-    background-color: #875cff;
+    background-color: ;
     padding: 2rem;
     display: flex;
     justify-content: space-around;
@@ -31,6 +31,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .contactRight {

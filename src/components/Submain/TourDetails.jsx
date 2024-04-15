@@ -1,96 +1,88 @@
 import React from 'react';
-import './TourDetails.css';
+import styles from './TourDetails.module.css'; // Import CSS module
 
-const TourDetails = ({ tour }) => {
+const TourDetails = () => {
   return (
-    <div className="tour-details">
-      <h2>{tour.name}</h2>
-      <div className="image-container">
-        <img src={tour.image} alt={tour.name} />
-      </div>
-      <div className="tour-info">
-        <h3>Tour Rate</h3>
-        <div className="tour-rate">
-          <div className="rate-details">
-            <span>Tour Date</span>
-            <input type="date" value="2024-04-12" />
+    <div className={styles.container}>
+      <h1 className={styles.heading}>The Best of Everest Base Camp Trek / Kalapathar Trekking</h1>
+      <p className={styles.description}>
+        Everest Base camp is one of the most trekked destinations among the other trekking routes in the Everest region.
+      </p>
+      <p className={styles.description}>
+        One of the world's most challenging treks and to be able to be a part of the community of many daredevils who have ventured is a thrill in itself.
+        This trek challenges one to push human limits and thriving adrenaline rushes to give you the once in a lifetime feeling of being at the roof of the world. One of the world's most challenging treks is this and to be able to be a part of the community of many daredevils who have ventured is a thrill in itself. This Kalapathar trek challenges one to push human limits and thriving adrenaline rushes to give you the once in a lifetime feeling of being at the roof of the world.
+      </p>
+      <div className={styles.tourRate}>
+        <h2 className={styles.sectionHeading}>Tour Rate</h2>
+        <div className={styles.rateContainer}>
+          <div className={styles.rateItem}>
+            <span className={styles.rateLabel}>Tour Date</span>
+            <span className={styles.rateValue}>04/15/2024</span>
           </div>
-          <div className="rate-details">
-            <span>Adult</span>
-            <select>
-              <option value="0">0</option>
-              {/* Add more options as needed */}
-            </select>
+          <div className={styles.rateItem}>
+            <span className={styles.rateLabel}>Adult</span>
+            <span className={styles.rateValue}>0</span>
           </div>
-          <div className="rate-details">
-            <span>Children</span>
-            <select>
-              <option value="0">0</option>
-              {/* Add more options as needed */}
-            </select>
+          <div className={styles.rateItem}>
+            <span className={styles.rateLabel}>Children</span>
+            <span className={styles.rateValue}>0</span>
           </div>
-          <div className="rate-details">
-            <span>Infant 0-3 yrs</span>
-            <select>
-              <option value="0">0</option>
-              {/* Add more options as needed */}
-            </select>
+          <div className={styles.rateItem}>
+            <span className={styles.rateLabel}>Infant 0-3 yrs</span>
+            <span className={styles.rateValue}>0</span>
           </div>
-          <div className="rate-details">
-            <span>Total Amount</span>
-            <span>0</span>
+          <div className={styles.rateItem}>
+            <span className={styles.rateLabel}>Total Amount</span>
+            <span className={styles.rateValue}>0</span>
           </div>
         </div>
-        <div className="tour-actions">
-          <button className="book-now">Book Now</button>
-          <button className="more-info">More Info</button>
-        </div>
-        <div className="enquiry">
-          <h3>For more Enquiry</h3>
-          <p>+977 015900337</p>
-          <p>+977 9802348633</p>
+        <div className={styles.buttonContainer}>
+          <button className={styles.bookButton}>Book Now</button>
+          <button className={styles.infoButton}>More Info</button>
         </div>
       </div>
-      <div className="tour-details-content">
-        <h3>Your Itinerary</h3>
-        <ul>
-          <li>Day: 1 Arrive Kathmandu</li>
-          <li>Day: 2 Flight To Pokhara</li>
-          {/* Add more itinerary items as needed */}
+      <div className={styles.itinerary}>
+        <h2 className={styles.sectionHeading}>Your Itinerary</h2>
+        <ul className={styles.itineraryList}>
+          <li className={styles.itineraryItem}>Day : 1 Arrive Kathmandu</li>
+          <li className={styles.itineraryItem}>Day : 2 Flight To Pokhara</li>
         </ul>
-        <h3>What's Included</h3>
-        <div className="included-items">
-          <div className="included-item">
-            <span className="icon">&#x1F6E9;</span>
-            <span>ACCOMMODATION</span>
-            <p>Hotel, Camp</p>
-          </div>
-          <div className="included-item">
-            <span className="icon">&#x1F372;</span>
-            <span>MEALS</span>
-            <p>Breakfast, Lunch, Dinner</p>
-          </div>
-          <div className="included-item">
-            <span className="icon">&#x1F68D;</span>
-            <span>TRANSPORT</span>
-            <p>Bus, Walking</p>
-          </div>
-          <div className="included-item">
-            <span className="icon">&#x1F64B;</span>
-            <span>GUIDE</span>
-            <p>Expert Guide</p>
-          </div>
-          <div className="included-item">
-            <span className="icon">&#x2753;</span>
-            <span>ADDITIONAL INCLUDED</span>
-            <ul>
-              <li>Pick and Drop Services</li>
-              <li>1 Meal Per Day</li>
-              <li>Cruise Dinner &amp; Music Event</li>
-              <li>Visit 7 Best Places in the City With Group</li>
-            </ul>
-          </div>
+      </div>
+      <div className={styles.inclusion}>
+        <h2 className={styles.sectionHeading}>What's Included</h2>
+        <div className={styles.inclusionItem}>
+          <span className={styles.inclusionIcon}>🛋️</span>
+          <span className={styles.inclusionLabel}>ACCOMMODATION</span>
+          <span className={styles.inclusionValue}>Hotel, Camp</span>
         </div>
+        <div className={styles.inclusionItem}>
+          <span className={styles.inclusionIcon}>🍽️</span>
+          <span className={styles.inclusionLabel}>MEALS</span>
+          <span className={styles.inclusionValue}>Breakfast, Lunch, Dinner</span>
+        </div>
+      </div>
+      <div className={styles.additionalInclusion}>
+        <h2 className={styles.sectionHeading}>ADDITIONAL INCLUDED</h2>
+        <ul className={styles.inclusionList}>
+          <li>Pick and Drop Services</li>
+          <li>1 Meal Per Day</li>
+          <li>Cruise Dinner &amp; Music Event</li>
+          <li>Visit 7 Best Places in the City With Group</li>
+        </ul>
+        <div className={styles.enquiryContainer}>
+          <span className={styles.enquiryLabel}>For more Enquiry</span>
+          <span className={styles.enquiryNumber}>+977 015900337</span>
+          <span className={styles.enquiryNumber}>+977 9802348633</span>
+        </div>
+      </div>
+      <div className={styles.exclusion}>
+        <h2 className={styles.sectionHeading}>WHAT'S EXCLUDED</h2>
+        <ul className={styles.exclusionList}>
+          <li>Pick and Drop Services</li>
+          <li>1 Meal Per Day</li>
+          <li>Cruise Dinner &amp; Music Event</li>
+          <li>Visit 7 Best Places in the City With Group</li>
+        </ul>
       </div>
     </div>
   );

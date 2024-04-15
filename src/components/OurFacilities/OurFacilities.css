@@ -1,11 +1,17 @@
+body {
+    margin-bottom: 40px;
+    /* Add space at the bottom of the whole page */
+}
+
 .our-facilities {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     padding: 40px 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
+    color: #000;
 }
 
 .title {
@@ -13,14 +19,15 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #000;
 }
 
 .facility {
     width: 300px;
     text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #0f0f0f;
     border-radius: 5px;
     background-color: #ffd27f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
