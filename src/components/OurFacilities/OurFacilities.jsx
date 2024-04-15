@@ -11,6 +11,7 @@ const OurFacilities = () => {
         <div className="facility-icon">
           <i className="fa fa-bookmark"></i>
         </div>
+        
         <h3>Personalized Matching</h3>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>

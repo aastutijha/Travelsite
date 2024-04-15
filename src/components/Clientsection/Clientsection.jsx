@@ -11,7 +11,7 @@ const Clientsection = () => {
       <div className="feedback-container">
         <div className="feedback-box">
           <div className="rating">★★★★★</div>
-          <p>Overall, Travel Holidays exceeded my expectations, and I highly recommend them to anyone looking for a hassle-free and memorable travel experience. I'll definitely be booking with them again for my future vacations</p>
+          <p>Overall, Travel Holidays exceeded my expectations, and I highly recommend them to anyone looking for a hassle-free and memorable travel experience. I'll definitely be booking with them again for my future vacations.</p>
           <div className="client-info">
             <img src="src\assets\woman.jpeg" alt="Client Avatar" />
             <div>
