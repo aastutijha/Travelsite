@@ -1,17 +1,24 @@
 import React from 'react';
-import styles from './TourDetails.module.css'; // Import CSS module
+import styles from './TourDetails.css'; // Import CSS module
 
-const TourDetails = () => {
+const TourDetailspage = ({match}) => {
+  const tourId = match.params.id;
+  const tourdetails= {
+    id:1,
+    title: 'Best of everest base...',
+    description:'Everest Base camp is one of the most trekked destinations among the other trekking routes in the Everest region. One of the world\'s most challenging treks and to be able to be a part of the community of many daredevils who have ventured is a thrill in itself. This trek challenges one to push human limits and thriving adrenaline rushes to give you the once in a lifetime.',
+    duration: '18N/19D',
+    rating: '★★★★',
+    image: 'mountain.jpeg',
+  };
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>The Best of Everest Base Camp Trek / Kalapathar Trekking</h1>
-      <p className={styles.description}>
-        Everest Base camp is one of the most trekked destinations among the other trekking routes in the Everest region.
-      </p>
-      <p className={styles.description}>
-        One of the world's most challenging treks and to be able to be a part of the community of many daredevils who have ventured is a thrill in itself.
-        This trek challenges one to push human limits and thriving adrenaline rushes to give you the once in a lifetime feeling of being at the roof of the world. One of the world's most challenging treks is this and to be able to be a part of the community of many daredevils who have ventured is a thrill in itself. This Kalapathar trek challenges one to push human limits and thriving adrenaline rushes to give you the once in a lifetime feeling of being at the roof of the world.
-      </p>
+    <div className="tour-details">
+      <img src={tourDetails.image} alt={tourDetails.title} />
+      <h2>{tourDetails.title}</h2>
+      <p>{tourDetails.description}</p>
+      <p>Duration: {tourDetails.duration}</p>
+      <p>Rating: {tourDetails.rating}</p>
+      {/* Add more details */}
       <div className={styles.tourRate}>
         <h2 className={styles.sectionHeading}>Tour Rate</h2>
         <div className={styles.rateContainer}>
@@ -88,4 +95,4 @@ const TourDetails = () => {
   );
 };
 
-export default TourDetails;
+export default TourDetailspage;

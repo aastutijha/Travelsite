@@ -8,6 +8,7 @@ import tokyoImage from '../../assets/tokyo.jpg';
 import InboundTours from './InboundTours';
 import OutboundPlaces from './OutboundPlaces';
 
+
 const Submain = () => {
   const [showForm, setShowForm] = useState(false);
 
@@ -20,6 +21,7 @@ const Submain = () => {
   };
 
   return (
+    
     <div className="subMain" id="sub-main">
       <h2 className="subMainTop">Popular OutBound Tour Places</h2>
       <div className="tourPlaces">

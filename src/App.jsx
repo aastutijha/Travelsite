@@ -8,6 +8,7 @@ import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 import Team from './components/Team/Team.jsx'
 import Contact from './components/contact/contact.jsx'
+import NavigationBar from './components/NavigationBar/NavigationBar.jsx'
 import Footer from './components/Footer/Footer.jsx'
 // import Institution from './components/Institution/Institution.jsx'
 
@@ -36,6 +37,7 @@ function App() {
     <Clientsection />
     <Team/>
     <Contact />
+    <NavigationBar/>
     <Footer />
     </>
   )

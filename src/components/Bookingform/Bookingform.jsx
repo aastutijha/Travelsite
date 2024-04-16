@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
-import './bookingform.css'; // Import your CSS file for styling the form
+import './bookingform.css';
 
 const BookingForm = ({ onClose, onSubmit }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    destination: '', 
-    person: '',
-    date: '',
+    date: '04/16/2024',
+    destination: '',
+    adult: 0,
+    children: 0,
+    infant: 0,
   });
-
-  const [isCloseClicked, setIsCloseClicked] = useState(false);
-  const [isBookNowClicked, setIsBookNowClicked] = useState(false);
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,79 +17,90 @@ const BookingForm = ({ onClose, onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const isEmpty = Object.values(formData).some(value => value === '');
+    
+    if (isEmpty) {
+      alert('Please fill in all the details.');
+      return;
+    }
     onSubmit(formData);
-    setIsBookNowClicked(true); // Set book now button clicked
   };
 
-  const handleCloseClick = () => {
-    setIsCloseClicked(true);
-    onClose();
+  const calculateTotalAmount = () => {
+    // Implement your logic to calculate the total amount based on the formData
+    return 0;
   };
 
   return (
     <div className="booking-form-container">
       <div className="booking-form">
-        <h2>Book a Tour</h2>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Email</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            placeholder="Your Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="destination">Destination</label>
-          <input
-            type="text"
-            name="destination"
-            id="destination"
-            placeholder="Destination"
-            value={formData.destination}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="person">Adults?</label>
-          <input
-            type="number"
-            name="person"
-            id="person"
-            placeholder="How Many Adults?"
-            value={formData.person}
-            onChange={handleChange}
-            required
-          />
-           <label htmlFor="person">Children</label>
-          <input
-            type="number"
-            name="person"
-            id="person"
-            placeholder="How Many Children?"
-            value={formData.person}
-            onChange={handleChange}
-            required
-          />
-          <label htmlFor="date">Tour dates</label>
+        <h2> Book a Tour </h2>
+        <div className="form-group">
+          <label>Tour Date</label>
           <input
             type="date"
             name="date"
-            id="date"
-            placeholder="How Many Days?"
-            value={formData.days}
+            value={formData.date}
             onChange={handleChange}
-            required
           />
-          <div className="button-group">
-          <button type="submit" className={isBookNowClicked ? 'book-now-clicked' : ''}>
-              Book Now
-            </button>
-            <button className={isCloseClicked ? "close-button-red" : "close-button"} onClick={handleCloseClick}>
-              Close
-            </button>
-          </div>
-        </form>
+        </div>
+        <div className="form-group">
+          <label>Destination</label>
+          <input
+            type="text"
+            name="destination"
+            value={formData.destination}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="form-group">
+          <label>Adult</label>
+          <select name="adult" value={formData.adult} onChange={handleChange}>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            {/* Add more options as needed */}
+          </select>
+        </div>
+        <div className="form-group">
+          <label>Children</label>
+          <select
+            name="children"
+            value={formData.children}
+            onChange={handleChange}
+          >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            {/* Add more options as needed */}
+          </select>
+        </div>
+        <div className="form-group">
+          <label>Infant 0-3 yrs</label>
+          <select name="infant" value={formData.infant} onChange={handleChange}>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            {/* Add more options as needed */}
+          </select>
+        </div>
+        <div className="total-amount">
+          <span>Total Amount:</span>
+          <span>{calculateTotalAmount()}</span>
+        </div>
+        <div className="button-group">
+          <button type="submit" onClick={handleSubmit} className="book-now">
+            Book Now
+          </button>
+          <button className="close-button" onClick={onClose}>
+          Close
+        </button>
+        </div>
       </div>
     </div>
   );

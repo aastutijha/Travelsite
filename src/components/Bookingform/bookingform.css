@@ -12,102 +12,76 @@
 }
 
 .booking-form {
-    background-color: #8c6af0;
-    color: #f3fafb;
+    background-color: #9a5fe3;
+    color: #333;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    width: 60%;
-    margin-top: 50px;
+    max-width: 350px;
+    width: 90%;
+    margin-top: 60px;
 }
 
 .booking-form h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.booking-form form {
-    display: flex;
-    flex-direction: column;
+.form-group {
+    margin-bottom: 15px;
 }
 
-.booking-form label {
+.form-group label {
+    display: block;
     margin-bottom: 5px;
 }
 
-.booking-form input {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ae4564;
-    border-radius: 5px;
+.form-group input,
+.form-group select {
     width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.booking-form .button-group {
+.total-amount {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
-.booking-form button {
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    width: 100%;
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.booking-form button.book-now-clicked {
-    background-color: green;
-    /* Green color for book now button when clicked */
-}
-
-.close-button {
-    padding: 10px 10px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    /* Increased margin-bottom for more space */
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .booking-form-container {
-        height: 110%;
-    }
-    .booking-form {
-        max-width: 400px;
-        width: 90%;
-    }
-    .booking-form .button-group {
-        flex-direction: row;
-        margin-bottom: 50px;
-        margin-trim: 50px;
-        /* Increased margin-bottom for more space */
-    }
-}
-
-.booking-form button:hover {
-    background-color: #48f46e;
-}
-
-*/ .close-button:hover {
-    background-color: #fe3535;
-}
-
-.close-button-red {
+.button-group button {
     padding: 10px 20px;
-    color: #fff;
-    background-color: red;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.close-button-red.clicked {
-    background-color: red;
-    /* Red color for close button when clicked */
+.book-now {
+    background-color: #1a9335;
+    color: #fff;
+    width: 30%;
+}
+
+.more-info {
+    background-color: #ccc;
+    color: #333;
+}
+
+.close-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    width: 30%;
 }
