@@ -11,6 +11,46 @@ const TourDetailspage = ({match}) => {
     rating: '★★★★',
     image: 'mountain.jpeg',
   };
+  const tourdetails= {
+    id:2,
+    title: 'Illam Tea Garden',
+    description:'Illam Tea Garden, nestled in Nepal Ilam District, is a picturesque expanse of rolling hills adorned with lush tea plantations.Its idyllic setting against the backdrop of the Himalayas creates a serene and captivating environment. Renowned for producing high-quality black and green teas, the garden sustainable practices ensure a harmonious blend of nature and cultivation. Visitors are treated to breathtaking views, cultural insights, and a tranquil escape into the heart of Nepales tea country, making Illam Tea Garden a must-visit destination for nature lovers and tea enthusiasts alike.',
+    duration: '10N/11D',
+    rating: '★★★',
+    image: 'Ilam.jpeg',
+  };
+  const tourdetails= {
+    id:3,
+    title: 'Langtang Trek',
+    description:'The Langtang Trek is a captivating adventure that takes you through the stunning Langtang Valley in Nepal. It is a perfect blend of natural beauty and cultural immersion, with lush forests, picturesque meadows, and majestic snow-capped peaks like Langtang Lirung and Ganesh Himal providing a breathtaking backdrop. Along the way, you will encounter traditional Tamang villages, ancient monasteries, and prayer flags fluttering in the Himalayan breeze, offering glimpses into the rich local culture. The treks moderate difficulty makes it accessible to a wide range of trekkers, while the opportunity to explore the Langtang Glacier and soak in panoramic mountain views makes it an unforgettable Himalayan experience. ',
+    duration: '20N/21D',
+    rating: '★★',
+    image: 'langtang.jpeg',
+  };
+  const tourdetails= {
+    id:4,
+    title: 'Darjeeking sikkim Trek',
+    description:'The Darjeeling-Sikkim trek is a mesmerizing journey through the eastern Himalayas, offering a blend of scenic beauty and cultural exploration. As you traverse the picturesque landscapes, including lush tea gardens, dense forests, and cascading waterfalls, you will be greeted by panoramic views of snow-capped peaks like Kanchenjunga. Along the way, you will encounter charming villages inhabited by diverse ethnic groups, providing insights into their traditional way of life. The trek also encompasses visits to monasteries, tea estates, and vibrant markets, adding layers of cultural immersion to the adventure. With its moderate difficulty level and captivating sights, the Darjeeling-Sikkim trek promises an enriching and unforgettable Himalayan experience.',
+    duration: '11N/12D',
+    rating: '★★',
+    image: 'darjeeling.jpeg',
+  };
+  const tourdetails= {
+    id:5,
+    title: 'Rara Lake Trekking',
+    description:' Rara Lake trekking is a mesmerizing adventure that takes you to the pristine Rara Lake, nestled in the remote regions of Nepal. This trek offers a blend of natural beauty with serene surroundings, including lush forests, cascading waterfalls, and panoramic mountain views. The tranquil atmosphere of Rara Lake, surrounded by snow-capped peaks, makes it a haven for nature lovers and a perfect destination for those seeking a peaceful retreat in the Himalayas.',
+    duration: '6N/7D',
+    rating: '★★★',
+    image: 'raralake.jpeg',
+  };
+  const tourdetails= {
+    id:6,
+    title: 'Adventure Highlights',
+    description:'Nepal adventure scene, especially rafting, is a thrill-seekers paradise. The country rivers, stemming from the majestic Himalayas, offer a range of rafting experiences suitable for all levels. Whether navigating the gentle currents of the Trishuli River or braving the intense rapids of the Bhote Koshi, every journey promises stunning natural vistas and cultural encounters with riverside communities. Rafting in Nepal is not just about the adrenaline rush; its a holistic immersion into the country rugged beauty and rich heritage, making each trip down these waters an unforgettable adventure.',
+    duration: '5N/6D',
+    rating: '★',
+    image: 'adventure.jpeg',
+  };
   return (
     <div className="tour-details">
       <img src={tourDetails.image} alt={tourDetails.title} />

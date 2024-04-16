@@ -48,6 +48,12 @@ body {
     text-align: left;
     flex: 1 1 300px;
     margin-bottom: 5vw;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.feedback-box:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
 
 .feedback-box .rating {

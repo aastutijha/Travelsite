@@ -1,3 +1,14 @@
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .booking-form-container {
     position: fixed;
     top: 0;
@@ -20,6 +31,8 @@
     max-width: 350px;
     width: 90%;
     margin-top: 60px;
+    /* Existing styles */
+    animation: slideDown 0.5s ease-in-out;
 }
 
 .booking-form h2 {

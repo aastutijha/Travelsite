@@ -15,12 +15,24 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+    /* Zoom in effect */
 }
 
 .tour-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover img {
+    transform: scale(1.2);
+    /* Zoom in effect for the image */
 }
 
 .tour-card h3 {

@@ -43,6 +43,18 @@ body {
 .image-content {
     margin-bottom: 20px;
     margin-right: 40px;
+    animation: slideRight 1s forwards ease-in-out;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .image-content img {
@@ -61,6 +73,19 @@ body {
     /* Add space to the right side of the text */
     text-align: center;
     /* Center-align text */
+    animation: slideDown 1s forwards ease-in-out;
+    /* Apply slideDown animation to text content */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .text-content p {
@@ -69,6 +94,8 @@ body {
     margin-bottom: 20px;
     text-align: justify;
     /* Justify-align text for better readability */
+    animation: slideDown 1s forwards ease-in-out;
+    /* Apply slideDown animation to paragraphs */
 }
 
 .learn-more-btn {
@@ -82,6 +109,19 @@ body {
     margin-top: 0px;
     margin-bottom: 20px;
     /* Add margin to create space between paragraph and button */
+    animation: slideUp 1s forwards ease-in-out;
+    /* Apply slideUp animation to Learn More button */
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .learn-more-btn:hover {
