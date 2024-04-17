@@ -35,7 +35,7 @@ html {
 }
 
 .navItem:hover {
-    color: #875cff;
+    color:  #e7a814;
 }
 
 .logoImage {
@@ -59,7 +59,7 @@ html {
 }
 
 .active {
-    color: #875cff;
+    color:  #e7a814;
 }
 
 .navItemsMobMenu {
@@ -157,7 +157,8 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 5rem;
+        height: 2rem; 
+        width: 2rem; /* Add this line */
         position: relative;
         top: 0.2rem;
         z-index: 101;

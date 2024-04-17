@@ -4,7 +4,7 @@ import   './footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-     <span className="footerItem">&copy; 2023 Travel HoildaysLtd.</span>
+     <span className="footerItem">&copy; 2024 Travel HoildaysLtd.</span>
      <span className="footerItem">All rights reserved.</span>
      <span className="footerItem">Privacy Policy</span>
      <span className="footerItem">Terms Of  Service</span>

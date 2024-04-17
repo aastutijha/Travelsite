@@ -1,8 +1,8 @@
 import React from 'react';
-import './productandservices.css';
+import './AboutUs.css';
 import imgPlaceholder from '../../assets/group.jpg';
 
-const Productandservices = () => {
+const AboutUs = () => {
   return (
     <div className="container" id="products">
       <section className="title">
@@ -27,4 +27,4 @@ const Productandservices = () => {
   );
 };
 
-export default Productandservices;
+export default AboutUs;

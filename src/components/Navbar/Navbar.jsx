@@ -68,7 +68,7 @@ import company from '../../assets/logo.png';
         </div>
         </div>
         <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
-        { <img src={HamburgerIcon.svg} alt="Hamburger icon" /> }
+        { <img src={HamburgerIcon} alt="Hamburger icon" /> }
         <div className={` ${showMenu?'showMobMenu':'myMobMenu'} `}>
           {/* this is mobile view navbar */}
           <Link onClick={toggleMenu} activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem"><span className='navLink'>Home</span></Link>

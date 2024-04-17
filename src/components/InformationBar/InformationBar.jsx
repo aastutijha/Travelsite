@@ -1,7 +1,7 @@
 import React from 'react';
-import './NavigationBar.css';
+import './InformationBar.css';
 
-const NavigationBar = () => {
+const InformationBar = () => {
   const handleQuickInquiryClick = () => {
     // Scroll to the contact FAQ section
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -51,4 +51,4 @@ const NavigationBar = () => {
   );
 };
 
-export default NavigationBar;
+export default InformationBar;
