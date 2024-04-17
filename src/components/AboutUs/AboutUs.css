@@ -99,7 +99,7 @@ body {
 }
 
 .learn-more-btn {
-    background-color: #7c4fdc;
+    background-color: #e7a814;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -125,7 +125,7 @@ body {
 }
 
 .learn-more-btn:hover {
-    background-color: #5f35e0;
+    background-color: #e7a814;
 }
 
 @media (min-width: 768px) {
