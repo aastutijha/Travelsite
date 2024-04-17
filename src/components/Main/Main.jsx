@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './main.css';
-import background from '../../assets/bgphoto.jpeg';
+import background from '../../assets/bg.jpg';
 import Bookingform from '../Bookingform/Bookingform'; // Import the BookingForm component
 
 const Main = () => {
@@ -29,12 +29,23 @@ const Main = () => {
         <div className="text2">
           Discover the world with unforgettable travel experiences.
         </div>
-        <div className="searchButtonContainer">
-          {/* Change the button text and onClick event */}
-          <button className="searchButton" onClick={handleSearchButtonClick}>
-            Book a Tour
-          </button>
-        </div>
+
+        <div className="searchContainer">
+      <div className="searchInputContainer">
+        <input
+          type="text"
+          placeholder="Anywhere you wanna go.."
+          className="searchInput"
+        />
+      </div>
+      <div className="searchButtonContainer">
+        <button className="searchButton" onClick={handleSearchButtonClick}>
+          <i className="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+
       </div>
       {/* Conditionally render the BookingForm component */}
       {isFormOpen && <Bookingform onClose={handleCloseForm} onSubmit={handleSubmitForm} />}
