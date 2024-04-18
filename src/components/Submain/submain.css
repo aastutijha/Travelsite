@@ -7,7 +7,7 @@
 
 .subMainTop {
     font-size: 2rem;
-    color:  #e7a814;
+    color: #e7a814;
     margin-bottom: 1rem;
 }
 
@@ -65,7 +65,7 @@
 
 .discountedPrice {
     font-size: 1.2rem;
-    color:  #e7a814;
+    color: #e7a814;
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -78,7 +78,7 @@
 
 .openButton {
     margin-top: 10px;
-    background-color:  #e7a814;
+    background-color: #e7a814;
     color: white;
     border: none;
     padding: 8px 25px;
@@ -88,7 +88,7 @@
 }
 
 .closeButton {
-    background-color: #ff6b6b;
+    background-color: #e7a814;
     color: white;
     border: none;
     padding: 8px 7px;
@@ -122,12 +122,27 @@
 }
 
 .bookNowButton {
-    background-color:  #e7a814;
+    background-color: #e7a814;
     color: white;
     border: none;
     padding: 8px 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.openButton:hover {
+    background-color: #bac0be;
+    /* Red color when hovered */
+}
+
+.bookNowButton:hover {
+    background-color: #13f387;
+    /* Green color when hovered */
+}
+
+.closeButton:hover {
+    background-color: #f31329;
+    /* Red color when hovered */
 }
 
 @media (max-width: 768px) {

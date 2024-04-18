@@ -53,7 +53,7 @@ const InboundTours = () => {
         <div className="tour-card">
           <img src={raralakeImage} alt="Rara Lake Trekking" />
           <h3>Rara Lake Trekking</h3>
-          <p>6N/7D</p>
+          <p>17N/18D</p>
           <span className="rating">&#9733;★★★</span>
           <button>Explore</button>
         </div>

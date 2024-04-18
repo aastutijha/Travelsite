@@ -100,11 +100,11 @@
 }
 
 .book-now:hover {
-    background-color: #12893b;
+    background-color: #13f387;
     /* Green color when hovered */
 }
 
 .close-button:hover {
-    background-color: #c82333;
+    background-color: #fb263b;
     /* Red color when hovered */
 }
