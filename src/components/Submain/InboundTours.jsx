@@ -5,6 +5,7 @@ import everestImage from '../../assets/mountain.jpeg';
 import IlamImage from '../../assets/Ilam.jpeg';
 import langtangImage from '../../assets/langtang.jpeg';
 import raralakeImage from '../../assets/raralake.jpeg';
+import lumbiniImage from '../../assets/lumbini.jpg';
 import darjeelingImage from '../../assets/darjeeling.jpeg';
 import adventureImage from '../../assets/adventure.jpeg';
 
@@ -32,6 +33,13 @@ const InboundTours = () => {
           <img src={langtangImage} alt="Langtang Trek" />
           <h3>Langtang Trek</h3>
           <p>20N/21D</p>
+          <span className="rating">&#9733;★★</span>
+          <button>Explore</button>
+        </div>
+        <div className="tour-card">
+          <img src={lumbiniImage} alt="Lumbini" />
+          <h3>Lumbini</h3>
+          <p>10N/11D</p>
           <span className="rating">&#9733;★★</span>
           <button>Explore</button>
         </div>

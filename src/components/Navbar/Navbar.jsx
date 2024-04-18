@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
+import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
 import './navbar.css';
-import HamburgerIcon from '../../assets/HamburgerIcon.svg';
+//import HamburgerIcon from '../../assets/HamburgerIcon.svg';
 import company from '../../assets/logo.png';
 //import companyInv from '../../assets/logoInv.png';
 
@@ -68,7 +69,8 @@ import company from '../../assets/logo.png';
         </div>
         </div>
         <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
-        { <img src={HamburgerIcon} alt="Hamburger icon" /> }
+        <FaBars /> {/* Use the hamburger icon from React Icons */}
+        {/* <img src={HamburgerIcon} alt="Hamburger icon" />*/ }
         <div className={` ${showMenu?'showMobMenu':'myMobMenu'} `}>
           {/* this is mobile view navbar */}
           <Link onClick={toggleMenu} activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem"><span className='navLink'>Home</span></Link>
