@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './OutboundPlaces.css';
 import dubaiImage from '../../assets/dubai.jpeg';
 import indonesiaImage from '../../assets/indonesia.jpeg';
@@ -9,53 +9,68 @@ import chinaImage from '../../assets/china.jpeg';
 import japanImage from '../../assets/japan.jpeg';
 
 const OutboundPlaces = () => {
+  const [openFormIndex, setOpenFormIndex] = useState(null);
+  const [price, setPrice] = useState(0);
+  const [date, setDate] = useState('');
+
+  const handleOpenForm = (index) => {
+    setOpenFormIndex(index);
+  };
+
+  const handleCloseForm = () => {
+    setOpenFormIndex(null);
+  };
+
+  const handlePriceChange = (event) => {
+    setPrice(event.target.value);
+  };
+
+  const handleDateChange = (event) => {
+    setDate(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission here
+    console.log(`Price: ${price}, Date: ${date}`);
+  };
+
+  const placeCards = [
+    { image: dubaiImage, alt: "Dubai", title: "Dubai", tours: "1 Tour" },
+    { image: indonesiaImage, alt: "Indonesia", title: "Indonesia", tours: "1 Tour" },
+    { image: thailandImage, alt: "Thailand", title: "Thailand", tours: "2 Tours" },
+    { image: cambodiaImage, alt: "Cambodia", title: "Cambodia", tours: "1 Tour" },
+    { image: europeImage, alt: "Colours Of Europe", title: "Colours Of Europe", tours: "1 Tour" },
+    { image: chinaImage, alt: "China", title: "China", tours: "1 Tour" },
+    { image: japanImage, alt: "Japan", title: "Japan", tours: "2 Tours" },
+  ];
+
   return (
-    <div className="outbound-places">
+    <div className={`outbound-places ${openFormIndex !== null ? 'blur' : ''}`}>
       <h2>TOP OUTBOUND PLACES</h2>
-      <p>Spots at the top of our outbound must go list</p>
+      <p>Spots at the top of our outbound must-go list</p>
       <div className="place-cards">
-        <div className="place-card">
-          <img src={dubaiImage} alt="Dubai" />
-          <h3>Dubai</h3>
-          <p>1 Tour</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={indonesiaImage} alt="Indonesia" />
-          <h3>Indonesia</h3>
-          <p>1 Tour</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={thailandImage} alt="Thailand" />
-          <h3>Thailand</h3>
-          <p>2 Tours</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={cambodiaImage} alt="Cambodia" />
-          <h3>Cambodia</h3>
-          <p>1 Tour</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={europeImage} alt="Colours Of Europe" />
-          <h3>Colours Of Europe</h3>
-          <p>1 Tour</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={chinaImage} alt="China" />
-          <h3>China</h3>
-          <p>1 Tour</p>
-          <button>Explore</button>
-        </div>
-        <div className="place-card">
-          <img src={japanImage} alt="Japan" />
-          <h3>Japan</h3>
-          <p>2 Tours</p>
-          <button>Explore</button>
-        </div>
+        {placeCards.map((card, index) => (
+          <div className="place-card" key={index}>
+            <img src={card.image} alt={card.alt} />
+            <h3>{card.title}</h3>
+            <p>{card.tours}</p>
+            <button onClick={() => handleOpenForm(index)}>Explore</button>
+            {openFormIndex === index && (
+              <form className="bookingForm" onSubmit={handleSubmit}>
+                <img src={card.image} alt={card.alt} />
+                <h3>{card.title}</h3>
+                <p>{card.tours}</p>
+                <label htmlFor="price">Price:</label>
+                <input type="number" id="price" value={price} onChange={handlePriceChange} />
+                <label htmlFor="date">Tour Dates :</label>
+                <input type="date" id="date" value={date} onChange={handleDateChange} />
+                <button type="submit">Submit</button>
+                <button type="button" onClick={handleCloseForm}>Close</button>
+              </form>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
