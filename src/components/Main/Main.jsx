@@ -34,7 +34,7 @@ const Main = () => {
       <div className="searchInputContainer">
         <input
           type="text"
-          placeholder="Anywhere you wanna go.."
+          placeholder="Anywhere you wanna go..."
           className="searchInput"
         />
       </div>

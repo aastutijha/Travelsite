@@ -29,6 +29,14 @@ const TourDetailspage = ({match}) => {
   };
   const tourdetails= {
     id:4,
+    title: 'Lumbini',
+    description:'Lumbini, located in Nepal Rupandehi District, is renowned as the birthplace of Siddhartha Gautama, who later became Gautama Buddha. This sacred site holds deep religious significance for Buddhists worldwide, being one of the key pilgrimage destinations associated with Buddhas life. The Maya Devi Temple, marking the exact birthplace, and the Monastic Zone with its diverse monasteries are major attractions. Lumbini peaceful environment, historical ruins, and ongoing conservation efforts make it a serene and culturally rich destination, offering visitors a chance for spiritual reflection and cultural exploration.',
+    duration: '8N/9D',
+    rating: '★★',
+    image: 'lumbini.jpg',
+  };
+  const tourdetails= {
+    id:5,
     title: 'Darjeeking sikkim Trek',
     description:'The Darjeeling-Sikkim trek is a mesmerizing journey through the eastern Himalayas, offering a blend of scenic beauty and cultural exploration. As you traverse the picturesque landscapes, including lush tea gardens, dense forests, and cascading waterfalls, you will be greeted by panoramic views of snow-capped peaks like Kanchenjunga. Along the way, you will encounter charming villages inhabited by diverse ethnic groups, providing insights into their traditional way of life. The trek also encompasses visits to monasteries, tea estates, and vibrant markets, adding layers of cultural immersion to the adventure. With its moderate difficulty level and captivating sights, the Darjeeling-Sikkim trek promises an enriching and unforgettable Himalayan experience.',
     duration: '11N/12D',
@@ -36,7 +44,7 @@ const TourDetailspage = ({match}) => {
     image: 'darjeeling.jpeg',
   };
   const tourdetails= {
-    id:5,
+    id:6,
     title: 'Rara Lake Trekking',
     description:' Rara Lake trekking is a mesmerizing adventure that takes you to the pristine Rara Lake, nestled in the remote regions of Nepal. This trek offers a blend of natural beauty with serene surroundings, including lush forests, cascading waterfalls, and panoramic mountain views. The tranquil atmosphere of Rara Lake, surrounded by snow-capped peaks, makes it a haven for nature lovers and a perfect destination for those seeking a peaceful retreat in the Himalayas.',
     duration: '6N/7D',
@@ -44,12 +52,12 @@ const TourDetailspage = ({match}) => {
     image: 'raralake.jpeg',
   };
   const tourdetails= {
-    id:6,
-    title: 'Adventure Highlights',
+    id:7,
+    title: 'Chitwan Safarii',
     description:'Nepal adventure scene, especially rafting, is a thrill-seekers paradise. The country rivers, stemming from the majestic Himalayas, offer a range of rafting experiences suitable for all levels. Whether navigating the gentle currents of the Trishuli River or braving the intense rapids of the Bhote Koshi, every journey promises stunning natural vistas and cultural encounters with riverside communities. Rafting in Nepal is not just about the adrenaline rush; its a holistic immersion into the country rugged beauty and rich heritage, making each trip down these waters an unforgettable adventure.',
     duration: '5N/6D',
     rating: '★',
-    image: 'adventure.jpeg',
+    image: 'chitwan.jpeg',
   };
   return (
     <div className="tour-details">

@@ -28,7 +28,7 @@ const OurFacilities = () => {
         </div>
         
         <h3>Personalized Matching</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>"Tailored experiences to match your travel dreams perfectly."</p>
       </div>
 
       <div className="facility">
@@ -36,7 +36,7 @@ const OurFacilities = () => {
           <i className="fa fa-globe"></i>
         </div>
         <h3>Wide Variety Of Destinations</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>"Explore an expansive array of diverse destinations for your next adventure."</p>
       </div>
 
       <div className="facility">
@@ -44,7 +44,7 @@ const OurFacilities = () => {
           <i className="fa fa-user-tie"></i>
         </div>
         <h3>Highly Qualified Service</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>"Experience unparalleled service excellence from our highly skilled and knowledgeable professionals."</p>
       </div>
 
       <div className="facility">
@@ -52,7 +52,7 @@ const OurFacilities = () => {
           <i className="fa fa-umbrella"></i>
         </div>
         <h3>Best Price Guarantee</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+        <p>"Unlock unbeatable prices and savings with our Best Price Guarantee on all travel packages."</p>
       </div>
 
       <div className="facility">
@@ -60,7 +60,7 @@ const OurFacilities = () => {
           <i className="fa fa-users"></i>
         </div>
         <h3>24/7 Support</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+        <p>"Round-the-clock assistance and support to ensure a seamless and worry-free travel experience."</p>
       </div>
     </div>
     </div>
