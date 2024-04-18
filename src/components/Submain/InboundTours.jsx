@@ -7,7 +7,7 @@ import langtangImage from '../../assets/langtang.jpeg';
 import raralakeImage from '../../assets/raralake.jpeg';
 import lumbiniImage from '../../assets/lumbini.jpg';
 import darjeelingImage from '../../assets/darjeeling.jpeg';
-import adventureImage from '../../assets/adventure.jpeg';
+import chitwanImage from '../../assets/chitwan.jpg';
 
 const InboundTours = () => {
   return (
@@ -39,7 +39,7 @@ const InboundTours = () => {
         <div className="tour-card">
           <img src={lumbiniImage} alt="Lumbini" />
           <h3>Lumbini</h3>
-          <p>10N/11D</p>
+          <p>8N/9D</p>
           <span className="rating">&#9733;★★</span>
           <button>Explore</button>
         </div>
@@ -58,8 +58,8 @@ const InboundTours = () => {
           <button>Explore</button>
         </div>
         <div className="tour-card">
-          <img src={adventureImage} alt="Adventure Highlights" />
-          <h3>Adventure Highlights</h3>
+          <img src={chitwanImage} alt="Chitwan Safarii" />
+          <h3>Chitwan Safarii</h3>
           <p>5N/6D</p>
           <span className="rating">&#9733;★</span>
           <button>Explore</button>

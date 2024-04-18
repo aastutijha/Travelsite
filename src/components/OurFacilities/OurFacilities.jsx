@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './OurFacilities.css';
 import backgroundImage from "../../assets/background-image.jpeg";
 
 const OurFacilities = () => {
+  const [animate, setAnimate] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const { top } = sectionRef.current.getBoundingClientRect();
+      // Set animate to true when the section is near the viewport
+      setAnimate(top < window.innerHeight - 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
      <div className="our-facilities-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="title">Our Facilities</h1>

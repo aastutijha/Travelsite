@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef,  useState, useEffect } from 'react';
 import './contact.css';
 import locationIcon from '../../assets/location.png';
 import phoneIcon from '../../assets/phone.png';
@@ -7,6 +7,11 @@ import backgroundImage from "../../assets/contact.jpg";
 
 const Contact = () => {
   const form = useRef();
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true); // Trigger animation when component mounts
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact"  style={{ backgroundImage: `url(${backgroundImage})` }}  id="contact">
+    <div className={`contact ${animate ? 'animate' : ''}`}  style={{ backgroundImage: `url(${backgroundImage})` }}  id="contact">
       <div className="contactTop">
       <div className="Company name">"Travel holidays"</div>
         <div className="contactLeft">

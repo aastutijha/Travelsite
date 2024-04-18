@@ -108,13 +108,29 @@
 }
 
 .queryForm button {
-    background-color:  #e7a814;
+    background-color: #e7a814;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     align-self: flex-start;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate .contactTop,
+.animate .contactBottom {
+    animation: slideUp 0.5s ease forwards;
 }
 
 @media (max-width: 768px) {

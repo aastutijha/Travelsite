@@ -14,6 +14,19 @@ body {
     margin-bottom: 50px;
     text-align: center;
     color: #000;
+    transition: transform 2.5s ease;
+}
+
+.our-facilities-section {
+    /* Existing styles for .our-facilities-section */
+    /* Add transition for smooth scroll animation */
+    transition: transform 0.5s ease;
+}
+
+.animate {
+    /* Apply transformation for scroll animation */
+    transform: translateY(-20px);
+    /* Adjust the value for desired animation */
 }
 
 .title {
