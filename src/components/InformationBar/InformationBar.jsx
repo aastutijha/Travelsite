@@ -9,7 +9,6 @@ const InformationBar = () => {
 
   return (
     <div className="navigation-bar">
-      
       <div className="tours">
         <h3>TOURS IN NEPAL</h3>
         <ul>
@@ -20,7 +19,6 @@ const InformationBar = () => {
           <li>Chitwan Safari Tour</li>
         </ul>
       </div>
-      
       <div className="treks">
         <h3>TREKS IN NEPAL</h3>
         <ul>
