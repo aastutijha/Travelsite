@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./submain.css";
 import underwaterImage from "../../assets/underwater.jpg";
 import londonImage from "../../assets/london.jpg";
