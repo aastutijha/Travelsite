@@ -17,7 +17,8 @@
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
-    position: relative; /* Ensure proper stacking context */
+    position: relative;
+    /* Ensure proper stacking context */
 }
 
 .place-card:hover {
@@ -51,21 +52,9 @@
 .place-card button {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
-    background-color:  #e7a814;
+    background-color: #e7a814;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.bookingForm {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 101; /* Ensure the extended card is above the original card */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

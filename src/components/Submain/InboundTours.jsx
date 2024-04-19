@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import './InboundTours.css';
 import everestImage from '../../assets/mountain.jpeg';
 import IlamImage from '../../assets/Ilam.jpeg';
@@ -9,32 +9,6 @@ import darjeelingImage from '../../assets/darjeeling.jpeg';
 import chitwanImage from '../../assets/chitwan.jpg';
 
 const InboundTours = () => {  
-    const [openFormIndex, setOpenFormIndex] = useState(null);
-    const [price, setPrice] = useState(0);
-    const [date, setDate] = useState('');
-  
-    const handleOpenForm = (index) => {
-      setOpenFormIndex(index);
-  };
-  
-    const handleCloseForm = () => {
-      setOpenFormIndex(null);
-    };
-  
-    const handlePriceChange = (event) => {
-      setPrice(event.target.value);
-    };
-  
-    const handleDateChange = (event) => {
-      setDate(event.target.value);
-    };
-  
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      // Handle form submission here
-      console.log(`Price: ${price}, Date: ${date}`);
-    };
-  
     const tourCards = [
       { image: everestImage, alt: "Mount Everest, Nepal", title: "Best of Everest Base Camp", duration: "18N/19D", rating: "&#9733;★★★★" },
       { image: IlamImage, alt: "Ilam Tea Garden, Nepal", title: "Illam Tea Garden", duration: "10N/11D", rating: "&#9733;★★★" },
@@ -57,20 +31,6 @@ const InboundTours = () => {
               <p>{card.duration}</p>
               <span className="rating" dangerouslySetInnerHTML={{ __html: card.rating }}></span>
               <button onClick={() => handleOpenForm(index)}>Explore</button>
-              {openFormIndex === index && (
-                <div className="bookingForm">
-                  <img src={card.image} alt={card.alt} />
-                  <h3>{card.title}</h3>
-                  <p>{card.duration}</p>
-                  <span className="rating" dangerouslySetInnerHTML={{ __html: card.rating }}></span>
-                  <label htmlFor="price">Price:</label>
-                  <input type="number" id="price" value={price} onChange={handlePriceChange} />
-                  <label htmlFor="date">Tour Dates :</label>
-                  <input type="date" id="date" value={date} onChange={handleDateChange} />
-                  <button type="submit">Submit</button>
-                  <button type="button" onClick={handleCloseForm}>Close</button>
-                </div>
-              )}
             </div>
           ))}
         </div>

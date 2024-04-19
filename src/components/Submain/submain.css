@@ -7,7 +7,7 @@
 
 .subMainTop {
     font-size: 2rem;
-    color:  #ffb300;
+    color: #ffb300;
     margin-bottom: 1rem;
 }
 
@@ -22,10 +22,10 @@
 
 .tourPlace {
     width: calc(50% - 10px);
-    border: 1px solid #ccc;
+    border: 2px solid red green;
+    /* Fixed the border syntax */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    border:  2xp red green;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
@@ -38,17 +38,13 @@
 .tourPlace:hover img {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-
 }
 
 .tourPlace img {
-    width: 100%;   
+    width: 100%;
     height: 150px;
     object-fit: cover;
-    
 }
-
-
 
 .tourPlaceDetails {
     text-align: left;
@@ -75,7 +71,7 @@
 
 .discountedPrice {
     font-size: 1.2rem;
-    color:  #e7a814;
+    color: #e7a814;
     font-weight: bold;
     margin-right: 0.5rem;
 }
@@ -88,7 +84,7 @@
 
 .openButton {
     margin-top: 10px;
-    background-color:  #ffb300;
+    background-color: #ffb300;
     color: white;
     border: none;
     padding: 8px 25px;
@@ -96,7 +92,8 @@
     cursor: pointer;
     margin-right: 10px;
 }
-.openButton:hover{
+
+.openButton:hover {
     background-color: #e7a814;
 }
 
@@ -110,11 +107,21 @@
     margin-left: 10px;
 }
 
-.bookingForm {
-    margin-top: 20px;
+.bookingFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bookingForm {
+    margin-top: 20px;
 }
 
 .bookingForm h3 {
@@ -135,7 +142,7 @@
 }
 
 .bookNowButton {
-    background-color:  #e7a814;
+    background-color: #e7a814;
     color: white;
     border: none;
     padding: 8px 10px;
@@ -143,19 +150,17 @@
     cursor: pointer;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-    .tourPlacesCards {
-        flex-wrap: wrap;
-    }
-
-    .tourPlace {
-        width: calc(50% - 10px);
-    }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
 }
-/* Media query for even smaller screens */
-@media only screen and (max-width: 480px) {
-    .tourPlace {
-        width: 100%;
-    }
+
+.overlay.active {
+    display: block;
 }

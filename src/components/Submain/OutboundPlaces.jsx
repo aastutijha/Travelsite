@@ -17,23 +17,6 @@ const OutboundPlaces = () => {
     setOpenFormIndex(index);
   };
 
-  const handleCloseForm = () => {
-    setOpenFormIndex(null);
-  };
-
-  const handlePriceChange = (event) => {
-    setPrice(event.target.value);
-  };
-
-  const handleDateChange = (event) => {
-    setDate(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission here
-    console.log(`Price: ${price}, Date: ${date}`);
-  };
 
   const placeCards = [
     { image: dubaiImage, alt: "Dubai", title: "Dubai", tours: "1 Tour" },
@@ -56,19 +39,6 @@ const OutboundPlaces = () => {
             <h3>{card.title}</h3>
             <p>{card.tours}</p>
             <button onClick={() => handleOpenForm(index)}>Explore</button>
-            {openFormIndex === index && (
-              <form className="bookingForm" onSubmit={handleSubmit}>
-                <img src={card.image} alt={card.alt} />
-                <h3>{card.title}</h3>
-                <p>{card.tours}</p>
-                <label htmlFor="price">Price:</label>
-                <input type="number" id="price" value={price} onChange={handlePriceChange} />
-                <label htmlFor="date">Tour Dates :</label>
-                <input type="date" id="date" value={date} onChange={handleDateChange} />
-                <button type="submit">Submit</button>
-                <button type="button" onClick={handleCloseForm}>Close</button>
-              </form>
-            )}
           </div>
         ))}
       </div>
