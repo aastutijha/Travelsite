@@ -1,116 +1,64 @@
-import { useState } from "react";
-import "./submain.css";
-import underwaterImage from "../../assets/underwater.jpg";
-import londonImage from "../../assets/london.jpg";
-import australiaImage from "../../assets/australia.jpg";
-import parisImage from "../../assets/paris.jpeg";
-import tokyoImage from "../../assets/tokyo.jpg";
-import InboundTours from "./InboundTours";
-import OutboundPlaces from "./OutboundPlaces";
+import React, { useState } from 'react';
+import './submain.css';
+import underwaterImage from '../../assets/underwater.jpg';
+import londonImage from '../../assets/london.jpg';
+import australiaImage from '../../assets/australia.jpg';
+import parisImage from '../../assets/paris.jpeg';
+import tokyoImage from '../../assets/tokyo.jpg';
+import CoxsBazarSea from '../Submain/Tours/Popular Outbound/CoxsBazarSea';
+import London from '../Submain/Tours/Popular Outbound/London';
+import Australia from '../Submain/Tours/Popular Outbound/Australia';
+import Paris from '../Submain/Tours/Popular Outbound/Paris';
+import Tokyo from '../Submain/Tours/Popular Outbound/Tokyo';
+import InboundTours from './InboundTours';
+import OutboundPlaces from './OutboundPlaces';
+
+const places = {
+  'CoxsBazarSea': CoxsBazarSea,
+  'London': London,
+  'Australia': Australia,
+  'Paris': Paris,
+  'Tokyo': Tokyo,
+};
 
 const Submain = () => {
-  const [showFormIndex, setShowFormIndex] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+  const [currentPlace, setCurrentPlace] = useState(null);
 
-  function handleOpenForm(index) {
-    setShowFormIndex(index);
-  }
+  const handleCloseForm = () => {
+    setShowForm(false);
+    setCurrentPlace(null);
+  };
 
-  function handleCloseForm() {
-    setShowFormIndex(null);
-  }
-
-  const tourPlaces = [
-    {
-      image: underwaterImage,
-      alt: "Cox's Bazar Sea",
-      title: "Cox's Bazar Sea ",
-      location: "Chittagong, Bangladesh",
-      discountedPrice: "$1290",
-      originalPrice: "$2200",
-    },
-    {
-      image: londonImage,
-      alt: "London Eye",
-      title: "Beautiful London",
-      location: "London, UK",
-      discountedPrice: "$3344",
-      originalPrice: "$4200",
-    },
-    {
-      image: parisImage,
-      alt: "Eiffel Tower",
-      title: "City of Romance",
-      location: "Paris, France",
-      discountedPrice: "$3344",
-      originalPrice: "$5200",
-    },
-    {
-      image: australiaImage,
-      alt: "Sydney Opera House",
-      title: "Sundarban Bromon",
-      location: "Australia",
-      discountedPrice: "$2290",
-      originalPrice: "$3200",
-    },
-    {
-      image: tokyoImage,
-      alt: "Tokyo Tower",
-      title: "Life of Animation",
-      location: "Tokyo, Japan",
-      discountedPrice: "$4290",
-      originalPrice: "$6200",
-    },
-  ];
+  const handleOpenForm = (place) => {
+    setCurrentPlace(place);
+    setShowForm(true);
+  };
+  
+  const CurrentPlaceComponent = places[currentPlace];
 
   return (
-    <div
-      className={`subMain ${showFormIndex !== null ? "blur" : ""}`}
-      id="sub-main"
-    >
-      <h2 className="subMainTop">Popular Outbound Tour Places</h2>
-      <div className="tourPlacesCards">
-        {tourPlaces.map((place, index) => (
-          <div className="tourPlace" key={index}>
-            <img src={place.image} alt={place.alt} />
+    <div className="subMain" id="sub-main">
+      <h2 className="subMainTop">Popular OutBound Tour Places</h2>
+      <div className="tourPlaces">
+        {Object.keys(places).map(place => (
+          <div className="tourPlace" key={place}>
+            <img src={place === 'CoxsBazarSea' ? underwaterImage : place === 'London' ? londonImage : place === 'Australia' ? australiaImage : place === 'Paris' ? parisImage : tokyoImage} alt={place === 'CoxsBazarSea' ? "Cox's Bazar Sea Beach" : place === 'London' ? "Festival" : place === 'Paris' ? "Adventures ride" : place === 'Australia' ? "Sundorban Bromon" : "Sundorban Bromon"} />
             <div className="tourPlaceDetails">
-              <h3>{place.title}</h3>
-              <p>{place.location}</p>
+              <h3>{place === 'CoxsBazarSea' ? "Cox's Bazar Sea Beach" : place === 'London' ? "London" : place === 'Paris' ? "City of Romance" : place === 'Australia' ? "Sundorban Bromon" : "Life of Animation"}</h3>
+              <p>{place === 'CoxsBazarSea' ? "chitagong, bangladesh" : place === 'London' ? "London, UK" : place === 'Paris' ? "Paris" : place === 'Australia' ? "Australia" : "Tokyo"}</p>
               <div className="price">
-                <span className="discountedPrice">{place.discountedPrice}</span>
-                <span className="originalPrice">{place.originalPrice}</span>
+                <span className="discountedPrice">{place === 'CoxsBazarSea' ? "$1290" : place === 'London' ? "$1590" : place === 'Paris' ? "$3344" : place === 'Australia' ? "$2290" : "$4290"}</span>
+                <span className="originalPrice">{place === 'CoxsBazarSea' ? "$2200" : place === 'London' ? "$2500" : place === 'Paris' ? "$5200" : place === 'Australia' ? "$3200" : "$6200"}</span>
               </div>
-              <button
-                className="openButton"
-                onClick={() => handleOpenForm(index)}
-              >
-                Open
-              </button>
-              {showFormIndex === index && (
-                <div className="bookingForm">
-                  <h3>Booking Information</h3>
-                  <img src={place.image} alt={place.alt} />
-                  <label htmlFor="price">Price: {place.discountedPrice}</label>
-                  <label htmlFor="person">Number of Person:</label>
-                  <input type="number" id="person" />
-                  <label htmlFor="date">Tour Dates :</label>
-                  <input type="date" id="date" />
-                  <button onClick={handleCloseForm} className="bookNowButton">
-                    Book Now
-                  </button>
-                  <button
-                    onClick={() => setShowFormIndex(null)}
-                    className="closeButton"
-                  >
-                    Close
-                  </button>
-                </div>
-              )}
+              <button onClick={() => handleOpenForm(place)}>Open</button>
             </div>
           </div>
         ))}
       </div>
+      {showForm && CurrentPlaceComponent && <CurrentPlaceComponent onClose={handleCloseForm} />}
       <InboundTours />
-      <OutboundPlaces />
+      <OutboundPlaces/>
     </div>
   );
 };
