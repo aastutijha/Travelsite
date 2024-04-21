@@ -3,7 +3,7 @@ import './submain.css';
 import underwaterImage from '../../assets/underwater.jpg';
 import londonImage from '../../assets/london.jpg';
 import australiaImage from '../../assets/australia.jpg';
-import parisImage from '../../assets/paris.jpeg';
+import parisImage from '../../assets/paris.jpg';
 import tokyoImage from '../../assets/tokyo.jpg';
 import CoxsBazarSea from '../Submain/Tours/Popular Outbound/CoxsBazarSea';
 import London from '../Submain/Tours/Popular Outbound/London';
