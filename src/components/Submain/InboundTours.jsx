@@ -7,6 +7,7 @@ import raralakeImage from '../../assets/raralake.jpeg';
 import lumbiniImage from '../../assets/lumbini.jpg';
 import darjeelingImage from '../../assets/darjeeling.jpeg';
 import chitwanImage from '../../assets/chitwan.jpg';
+import { Link } from 'react-router-dom';
 
 const InboundTours = () => {  
     const tourCards = [
@@ -30,7 +31,7 @@ const InboundTours = () => {
               <h3>{card.title}</h3>
               <p>{card.duration}</p>
               <span className="rating" dangerouslySetInnerHTML={{ __html: card.rating }}></span>
-              <button onClick={() => handleOpenForm(index)}>Explore</button>
+              <Link to='/TourDetails'>Explore</Link>
             </div>
           ))}
         </div>

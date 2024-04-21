@@ -8,7 +8,6 @@ import AboutUs from './components/AboutUs/AboutUs.jsx'
 import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 import ChoiceCard from './components/ChoiceCard/ChoiceCard.jsx'
-
 //import Team from './components/Team/Team.jsx'
 import Contact from './components/contact/contact.jsx'
 import InformationBar from './components/InformationBar/InformationBar.jsx'
