@@ -12,6 +12,7 @@ import Paris from '../Submain/Tours/Popular Outbound/Paris';
 import Tokyo from '../Submain/Tours/Popular Outbound/Tokyo';
 import InboundTours from './InboundTours';
 import OutboundPlaces from './OutboundPlaces';
+import { Link } from 'react-router-dom';
 
 const places = {
   'CoxsBazarSea': CoxsBazarSea,
@@ -42,6 +43,7 @@ const Submain = () => {
       <h2 className="subMainTop">Popular OutBound Tour Places</h2>
       <div className="tourPlaces">
         {Object.keys(places).map(place => (
+         <Link to={`/tours/${place}`} key={place}> 
           <div className="tourPlace" key={place}>
             <img src={place === 'CoxsBazarSea' ? underwaterImage : place === 'London' ? londonImage : place === 'Australia' ? australiaImage : place === 'Paris' ? parisImage : tokyoImage} alt={place === 'CoxsBazarSea' ? "Cox's Bazar Sea Beach" : place === 'London' ? "Festival" : place === 'Paris' ? "Adventures ride" : place === 'Australia' ? "Sundorban Bromon" : "Sundorban Bromon"} />
             <div className="tourPlaceDetails">
@@ -54,6 +56,7 @@ const Submain = () => {
               <button onClick={() => handleOpenForm(place)}>Open</button>
             </div>
           </div>
+          </Link>
         ))}
       </div>
       {showForm && CurrentPlaceComponent && <CurrentPlaceComponent onClose={handleCloseForm} />}
