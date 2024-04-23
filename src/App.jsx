@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Main from './components/Main/Main.jsx'
+import TripWeatherForecast from './components/TripWeatherForecast/TripWeatherForecast.jsx'
 import SubMain from './components/Submain/Submain.jsx'
 import AboutUs from './components/AboutUs/AboutUs.jsx'
 import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
@@ -19,6 +20,7 @@ function App() {
     <>
     <Navbar />
     <Main />
+    <TripWeatherForecast />
     <SubMain />
     <AboutUs />
     <OurFacilities/>

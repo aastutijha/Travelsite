@@ -1,3 +1,10 @@
+.tour-details {
+    background-color: rgba(127, 255, 212, 0.7);
+    /* Transparent aquamarine background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -88,4 +95,8 @@
 
 .enquiryNumber {
     margin-right: 10px;
+}
+
+.tour-details {
+    background-color: aquamarine;
 }
