@@ -11,7 +11,7 @@ import Australia from '../Submain/Tours/Popular Outbound/Australia';
 import Paris from '../Submain/Tours/Popular Outbound/Paris';
 import Tokyo from '../Submain/Tours/Popular Outbound/Tokyo';
 import InboundTours from './InboundTours';
-import OutboundPlaces from './OutboundPlaces';
+import OutboundTours from './OutboundTours';
 import { Link } from 'react-router-dom';
 
 const places = {
@@ -61,7 +61,7 @@ const Submain = () => {
       </div>
       {showForm && CurrentPlaceComponent && <CurrentPlaceComponent onClose={handleCloseForm} />}
       <InboundTours />
-      <OutboundPlaces/>
+      <OutboundTours/>
     </div>
   );
 };

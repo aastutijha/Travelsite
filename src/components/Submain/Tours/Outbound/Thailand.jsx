@@ -1,10 +1,10 @@
 
-const Thiland = () => {
+const Thailand = () => {
   return (
     <div>
-      ah aha ah
+      sddfg
     </div>
   )
 }
 
-export default Thiland
+export default Thailand

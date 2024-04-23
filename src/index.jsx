@@ -45,13 +45,13 @@ ReactDOM.render(
         <Route path="/tours/inbound/Rara" element={<Rara />} />
         <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
         
-        <Route path="/outbound/Indonesia" element={<Indonesia />} />
-        <Route path="/outbound/Europe" element={<Europe />} />
-        <Route path="/outbound/Dubai" element={<Dubai />} />
-        <Route path="/outbound/China" element={<China />} />
-        <Route path="/outbound/Japan" element={<Japan />} />
-        <Route path="/outbound/Thailand" element={<Thailand />} />
-        <Route path="/outbound/Cambodia" element={<Cambodia />} />
+        <Route path="/tours/outbound/Indonesia" element={<Indonesia />} />
+        <Route path="/tours/outbound/Europe" element={<Europe />} />
+        <Route path="/tours/outbound/Dubai" element={<Dubai />} />
+        <Route path="/tours/outbound/China" element={<China />} />
+        <Route path="/tours/outbound/Japan" element={<Japan />} />
+        <Route path="/tours/outbound/Thailand" element={<Thailand />} />
+        <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
       </Routes>
     </Router>
   </React.StrictMode>,
