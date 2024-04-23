@@ -36,13 +36,15 @@ ReactDOM.render(
         <Route path="/tours/London" element={<London />} />
         <Route path="/tours/Paris" element={<Paris />} />
         <Route path="/tours/Tokyo" element={<Tokyo />} />
-        <Route path="/inbound/Darjelling" element={<Darjelling />} />
-        <Route path="/inbound/Everest" element={<Everest />} />
-        <Route path="/inbound/Illam" element={<Illam />} />
-        <Route path="/inbound/Langtang" element={<Langtang />} />
-        <Route path="/inbound/Lumbini" element={<Lumbini />} />
-        <Route path="/inbound/Rara" element={<Rara />} />
-        <Route path="/inbound/Chitwan" element={<Chitwan />} />
+
+        <Route path="/tours/inbound/Everest" element={<Everest />} />
+        <Route path="/tours/inbound/Illam" element={<Illam />} />
+        <Route path="/tours/inbound/Langtang" element={<Langtang />} />
+        <Route path="/tours/inbound/Lumbini" element={<Lumbini />} />
+        <Route path="/tours/inbound/Darjelling" element={<Darjelling />} />
+        <Route path="/tours/inbound/Rara" element={<Rara />} />
+        <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
+        
         <Route path="/outbound/Indonesia" element={<Indonesia />} />
         <Route path="/outbound/Europe" element={<Europe />} />
         <Route path="/outbound/Dubai" element={<Dubai />} />
