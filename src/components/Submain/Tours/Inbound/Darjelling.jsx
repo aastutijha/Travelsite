@@ -2,7 +2,7 @@
 const Darjelling = () => {
   return (
     <div>
-      yaya hoho
+      yaya hohoo
     </div>
   )
 }

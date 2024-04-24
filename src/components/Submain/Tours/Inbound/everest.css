@@ -1,0 +1,328 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+
+/* Container styles */
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: left;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+
+/* Image styles */
+
+.mb-4 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Title styles */
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+
+/* Paragraph styles */
+
+.mb-4 p {
+    margin-bottom: 1rem;
+}
+
+
+/* TourRate and AdditionalIncluded container styles */
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+
+/* Styles for the left-aligned rounded-md box */
+
+.left-box {
+    width: 70%;
+    /* Set the width as needed */
+    margin-right: auto;
+    /* Move the box to the left by pushing it to the right */
+    margin-left: 5rem;
+    /* Add some left margin for spacing */
+}
+
+
+/* Adjustments for responsiveness */
+
+@media (max-width: 768px) {
+    .left-box {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        margin-left: 1rem;
+        /* Reduce left margin for smaller screens */
+    }
+}
+
+
+/* Other existing styles remain unchanged */
+
+
+/* Rest of your CSS styles */
+
+.bg-white {
+    background-color: #fff;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.rounded-md {
+    border-radius: 0.75rem;
+    /* Make the box bigger by increasing border-radius */
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading styles */
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+
+/* Input styles */
+
+.block {
+    display: block;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-gray-700 {
+    color: #4b5563;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.border-gray-300 {
+    border-color: #e2e8f0;
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.focus:border-indigo-500 {
+    border-color: #667eea;
+}
+
+.focus:ring-indigo-500 {
+    box-shadow: 0 0 0 0.125rem rgba(99, 102, 241, 0.5);
+}
+
+.sm\:text-sm {
+    font-size: 0.875rem;
+}
+
+
+/* Media query for tablets and larger devices */
+
+@media (min-width: 768px) {
+    /* Container styles */
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow flex items to wrap */
+    }
+    /* Styles for the left-aligned rounded-md box */
+    .left-box {
+        width: 70%;
+        /* Set the width as needed */
+        margin-right: auto;
+        /* Move the box to the left by pushing it to the right */
+        margin-left: 5rem;
+        /* Add some left margin for spacing */
+    }
+    /* Heading styles */
+    .text-lg {
+        font-size: 1.5rem;
+        /* Increase font size for better readability */
+    }
+    /* Input styles */
+    .text-sm {
+        font-size: 0.9375rem;
+        /* Increase font size for better readability */
+    }
+    /* Button styles */
+    .py-2 {
+        padding-top: 0.75rem;
+        /* Increase padding for better touch interaction */
+        padding-bottom: 0.75rem;
+        /* Increase padding for better touch interaction */
+    }
+    .px-4 {
+        padding-left: 1.25rem;
+        /* Increase padding for better touch interaction */
+        padding-right: 1.25rem;
+        /* Increase padding for better touch interaction */
+    }
+}
+
+
+/* Button styles */
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+
+/* Book Now button */
+
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+
+/* More Info button */
+
+.bg-gray-300 {
+    background-color: #e5e7eb;
+}
+
+.hover\:bg-gray-400:hover {
+    background-color: #d1d5db;
+}
+
+.text-gray-800 {
+    color: #374151;
+}
+
+
+/* Contact section styles */
+
+.bg-orange-500 {
+    background-color: #f97316;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+
+/* Enquiry button styles */
+
+.enquiry-button {
+    cursor: pointer;
+}
+
+.enquiry-button:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact details styles */
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+/* Excluded section styles */
+
+.mt-4 {
+    margin-top: 1rem;
+}
