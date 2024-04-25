@@ -84,12 +84,23 @@ const TourRate = () => {
 const AdditionalIncluded = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
+       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+          <ul className="list-disc pl-6">
+            <li>Day : 1 Kathmandu to Surkhet</li>
+            <li>Day : 2 Surkhet to Jumla</li>
+            <li>Day : 3 Jumla to Rara</li>
+            <li>Day : 4 Explore Rara Lake</li>
+            <li>Day : 5 Rara to Jumla</li>
+            <li>Day : 6 Jumla to Surkhet</li>
+            <li>Day : 7 Surkhet to Kathmandu</li>
+          </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
-        <li>Pick and Drop Services</li>
-        <li>1 Meal Per Day</li>
-        <li>Cruise Dinner &amp; Music Event</li>
-        <li>Visit 7 Best Places in the City With Group</li>
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
       </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
@@ -100,17 +111,21 @@ const AdditionalIncluded = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4">
-        <h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
-        <ul className="list-disc list-inside">
-          <li>Pick and Drop Services</li>
-          <li>1 Meal Per Day</li>
-          <li>Cruise Dinner &amp; Music Event</li>
-          <li>Visit 7 Best Places in the City With Group</li>
-        </ul>
-      </div>
     </div>
   );
+};
+const  EXCLUDED = () => {
+  return (
+<div className="bg-white p-4 rounded-md shadow-md left-box">
+<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<ul className="list-disc list-inside">
+  <li>Pick and Drop Services</li>
+  <li>1 Meal Per Day</li>
+  <li>Cruise Dinner &amp; Music Event</li>
+  <li>Visit 7 Best Places in the City With Group</li>
+</ul>
+</div>
+ );
 };
 const Rara = () => {
   return (
@@ -137,6 +152,7 @@ The trekking routes for Rare Lake Trek vary in duration and difficulty, catering
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TourRate />
             <AdditionalIncluded />
+            <EXCLUDED />
           </div>
         </div>
       </div>

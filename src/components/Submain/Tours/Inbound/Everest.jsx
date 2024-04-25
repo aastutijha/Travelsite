@@ -84,6 +84,21 @@ const TourRate = () => {
 const AdditionalIncluded = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
+       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+          <ul className="list-disc pl-6">
+            <li>Day 1: Arrive Kathmandu</li>
+            <li>Day 2: Flight to Lukla and Trek to Phakding (2652m)</li>  <li>Day 3: Trek from Phakding to Namche Bazaar (3440m) </li>
+            <li> Day 4: Acclimatization Day in Namche Bazaar</li> 
+            <li> Day 5: Trek from Namche Bazaar to Tengboche (3860m)</li> <li>Day 6: Trek from Tengboche to Dingboche (4410m) </li>
+          <li>Day 7: Acclimatization Day in Dingboche </li> 
+          <li>Day 8: Trek from Dingboche to Lobuche (4910m) </li>
+           <li>Day 9: Trek from Lobuche to Everest Base Camp (5364m) and Back to Gorak Shep (5164m)</li>
+            <li> Day 10: Hike to Kala Patthar (5545m) and Descend to Pheriche (4371m)</li>
+             <li> Day 11: Trek from Pheriche to Namche Bazaar</li> 
+              <li> Day 12: Trek from Namche Bazaar to Lukla </li> 
+              <li> Day 13: Flight from Lukla to Kathmandu</li>  
+               <li>Day 14: Departure from Kathmandu</li>
+          </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
@@ -100,17 +115,21 @@ const AdditionalIncluded = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4">
-        <h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
-        <ul className="list-disc list-inside">
-          <li>Pick and Drop Services</li>
-          <li>1 Meal Per Day</li>
-          <li>Cruise Dinner &amp; Music Event</li>
-          <li>Visit 7 Best Places in the City With Group</li>
-        </ul>
-      </div>
     </div>
   );
+};
+const  EXCLUDED = () => {
+  return (
+<div className="bg-white p-4 rounded-md shadow-md left-box">
+<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<ul className="list-disc list-inside">
+  <li>Pick and Drop Services</li>
+  <li>1 Meal Per Day</li>
+  <li>Cruise Dinner &amp; Music Event</li>
+  <li>Visit 7 Best Places in the City With Group</li>
+</ul>
+</div>
+ );
 };
 
 const Everest = () => {
@@ -135,6 +154,7 @@ const Everest = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TourRate />
             <AdditionalIncluded />
+            <EXCLUDED />
           </div>
         </div>
       </div>
