@@ -139,7 +139,17 @@ const Lumbini = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Lumbini</h1>
         <p className="mb-4">
-        Lumbini, located in Nepal Rupandehi District, is renowned as the birthplace of Siddhartha Gautama, who later became Gautama Buddha. This sacred site holds deep religious significance for Buddhists worldwide, being one of the key pilgrimage destinations associated with Buddhas life. The Maya Devi Temple, marking the exact birthplace, and the Monastic Zone with its diverse monasteries are major attractions. Lumbini peaceful environment, historical ruins, and ongoing conservation efforts make it a serene and culturally rich destination, offering visitors a chance for spiritual reflection and cultural exploration.
+        Lumbini is a revered pilgrimage site located in the Rupandehi District of Nepal, renowned as the birthplace of Siddhartha Gautama, who later became known as Lord Buddha. It holds immense significance for Buddhists worldwide and is recognized as a UNESCO World Heritage Site.
+
+The historical and spiritual importance of Lumbini is deeply rooted in Buddhist tradition. It is believed that Queen Maya Devi, the mother of Siddhartha Gautama, gave birth to him while visiting her maternal home in Lumbini. The exact spot of Lord Buddha's birth is marked by the Mayadevi Temple, where pilgrims from all over the world come to pay their respects and offer prayers.
+
+Lumbini is not only a place of religious significance but also a center for cultural and historical exploration. The sacred site is surrounded by tranquil gardens, monasteries, and meditation centers, creating a serene and contemplative atmosphere for visitors. The Ashoka Pillar, erected by Emperor Ashoka in the 3rd century BCE, stands as a testament to the ancient Buddhist heritage of Lumbini.
+
+Visitors to Lumbini can explore various monastic zones representing different Buddhist traditions, including Theravada, Mahayana, and Vajrayana. These zones house beautifully designed monasteries, stupas, and shrines built by Buddhist communities from different countries, showcasing the global reverence for Lord Buddha and his teachings.
+
+Apart from its religious and cultural significance, Lumbini also offers opportunities for spiritual reflection, meditation, and learning about Buddhist philosophy and practices. The peaceful surroundings, coupled with the spiritual ambiance, make it an ideal destination for those seeking inner peace, enlightenment, and a deeper understanding of Buddhism.
+
+Lumbini's allure extends beyond its religious context, attracting travelers interested in history, archaeology, and architecture. The nearby Lumbini Museum and archaeological ruins provide insights into the region's ancient past and the evolution of Buddhism over the centuries.
      </p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -138,11 +138,17 @@ const Chitwan = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Chitwan Safari </h1>
         <p className="mb-4">
-        Chitwan Safari offers a captivating journey into the heart of Nepal's lush wilderness, renowned for its rich biodiversity and stunning landscapes. Nestled in the subtropical Terai region, Chitwan National Park stands as a testament to the country's commitment to conservation and ecotourism. The safari experience here is a harmonious blend of adventure, wildlife encounters, and cultural immersion.
-Embarking on a Chitwan Safari unveils a world of diverse wildlife, including the majestic Bengal tiger, one-horned rhinoceros, Asian elephant, leopard, sloth bear, and a myriad of bird species. The park's dense forests, grasslands, and wetlands serve as habitats for these fascinating creatures, offering visitors the chance to observe them in their natural environment.
+        A Chitwan safari offers an exhilarating adventure into the heart of the lush Terai region of Nepal, renowned for its rich biodiversity and stunning natural beauty. The safari typically takes place in the iconic Chitwan National Park, a UNESCO World Heritage Site and one of the best-preserved conservation areas in Asia.
 
-The safari adventure unfolds through various activities like jeep safaris, elephant safaris, nature walks, and canoe rides along the serene Rapti River. Each expedition is led by experienced guides and naturalists who share their knowledge about the park's flora, fauna, and conservation efforts, enhancing the educational aspect of the journey.
-     </p>
+Chitwan safaris provide an opportunity to explore the diverse ecosystems of the park, which include dense forests, grasslands, and wetlands. Visitors can embark on thrilling jungle excursions led by experienced guides, either on elephant-back or in four-wheel-drive vehicles, allowing them to traverse through the wilderness and observe the region's incredible wildlife up close.
+
+One of the highlights of a Chitwan safari is the chance to encounter rare and endangered species in their natural habitat. From majestic Bengal tigers and one-horned rhinoceros to Asian elephants and elusive leopards, the park is home to a remarkable array of wildlife. Additionally, visitors can spot various species of deer, monkeys, crocodiles, and over 500 species of birds, making it a paradise for wildlife enthusiasts and birdwatchers alike.
+
+Aside from wildlife viewing, Chitwan safaris offer a range of other exciting activities. Travelers can enjoy serene canoe rides along the Rapti River, where they may spot crocodiles basking on the riverbanks or vibrant birdlife fluttering above. Nature walks through the park's lush trails provide opportunities to learn about the region's flora and fauna from knowledgeable guides.
+
+Chitwan safaris also offer cultural experiences, allowing visitors to interact with the indigenous Tharu communities who call the region home. Travelers can visit Tharu villages, witness traditional dance performances, and learn about the unique customs and traditions of these fascinating people.
+
+Accommodations for Chitwan safaris range from luxury jungle lodges to eco-friendly resorts and budget-friendly guesthouses, ensuring that there are options to suit every traveler's preferences and budget. Whether seeking adventure, wildlife encounters, cultural immersion, or relaxation amidst nature, a Chitwan safari promises an unforgettable journey into the wilderness of Nepal.</p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <TourRate />
