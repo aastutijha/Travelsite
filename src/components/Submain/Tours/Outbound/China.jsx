@@ -145,7 +145,19 @@ const China = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">China</h1>
         <p className="mb-4">
-        China, a vast and diverse country in East Asia, is a land of rich history, vibrant culture, and stunning landscapes. With a civilization that spans over thousands of years, China is home to iconic landmarks such as the Great Wall, the Forbidden City, and the Terracotta Army. Its cultural heritage is celebrated through ancient traditions like Chinese New Year, martial arts like Tai Chi, and a cuisine renowned for its flavors and variety. From the modern skylines of Shanghai and Beijing to the serene landscapes of Guilin and the majestic Yangtze River, China offers a blend of ancient traditions and modern innovation. With a population exceeding 1.4 billion people, China's diversity is reflected in its languages, dialects, and ethnic groups, creating a tapestry of experiences for visitors to explore and discover.
+        China, a vast and diverse country in East Asia, is renowned for its rich history, cultural heritage, stunning landscapes, and modern cities. As one of the world's oldest civilizations, China has a wealth of historical sites, including the Great Wall, the Forbidden City, and the Terracotta Army, which showcase its ancient glory and architectural marvels.
+
+The capital city, Beijing, is a blend of ancient traditions and modernity, with landmarks like Tiananmen Square, the Temple of Heaven, and the Summer Palace reflecting its imperial past. Beijing is also a hub of cultural activities, with traditional opera performances, art galleries, and thriving street food markets.
+
+Shanghai, on the other hand, is a bustling metropolis known for its futuristic skyline, vibrant nightlife, and cosmopolitan lifestyle. The iconic Bund waterfront offers stunning views of colonial-era buildings juxtaposed with modern skyscrapers, while the Yu Garden and Nanjing Road are popular spots for shopping and exploration.
+
+Guilin's picturesque landscapes, characterized by karst mountains, winding rivers, and rice terraces, make it a haven for nature lovers and photographers. The Li River cruise from Guilin to Yangshuo offers breathtaking scenery and opportunities to immerse in rural life.
+
+China's diverse culture is reflected in its festivals, such as the vibrant celebrations of Chinese New Year, the colorful lantern festivals, and traditional performances like Peking Opera and Chinese martial arts demonstrations.
+
+The country's culinary scene is equally diverse, with regional specialties like Peking duck, Sichuan hotpot, Cantonese dim sum, and spicy Hunan cuisine delighting food enthusiasts. Tea culture is also integral to Chinese tradition, with tea houses offering a serene escape for tea appreciation and relaxation.
+
+China's rapid development has also led to modern marvels like the Shanghai Tower, the Beijing National Stadium (Bird's Nest), and the high-speed railway network, showcasing its technological advancements and global influence.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -145,7 +145,16 @@ const Thailand = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Thailand</h1>
         <p className="mb-4">
-        Thailand, often called the "Land of Smiles," is a captivating Southeast Asian country renowned for its vibrant culture, stunning beaches, and rich history. From bustling metropolises like Bangkok with its bustling markets and ornate temples to serene islands like Phuket and Koh Samui offering pristine beaches and crystal-clear waters, Thailand offers a diverse range of experiences. Its mouthwatering cuisine, friendly locals, and ancient ruins such as those in Ayutthaya and Sukhothai add to its allure. Whether exploring ancient temples, indulging in delicious street food, or relaxing on tropical beaches, Thailand promises a memorable and enchanting journey for travelers.
+        Thailand, known as the "Land of Smiles," is a captivating and diverse country in Southeast Asia that attracts millions of visitors each year with its rich cultural heritage, stunning landscapes, vibrant cities, and warm hospitality. From bustling metropolises to tranquil beaches, ancient temples to modern skyscrapers, Thailand offers a myriad of experiences that appeal to travelers of all interests.
+
+Bangkok, the bustling capital city, is a vibrant hub of culture, commerce, and cuisine. Here, visitors can explore ornate temples like Wat Phra Kaew (Temple of the Emerald Buddha) and Wat Pho (Temple of the Reclining Buddha), shop for local handicrafts at markets like Chatuchak Weekend Market, and indulge in delicious street food along bustling streets like Khao San Road.
+Northern Thailand is renowned for its picturesque landscapes and cultural heritage.  The region's lush jungles and hill tribes also attract adventure seekers and nature enthusiasts.
+
+In the south, Thailand's stunning islands and beaches beckon travelers seeking relaxation and natural beauty. Phuket, Koh Samui, Krabi, and Phi Phi Islands are just a few of the famous beach destinations known for their crystal-clear waters, white sandy beaches, and vibrant marine life. Activities such as snorkeling, diving, island hopping, and beach parties are popular here.
+
+Thailand's cultural heritage is also evident in its ancient cities and historical sites. Ayutthaya, a UNESCO World Heritage Site, was once the capital of the Kingdom of Siam and boasts impressive ruins of temples and palaces. Sukhothai Historical Park is another UNESCO site known for its well-preserved ancient temples and monuments.
+
+Thailand's culinary scene is renowned worldwide, with its flavorful and diverse cuisine ranging from spicy curries and noodle dishes to tropical fruits and seafood delicacies. Street food markets like Bangkok's Chinatown and Chiang Mai's Night Bazaar are culinary hotspots where visitors can sample a wide variety of local dishes.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

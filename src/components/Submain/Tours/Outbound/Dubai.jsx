@@ -138,7 +138,19 @@ const Dubai = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Dubai</h1>
         <p className="mb-4">
-        Dubai, a city in the United Arab Emirates (UAE), is a beacon of modernity and luxury. With its stunning skyline featuring the iconic Burj Khalifa, extravagant shopping malls, and world-class hospitality, Dubai is a global hub for business, tourism, and innovation. The city seamlessly blends its rich cultural heritage with futuristic architecture, offering visitors and residents an unforgettable experience of opulence, adventure, and cosmopolitan charm. From desert safaris and luxury resorts to theme parks and gourmet dining, Dubai caters to every taste and preference, making it a must-visit destination for travelers seeking a unique and vibrant urban experience.
+        Dubai, located in the United Arab Emirates (UAE), is a modern and dynamic city known for its futuristic skyline, luxury shopping, vibrant nightlife, and world-class attractions. It has transformed from a small fishing village into a global metropolis and tourist hotspot, attracting millions of visitors each year.
+
+One of Dubai's most iconic landmarks is the Burj Khalifa, the tallest building in the world, offering breathtaking views of the city from its observation decks. The Dubai Fountain, located at the base of the Burj Khalifa, is a mesmerizing water and light show set to music, creating a spectacular visual experience.
+
+Dubai is also renowned for its luxury shopping malls, including The Dubai Mall, home to over 1,200 retail outlets, an indoor aquarium, an ice rink, and the Dubai Fountain. Visitors can indulge in high-end fashion brands, fine dining, and entertainment options within these extravagant shopping destinations.
+
+The Dubai Desert Safari is a popular excursion for adventure seekers, offering thrilling activities such as dune bashing, camel riding, sandboarding, and traditional Bedouin-style desert camps with entertainment and BBQ dinners under the stars.
+
+Dubai's coastline is dotted with luxurious beach resorts and pristine beaches like Jumeirah Beach, where visitors can relax, sunbathe, and enjoy water sports such as jet skiing, parasailing, and paddleboarding.
+
+The city's culinary scene is diverse and vibrant, with a plethora of international restaurants, celebrity chef venues, and traditional Arabic eateries serving delicious cuisine. Visitors can sample local delicacies like shawarma, falafel, hummus, and Arabic sweets.
+
+Dubai's commitment to innovation and entertainment is evident in attractions like the Dubai Marina, Palm Jumeirah Island, Dubai Parks and Resorts, and the upcoming Expo 2020 Dubai, a global event showcasing technology, innovation, and culture.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

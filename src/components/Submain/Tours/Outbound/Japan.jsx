@@ -138,7 +138,21 @@ const Japan = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Japan </h1>
         <p className="mb-4">
-        Japan, an island nation in East Asia, is a captivating blend of ancient traditions and modern innovations. Renowned for its cutting-edge technology, bustling cities, and stunning natural landscapes, Japan offers a diverse range of experiences for travelers. From the bustling streets of Tokyo with its neon lights and futuristic skyscrapers to the serene temples of Kyoto steeped in history and culture, Japan is a country of contrasts. Its cuisine, including sushi, ramen, and tempura, is celebrated worldwide for its exquisite flavors and presentation. The country's rich heritage is reflected in its traditional arts such as tea ceremonies, kabuki theater, and intricate gardens like those found in Kanazawa and Nikko. With a deep respect for tradition and a keen eye towards the future, Japan continues to captivate visitors with its unique charm and endless discoveries.
+        Japan, an archipelago nation in East Asia, is a captivating blend of ancient traditions and cutting-edge modernity. Renowned for its rich culture, stunning landscapes, advanced technology, and unique experiences, Japan attracts millions of visitors from around the world each year.
+
+Tokyo, Japan's bustling capital, is a vibrant metropolis where traditional temples and historic sites coexist with towering skyscrapers, neon-lit streets, and bustling markets. The city is a hub of innovation, fashion, cuisine, and entertainment, offering endless opportunities for exploration and discovery.
+
+Kyoto, Japan's former imperial capital, is a treasure trove of cultural heritage, featuring iconic landmarks such as the Fushimi Inari Shrine with its thousands of vermillion torii gates, the serene Kinkaku-ji Temple (Golden Pavilion), and the historic Gion district known for its traditional tea houses and geisha culture.
+
+Osaka, known as Japan's "Kitchen of the Nation," is renowned for its culinary delights, vibrant nightlife, and modern attractions like Universal Studios Japan. Visitors can explore Osaka Castle, stroll through bustling street markets like Dotonbori, and indulge in delicious street food and local delicacies.
+
+Hiroshima, a city with a poignant history, is home to the Peace Memorial Park and Museum, dedicated to the victims of the atomic bombing during World War II. The Itsukushima Shrine on Miyajima Island, with its iconic "floating" torii gate, is another must-visit attraction near Hiroshima.
+
+Nara, Japan's first permanent capital, is famous for its ancient temples, deer park, and the towering bronze Buddha statue at Todai-ji Temple. Visitors can experience the tranquility of nature at Nara Park while interacting with friendly deer considered sacred in Japanese culture.
+
+Other notable destinations in Japan include the historic city of Kamakura with its Great Buddha statue, the scenic coastal region of Kanagawa Prefecture, the ancient temples of Nikko, and the picturesque villages of Shirakawa-go and Gokayama with their traditional thatched-roof houses (gassho-zukuri).
+
+Japanese culture is deeply rooted in traditions like tea ceremonies, kimono wearing, cherry blossom viewing (hanami), and seasonal festivals such as the iconic Gion Matsuri in Kyoto and the vibrant Nebuta Matsuri in Aomori.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -140,7 +140,16 @@ const Cambodia = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">Cambodia</h1>
         <p className="mb-4">
-        Cambodia, located in Southeast Asia, boasts a rich historical legacy, vibrant culture, and captivating landscapes. With its ancient Khmer Empire heritage evident in magnificent temples like Angkor Wat, Cambodia attracts tourists worldwide. The capital city, Phnom Penh, pulsates with energy, while Siem Reap's Angkor Archaeological Park is a testament to the country's glorious past. Cambodian culture, deeply rooted in Buddhism, is celebrated through traditional arts, music, dance, and cuisine, offering a glimpse into its warm and hospitable society. Natural beauty abounds, from the Mekong River to the serene coastal areas, inviting visitors to explore its diverse landscapes. Despite facing challenges, Cambodia's economy is growing, driven by sectors like tourism and manufacturing. Cambodia's allure lies in its blend of ancient wonders, cultural vibrancy, and natural splendor, making it a must-visit destination for travelers seeking a unique and immersive experience.
+        Cambodia, located in Southeast Asia, is a country with a rich cultural heritage, ancient history, and natural beauty. Its most famous attraction is the magnificent Angkor Wat, a UNESCO World Heritage site and one of the largest religious monuments in the world. Built in the early 12th century, Angkor Wat is a symbol of Cambodia's Khmer Empire and is renowned for its intricate carvings, grand architecture, and spiritual significance.
+Cambodia's capital city, Phnom Penh, is a bustling metropolis with a mix of traditional Khmer architecture and modern developments. The Royal Palace, Silver Pagoda, and National Museum are must-visit sites that reflect Cambodia's royal history and artistic heritage. The Tuol Sleng Genocide Museum and Killing Fields of Choeung Ek offer poignant insights into Cambodia's tragic past during the Khmer Rouge regime.
+
+For nature lovers, Cambodia's countryside is dotted with lush landscapes, including the Tonle Sap Lake, Southeast Asia's largest freshwater lake, and the Cardamom Mountains, a biodiverse region rich in wildlife and ecotourism opportunities.
+
+The coastal areas of Cambodia, such as Sihanoukville and Koh Rong, boast pristine beaches, turquoise waters, and vibrant coral reefs, making them ideal for beach vacations, water activities, and relaxation.
+
+Cambodia's cultural heritage is also reflected in its traditional arts and crafts, including Khmer classical dance, silk weaving, pottery, and intricate stone carvings. Visitors can explore local markets, such as Psar Thmei (Central Market) and Psar Chas (Old Market), to experience Cambodia's vibrant street food scene, handicrafts, and cultural diversity.
+
+Cambodia's people are known for their warmth, hospitality, and resilience, making it a welcoming destination for travelers seeking historical insights, natural beauty, cultural immersion, and memorable experiences
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
