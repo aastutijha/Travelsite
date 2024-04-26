@@ -108,7 +108,7 @@ const AdditionalIncluded = () => {
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
           <div className="flex flex-col">
-            <span>+977 015900334</span>
+            <span>+977 015900337</span>
             <span>+977 9802348638</span>
           </div>
         </div>
