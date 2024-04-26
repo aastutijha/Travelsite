@@ -109,7 +109,7 @@ const AdditionalIncluded = () => {
           <span>For more Enquiry</span>
           <div className="flex flex-col">
             <span>+977 015900337</span>
-            <span>+977 9802348633</span>
+            <span>+977 9802348638</span>
           </div>
         </div>
       </div>
