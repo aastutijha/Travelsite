@@ -1,5 +1,55 @@
 import React from 'react';
 import './everest.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>Langtang</h3>
+        <div className="current-weather">
+          <span className="temperature">10°C</span>
+          <span className="condition">Partly cloudy</span>
+          <span className="icon">🌨</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">10°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">8°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">🌨</span>
+          <span className="temperature">5°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">🌨
+</span>
+          <span className="temperature">2°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">❄️</span>
+          <span className="temperature">-1°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">17:00 H</span>
+          <span className="icon">🌬️</span>
+          <span className="temperature">-5°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,27 +136,42 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day : 1 Arrival in Hotel</li>
-            <li>Day : 2 Sightseeing in Kathmandu valley in Hotel +O</li>
-            <li>Day : 3 Drive to Syabru Bensi (1550m, 7-8 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 4 Trek to Lama Hotel (2450m, 6-7 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 5 Trek to Langtang Village (3430m, 4-5 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 6 Trek to Kyanjin Gompa (3870m, 4 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 7 Acclimatization day in Kyanjin (3870m) o/n in Guest House +O+L+D</li>
-            <li>Day : 8 Trekking back to Lama Hotel (3430m, 6 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 9 Trek to Big Syabru Bensi (2230m, 6-7 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 10 Trek to Sing Gompa (3330m, 3-4 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 11 Trek to Gosaikunda Lake (4460m, 4-6 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 12 Trek to Ghopte (3440m, 6-8 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 13 Trek to Kutumsang (2440m, 6-7 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 14 Trek to Chisopani (2140m, 5-6 hrs) o/n in Guest House +O+L+D</li>
-            <li>Day : 15 Chisopani to Nagarkot (1620m, 5hrs) o/n in Hotel +O+L+D</li>
-            <li> Day : 16 Trek to Dhulikhel o/n in Hotel +O+L+D</li>
-            <li>Day : 17 Trek to Panauti and drive back to Kathmandu via Bhaktapur o/n in Hotel +O</li>
-            <li>Day : 18 Drive to Chitwan o/n in Hotel +O+L+D</li>
-            <li>Day : 19 Drive back to Kathmandu o/n in Hotel +O</li>
-            <li>Day : 20 Departure</li>
-            
+            <li><b>Day 1: Kathmandu to Syabrubesi :-</b>
+Drive from Kathmandu to Syabrubesi, the starting point of the Langtang trek.
+Enjoy scenic views of rural Nepal, terraced fields, and the Trishuli River along the way.
+Overnight stay in Syabrubesi, a small village with basic accommodations.</li>
+            <li><b>Day 2: Syabrubesi to Lama Hotel :-</b>
+Begin your trek from Syabrubesi, following the Langtang Khola River.
+Pass through dense forests and picturesque Tamang villages like Bamboo and Rimche.
+Reach Lama Hotel and rest for the night amidst the tranquility of the mountains.</li>
+            <li><b>Day 3: Lama Hotel to Langtang Village :-</b>
+Trek through rhododendron and pine forests, with occasional views of Langtang Lirung (7,227m) and other peaks.
+Pass by Ghoda Tabela (Horse Stable) and continue to Langtang Village, an ancient Tibetan-influenced settlement.
+Explore the village and interact with the local Tamang community.
+Overnight stay in Langtang Village.</li>
+            <li><b>Day 4: Langtang Village to Kyanjin Gompa :-</b>
+Trek to Kyanjin Gompa, a picturesque village with a Buddhist monastery and stunning mountain views.
+Hike up to the Kyanjin Ri viewpoint for panoramic vistas of the Langtang range, glaciers, and surrounding peaks.
+Explore the cheese factory and local yak pastures.
+Overnight stay in Kyanjin Gompa.</li>
+            <li><b>Day 5: Acclimatization Day at Kyanjin Gompa :-</b>
+Spend a day acclimatizing at Kyanjin Gompa to prepare for higher altitudes.
+Optional hikes to nearby viewpoints like Tserko Ri (4,984m) for breathtaking sunrise views.
+Attend a meditation session at the monastery or interact with local monks.
+Rest and relax to rejuvenate for the upcoming trekking days.</li>
+            <li><b>Day 6: Kyanjin Gompa to Lama Hotel :-</b>
+Begin your descent back towards Lama Hotel, retracing your steps through Langtang Village.
+Enjoy the downhill trek with different perspectives of the landscape.
+Overnight stay in Lama Hotel.</li>
+            <li><b>Day 7: Lama Hotel to Syabrubesi :-</b>
+Trek back to Syabrubesi, passing through forests, streams, and traditional Tamang settlements.
+Reflect on your trekking experience and enjoy the last leg of your journey.
+Celebrate the completion of the Langtang Valley Trek with fellow trekkers in Syabrubesi.
+Overnight stay in Syabrubesi.</li>
+            <li><b>Day 8: Syabrubesi to Kathmandu :-</b>
+Drive back from Syabrubesi to Kathmandu, enjoying the scenic route once again.
+Arrive in Kathmandu and transfer to your hotel.
+Relax and unwind in Kathmandu or explore the city's cultural attractions and vibrant markets.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -160,6 +225,7 @@ The trek typically begins with a scenic drive from Kathmandu to Syabrubesi, the 
 As trekkers ascend higher into the Langtang Valley, they are treated to panoramic views of snow-capped peaks, including Langtang Lirung, Ganesh Himal, and Dorje Lakpa, among others. The trek also includes visits to traditional Tamang and Sherpa villages like Lama Hotel, Langtang Village, and Kyanjin Gompa, where trekkers can immerse themselves in the local culture, interact with friendly villagers, and witness age-old customs and traditions.</p>
       <div className="flex justify-center items-center h-screen">
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TripWeatherForecast />
              <TourRate />
              <AdditionalIncluded />
              <EXCLUDED />

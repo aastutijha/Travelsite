@@ -1,5 +1,54 @@
 import React from 'react';
 import './everest.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>CHITWAN</h3>
+        <div className="current-weather">
+          <span className="temperature">39°C</span>
+          <span className="condition">Sunny</span>
+          <span className="icon">☀️</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">37°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">35°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">32°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">29°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">25°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">17:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">23°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,13 +135,26 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Lumbini</li>
-            <li>Day 2: Lumbini to Tilaurakot and Gotihawa Excursion</li>
-            <li>Day 3: Lumbini to Kapilvastu and Niglihawa Tourist </li>
-            <li> Day 4: Lumbini to Devdaha and Ramagrama Excursion</li>
-            <li> Day 5: Lumbini to Taulihawa and Sagarhawa Exploration</li>
-            <li> Day 6: Departure from Lumbini
-            </li>
+            <li><b>Day 1: Arrival in Lumbini :-</b>
+Arrive at Gautam Buddha Airport in Bhairahawa or at Lumbini by road from nearby cities like Pokhara or Kathmandu.
+Check into your hotel or guesthouse in Lumbini.
+After settling in, visit the Lumbini Garden, the sacred site where Lord Buddha was born. Explore the Maya Devi Temple, Ashoka Pillar, and other significant monuments within the garden.
+Attend the evening prayer ceremony at the Maya Devi Temple, a serene and spiritually enriching experience.</li>
+            <li><b>Day 2: Exploring Lumbini's Monastic Zone :-</b>
+Spend the day exploring the Monastic Zone, home to numerous monasteries and meditation centers built by Buddhist communities from around the world.
+Visit the International Monastic Zone, where you can explore monasteries representing different Buddhist traditions, cultures, and countries.
+Take a peaceful stroll or rent a bicycle to explore the serene surroundings of Lumbini, dotted with beautiful gardens and tranquil pathways.</li>
+            <li><b>Day 3: Excursion to Kapilvastu :-</b>
+Take a day trip to Kapilvastu, the ancient capital of the Shakya Kingdom and the childhood home of Prince Siddhartha (Lord Buddha).
+Visit Tilaurakot Archaeological Site, believed to be the remains of Kapilvastu's ancient palace complex where Prince Siddhartha spent his early years.
+Explore other historical sites in Kapilvastu, including Kudan, Niglihawa, and Gotihawa, associated with Lord Buddha's life and teachings.</li>
+            <li><b>Day 4: Mahaparinirvana Temple and Nearby Attractions :-</b>
+Visit the Mahaparinirvana Temple, located outside the Monastic Zone, which enshrines the ruins of a monastery and the reclining Buddha statue depicting Lord Buddha's passing into Nirvana.
+Explore nearby attractions such as the Ramagrama Stupa, believed to house Lord Buddha's relics, and the Devadaha, associated with the early life of Buddha's mother, Queen Mahamaya.
+Spend your evening in meditation or attending a discourse on Buddhism, offered by local monks or meditation centers in Lumbini.</li>
+            <li><b> Day 5: Departure from Lumbini :-</b>
+Depending on your departure schedule, you may have some free time in the morning to revisit any sites of interest or indulge in souvenir shopping.
+Depart from Lumbini, either by road or air, concluding your spiritual journey to the birthplace of Lord Buddha.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -153,6 +215,7 @@ Lumbini's allure extends beyond its religious context, attracting travelers inte
      </p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TripWeatherForecast />
             <TourRate />
             <AdditionalIncluded />
             <EXCLUDED />

@@ -1,5 +1,55 @@
 import React from 'react';
 import './everest.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>Illam</h3>
+        <div className="current-weather">
+          <span className="temperature">22°C</span>
+          <span className="condition">Partly cloudy</span>
+          <span className="icon">⛅</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">20°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">18°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">15°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">☁️
+</span>
+          <span className="temperature">12°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">10°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">17:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">5°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,12 +136,28 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Illam Tea Garden</li>
-            <li>Day 2: Illam Tea Garden Tour</li>
-            <li>Day 3: Explore Local Attractions and Cultural Experiences</li>
-            <li>Day 4: Nature Walks and Botanical Garden Visit </li>
-            <li>Day 5: Tea Garden Photography and Sunset Views</li>
-            <li>Day 6: Departure from Illam</li>
+            <li><b>Day 1: Arrival in Ilam :-</b>
+Arrive at Ilam, either by road from Kathmandu or through nearby airports like Bhadrapur or Biratnagar.
+Check into your accommodation, which could be a tea estate resort or a hotel in Ilam Bazaar.
+Take a leisurely stroll around Ilam Bazaar in the evening, exploring local markets and sampling traditional snacks like sel roti and local teas.</li>
+            <li><b>Day 2: Kanyam Tea Gardens :-</b>
+Begin your day with a visit to Kanyam Tea Gardens, one of the largest and most picturesque tea estates in Ilam.
+Take a guided tour of the tea gardens, learning about tea cultivation, processing, and the history of Ilam's tea industry.
+Enjoy a scenic walk through the lush greenery of the tea gardens, soaking in the serene ambiance and stunning views of the surrounding hills and mountains.</li>
+            <li><b>Day 3: Fikkal Tea Gardens and Tea Factory :-</b>
+Head to Fikkal, another prominent tea-growing area in Ilam, known for its high-quality tea production.
+Visit a tea factory in Fikkal to observe the tea processing methods firsthand, from plucking to drying and packaging.
+Participate in tea-tasting sessions, sampling various tea varieties produced in the region and learning to distinguish their flavors and aromas.</li>
+            <li><b>Day 4: Ilam Tea Museum and Siddhi Thumka :-</b>
+Explore the Ilam Tea Museum, located in Ilam Bazaar, to delve deeper into the history and heritage of Ilam's tea industry.
+Learn about the different stages of tea cultivation and processing, as well as the cultural significance of tea in Nepali society.
+In the afternoon, visit Siddhi Thumka, a traditional Limbu village, to experience the indigenous culture, lifestyle, and hospitality of the local community.</li>
+            <li><b>Day 5: Mai Pokhari and Sandakpur :-</b>
+Take a day trip to Mai Pokhari, a beautiful lake surrounded by tea gardens and forests, offering breathtaking views of the Himalayas.
+Continue your journey towards Sandakpur, a popular viewpoint on the Nepal-India border, known for its panoramic vistas of Kanchenjunga and other snow-capped peaks.
+Spend the day exploring these scenic destinations, capturing memorable moments amidst nature's splendor.</li>
+            <li><b>Day 6: Departure from Ilam :-</b>
+Depending on your travel plans, depart from Ilam with fond memories of your tea garden tour, enriched with insights into tea cultivation, breathtaking landscapes, and warm Nepali hospitality.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -151,6 +217,7 @@ Illam's tea production includes a variety of teas, such as orthodox black tea, g
 Visitors to the Illam Tea Garden can also explore tea factories to witness the tea processing stages, from withering and rolling to oxidation and drying. This immersive experience offers insights into the art and science of tea production, enhancing appreciation for the labor-intensive yet rewarding journey from leaf to cup.</p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TripWeatherForecast />
             <TourRate />
             <AdditionalIncluded />
             <EXCLUDED />

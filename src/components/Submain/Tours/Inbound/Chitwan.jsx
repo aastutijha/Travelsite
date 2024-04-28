@@ -1,5 +1,49 @@
 import React from 'react';
 import './everest.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>CHITWAN</h3>
+        <div className="current-weather">
+          <span className="temperature">34°C</span>
+          <span className="condition">Mostly Sunny</span>
+          <span className="icon">☀️</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">30°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">29°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">26°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">25°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">24°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,12 +130,28 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Chitwan</li>
-            <li>Day 2: Chitwan National Park Safari and wildlife viewing </li>
-               <li>Day 3: Chitwan - Elephant Breeding Center and Tharu Cultural Experience</li>
-               <li> Day 4: Chitwan - Canoe Ride and Bird Watching </li>
-               <li>Day 5: Chitwan - Jungle Walk and Elephant Interaction</li>  
-               <li>Day 6: Departure from Chitwan</li>
+            <li><b>Day 1: Arrival in Chitwan :-</b>
+Arrive in Chitwan, either by road or air from Kathmandu or Pokhara.
+Check into your safari lodge or hotel in Sauraha, the main gateway to Chitwan National Park.
+Rest and freshen up after your journey.
+In the evening, enjoy a cultural program featuring Tharu traditional dance and music.</li>
+            <li><b>Day 2: Chitwan National Park Safari :-</b>
+Start your day with an early morning jungle walk or bird watching tour with experienced guides.
+After breakfast, embark on a canoe ride along the Rapti River, observing aquatic wildlife and birds.
+Visit the Elephant Breeding Center to learn about elephant conservation efforts.
+Enjoy a delicious lunch at your lodge.
+In the afternoon, experience an elephant-back safari through the grasslands and forests of Chitwan, spotting wildlife such as rhinos, deer, and maybe even tigers (if lucky).
+Return to your lodge for dinner and overnight stay.</li>
+               <li><b>Day 3: Jeep Safari and Nature Walk :-</b>
+Begin your day with a thrilling jeep safari deep into the heart of Chitwan National Park, exploring diverse habitats and encountering wildlife in their natural habitat.
+Stop for a picnic lunch amidst the wilderness.
+Afternoon nature walk with naturalists to learn about flora, fauna, and jungle survival skills.
+Enjoy a sunset view over the park from a designated viewpoint.
+Return to your lodge for dinner and relaxation.</li>
+               <li><b>Day 4: Elephant Interaction and Departure :-</b>
+Participate in an elephant interaction program where you can feed, bathe, and learn about the daily care of elephants from mahouts (elephant keepers).
+Have a farewell breakfast at your lodge.
+Check out from your accommodation and depart for your onward journey, whether back to Kathmandu, Pokhara, or another destination. </li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -151,6 +211,7 @@ Chitwan safaris also offer cultural experiences, allowing visitors to interact w
 Accommodations for Chitwan safaris range from luxury jungle lodges to eco-friendly resorts and budget-friendly guesthouses, ensuring that there are options to suit every traveler's preferences and budget. Whether seeking adventure, wildlife encounters, cultural immersion, or relaxation amidst nature, a Chitwan safari promises an unforgettable journey into the wilderness of Nepal.</p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TripWeatherForecast />
             <TourRate />
             <AdditionalIncluded />
             <EXCLUDED />

@@ -1,5 +1,55 @@
 import React from 'react';
 import './everest.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>Rara</h3>
+        <div className="current-weather">
+          <span className="temperature">14°C</span>
+          <span className="condition">Partly cloudy</span>
+          <span className="icon">☁️</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">15°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">14°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">12°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">🌨
+</span>
+          <span className="temperature">10°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">❄️</span>
+          <span className="temperature">-5°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">17:00 H</span>
+          <span className="icon">🌬️</span>
+          <span className="temperature">-3°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,13 +136,32 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day : 1 Kathmandu to Surkhet</li>
-            <li>Day : 2 Surkhet to Jumla</li>
-            <li>Day : 3 Jumla to Rara</li>
-            <li>Day : 4 Explore Rara Lake</li>
-            <li>Day : 5 Rara to Jumla</li>
-            <li>Day : 6 Jumla to Surkhet</li>
-            <li>Day : 7 Surkhet to Kathmandu</li>
+            <li><b>Day 1: Kathmandu to Nepalgunj :-</b>
+Fly from Kathmandu to Nepalgunj, a major city in the western Terai region of Nepal.
+Check into a hotel in Nepalgunj and rest for the day, preparing for your journey to Rara Lake.</li>
+            <li><b>Day 2: Nepalgunj to Jumla :-</b>
+Take an early morning flight from Nepalgunj to Jumla Airport, the gateway to Rara Lake.
+Upon arrival in Jumla, meet your trekking guide and crew.
+Begin trekking towards Rara Lake, passing through picturesque villages, terraced fields, and lush forests.
+Overnight stay in a teahouse or campsite along the trekking route.</li>
+            <li><b>Day 3: Trek to Rara Lake :-</b>
+Continue your trek towards Rara Lake, enjoying breathtaking views of the surrounding mountains and landscapes.
+Arrive at Rara Lake, one of the largest and most beautiful lakes in Nepal, renowned for its crystal-clear waters and serene atmosphere.
+Settle into your accommodation near Rara Lake, either at a guesthouse or camping site.
+Spend the afternoon exploring the lakeshore, taking in the tranquility and natural beauty.</li>
+            <li><b>Day 4: Explore Rara Lake :-</b>
+Dedicate this day to fully exploring Rara Lake and its surroundings.
+Take a leisurely walk around the lake, enjoying the reflections of the surrounding hills and forests on the water.
+Visit Murma Top for panoramic views of Rara Lake and the surrounding Himalayan peaks.
+Engage in bird watching, as Rara Lake is a habitat for various bird species including migratory birds.
+Relax by the lakeshore, soak in the peaceful ambiance, and capture stunning photographs.</li>
+            <li><b>Day 5: Return to Jumla :-</b>
+Bid farewell to Rara Lake and start your trek back towards Jumla.
+Enjoy the scenic trekking route once again, appreciating the natural beauty and cultural encounters along the way.
+Arrive in Jumla and spend the evening relaxing and reflecting on your Rara Lake experience.</li>
+            <li><b>Day 6: Jumla to Nepalgunj to Kathmandu :-</b>
+Take a morning flight from Jumla to Nepalgunj.
+From Nepalgunj, fly back to Kathmandu, concluding your journey to Rara Lake.</li>        
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -150,6 +219,7 @@ The trekking routes for Rare Lake Trek vary in duration and difficulty, catering
      </p>
      <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <TripWeatherForecast/>
             <TourRate />
             <AdditionalIncluded />
             <EXCLUDED />
