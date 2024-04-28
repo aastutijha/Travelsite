@@ -1,6 +1,6 @@
 
 import React from 'react';
-//import './tour.css';
+
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
