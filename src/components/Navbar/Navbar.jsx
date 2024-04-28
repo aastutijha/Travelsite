@@ -63,8 +63,8 @@ import company from '../../assets/logo.png';
           <Link activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="navItem"><span className='navLink'>Home</span></Link>
           <Link activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</Link>
           <Link activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="navItem">About</Link>
-          <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Facilities</Link>
           <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Clients</Link>
+          <Link activeClass='active' to='team' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Team</Link>
           <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Contact</Link>
         </div>
         </div>
@@ -76,8 +76,8 @@ import company from '../../assets/logo.png';
           <Link onClick={toggleMenu} activeClass='active' to='main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem"><span className='navLink'>Home</span></Link>
           <Link onClick={toggleMenu} activeClass='active' to='sub-main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Places</Link>
           <Link onClick={toggleMenu} activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">About</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Facilities</Link>
           <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Cilents</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Team</Link>
           <Link onClick={toggleMenu} activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Contact</Link>
         </div>
       </div>
