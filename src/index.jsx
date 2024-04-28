@@ -17,7 +17,7 @@ import Lumbini from './components/Submain/Tours/Inbound/Lumbini.jsx';
 import Chitwan from './components/Submain/Tours/Inbound/Chitwan.jsx';
 import Rara from './components/Submain/Tours/Inbound/Rara.jsx';
 import Indonesia from './components/Submain/Tours/Outbound/Indonesia.jsx';
-import Europe from './components/Submain/Tours/Outbound/Europe.jsx';
+import India from './components/Submain/Tours/Outbound/India.jsx';
 import Dubai from './components/Submain/Tours/Outbound/Dubai.jsx';
 import China from './components/Submain/Tours/Outbound/China.jsx';
 import Japan from './components/Submain/Tours/Outbound/Japan.jsx';
@@ -46,7 +46,7 @@ ReactDOM.render(
         <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
         
         <Route path="/tours/outbound/Indonesia" element={<Indonesia />} />
-        <Route path="/tours/outbound/Europe" element={<Europe />} />
+        <Route path="/tours/outbound/India" element={<India />} />
         <Route path="/tours/outbound/Dubai" element={<Dubai />} />
         <Route path="/tours/outbound/China" element={<China />} />
         <Route path="/tours/outbound/Japan" element={<Japan />} />

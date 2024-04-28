@@ -5,7 +5,7 @@ import dubaiImage from '../../assets/dubai.jpeg';
 import indonesiaImage from '../../assets/indonesia.jpeg';
 import thailandImage from '../../assets/thailand.jpeg';
 import cambodiaImage from '../../assets/cambodia.jpeg';
-import europeImage from '../../assets/europe.jpeg';
+import IndiaImage from '../../assets/india.jpeg';
 import chinaImage from '../../assets/china.jpeg';
 import japanImage from '../../assets/japan.jpeg';
 
@@ -15,7 +15,7 @@ const OutboundTours = () => {
     { image: indonesiaImage, alt: "Indonesia", title: "Indonesia", tours: "1 Tour", id: 'indonesia' },
     { image: thailandImage, alt: "Thailand", title: "Thailand", tours: "2 Tours", id: 'thailand' },
     { image: cambodiaImage, alt: "Cambodia", title: "Cambodia", tours: "1 Tour", id: 'cambodia' },
-    { image: europeImage, alt: "Colours Of Europe", title: "Colours Of Europe", tours: "1 Tour", id: 'europe' },
+    { image: IndiaImage, alt: "India", title: "India", tours: "1 Tour", id: 'india' },
     { image: chinaImage, alt: "China", title: "China", tours: "1 Tour", id: 'china' },
     { image: japanImage, alt: "Japan", title: "Japan", tours: "2 Tours", id: 'japan' },
   ];

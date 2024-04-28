@@ -135,8 +135,46 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day : 1 Arrive Kathmandu</li>
-            <li>Day : 2 Flight To Pokhara</li>
+            <li><b>Day 1: Arrival in Delhi :-</b> 
+Arrive in Delhi, the capital city of India.
+Check into your hotel and relax after your journey.
+Optionally, explore local markets like Chandni Chowk or visit historical sites like Red Fort or Humayun's Tomb.</li>
+            <li><b>Day 2: Delhi Sightseeing :-</b> 
+Visit India Gate, Rashtrapati Bhavan, and Parliament House.
+Explore the vibrant markets of Connaught Place and Janpath.
+Visit the Lotus Temple and Qutub Minar.</li> 
+            <li><b> Day 3: Delhi to Agra :-</b> 
+Travel to Agra, home to the iconic Taj Mahal.
+Visit the Taj Mahal, Agra Fort, and Itmad-ud-Daulah's Tomb.
+Explore local markets for handicrafts and marble artifacts.</li> 
+            <li><b> Day 4: Agra to Jaipur (via Fatehpur Sikri) :-</b> 
+En route to Jaipur, visit Fatehpur Sikri, a UNESCO World Heritage site.
+Arrive in Jaipur, known as the "Pink City."
+Visit Amber Fort, City Palace, Jantar Mantar, and Hawa Mahal.</li> 
+            <li><b> Day 5: Jaipur Sightseeing :-</b> 
+Explore Jaipur's local markets for handicrafts and textiles.
+Visit Jal Mahal, Albert Hall Museum, and Nahargarh Fort.
+Experience traditional Rajasthani cuisine at a local restaurant.</li> 
+            <li><b>Day 6: Jaipur to Udaipur :-</b> 
+Travel to Udaipur, often called the "City of Lakes."
+Visit the City Palace, Jagdish Temple, and Saheliyon ki Bari.
+Enjoy a boat ride on Lake Pichola, visiting Jag Mandir and the Lake Palace.</li> 
+            <li><b>Day 7: Udaipur Sightseeing :-</b> 
+Explore the art and culture of Udaipur at Bagore ki Haveli and Shilpgram.
+Visit the Monsoon Palace for panoramic views of the city.
+Relax in the evening by the lakeside or attend a cultural show.</li> 
+            <li><b> Day 8: Udaipur to Mumbai :-</b> 
+Fly to Mumbai, India's financial and entertainment capital.
+Visit Gateway of India, Marine Drive, and Hanging Gardens.
+Explore the bustling markets of Colaba and Fashion Street.</li>
+            <li><b>Day 9: Mumbai Sightseeing :-</b> 
+Visit Elephanta Caves or explore Sanjay Gandhi National Park (optional).
+Discover Mumbai's history at Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly Prince of Wales Museum).
+Enjoy an evening walk at Juhu Beach or Marine Drive.</li>
+            <li><b>Day 10: Mumbai Departure :-</b> 
+Depart from Mumbai, concluding your India tour.
+Optionally, extend your stay to explore more of Mumbai or nearby destinations like Goa or Aurangabad.
+            </li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -171,7 +209,7 @@ const  EXCLUDED = () => {
  );
 };
 
-const Europe = () => {
+const India = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
@@ -182,19 +220,9 @@ const Europe = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Colours of Europe</h1>
+        <h1 className="text-3xl font-bold mb-2">India</h1>
         <p className="mb-4">
-        Europe, often referred to as the birthplace of Western civilization, is a continent rich in history, culture, and diversity. Spanning across numerous countries, each with its own unique character and attractions, Europe offers a wide range of experiences for travelers.
-
-One of the defining features of Europe is its historical landmarks and architectural marvels. From ancient Roman ruins like the Colosseum in Rome and the Acropolis in Athens to medieval castles and cathedrals such as Neuschwanstein Castle in Germany and Notre Dame Cathedral in Paris, Europe is a treasure trove of historical sites that showcase centuries of art, architecture, and heritage.
-
-Europe's cities are renowned for their cultural vibrancy and cosmopolitan atmosphere. Paris, the "City of Light," is synonymous with art, fashion, and romance, boasting iconic landmarks like the Eiffel Tower and the Louvre Museum. London, a melting pot of cultures, offers a blend of history, modernity, and theater with attractions like Buckingham Palace and the West End.
-
-Europe's culinary scene is as diverse as its landscapes. From French haute cuisine to Italian pasta and Spanish tapas, each region offers its own gastronomic delights and traditional dishes. Local markets, food festivals, and Michelin-starred restaurants contribute to Europe's reputation as a food lover's paradise.
-
-Cultural diversity is another hallmark of Europe. With dozens of languages, traditions, and customs, the continent celebrates its multiculturalism through festivals, music, dance, and art. From the flamenco of Spain to the opera of Austria and the festivals of Germany, Europe's cultural heritage is alive and vibrant.
-
-Travelers to Europe can also enjoy a variety of activities, including outdoor adventures like hiking in the Alps, sailing in the Mediterranean, or cycling along scenic routes. Museums, galleries, theaters, and music festivals offer opportunities for cultural immersion and entertainment.
+        India, a land of diverse cultures and traditions, is a captivating tapestry woven with ancient history, architectural marvels, and natural wonders. From the majestic Himalayas to the tranquil backwaters of Kerala, India's landscapes are as varied as its people. Rich in heritage, India's historical monuments like the Taj Mahal, Red Fort, and Ajanta-Ellora caves narrate tales of bygone eras. Spiritual seekers find solace in holy cities like Varanasi and Bodh Gaya, while wildlife enthusiasts explore the jungles of Ranthambore and Kaziranga. The aroma of spices and flavors of Indian cuisine, from delectable curries to mouthwatering street food, delight the senses. Vibrant festivals like Diwali and Holi paint the country in a riot of colors, showcasing India's unity amid diversity. With modern advancements in technology and a welcoming hospitality culture, India offers a unique blend of tradition and progress, making it a truly incredible destination.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -208,5 +236,5 @@ Travelers to Europe can also enjoy a variety of activities, including outdoor ad
     </div>
   );
 };
-export default Europe
+export default India
 

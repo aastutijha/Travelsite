@@ -135,18 +135,34 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Bangkok</li>
-            <li>Day 2: Bangkok City Tour</li>
-            <li>Day 3: Bangkok to Ayutthaya</li>
-            <li>Day 4: Ayutthaya to Chiang Mai</li>
-            <li>Day 5: Chiang Mai Elephant Sanctuary</li>
-            <li>Day 6: Chiang Mai to Phuket</li>
-            <li>Day 7: Phuket Island Tour</li>
-            <li>Day 8: Phuket to Krabi</li>
-            <li>Day 9: Krabi Island-Hopping Tour</li>
-            <li>Day 10: Krabi to Koh Samui</li>
-            <li>Day 11: Koh Samui Island Tour</li>
-            <li>Day 12: Koh Samui to Bangkok</li>
+            <li><b>Day 1: Arrival in Bangkok :-</b>
+Arrive at Suvarnabhumi Airport in Bangkok and transfer to your hotel.
+Explore the vibrant streets of Bangkok, visit local markets like Chatuchak Weekend Market, and try delicious Thai street food.</li>
+            <li><b>Day 2: Bangkok City Tour :-</b>
+Visit the Grand Palace and Wat Phra Kaew (Temple of the Emerald Buddha), iconic landmarks of Bangkok.
+Explore Wat Pho, home to the impressive Reclining Buddha statue and renowned Thai massage school.
+Take a boat tour along the Chao Phraya River, passing by historical sites and temples.</li>
+            <li><b>Day 3: Ayutthaya Day Trip :-</b>
+Take a day trip to Ayutthaya, a UNESCO World Heritage Site known for its ancient temples and ruins.
+Visit Wat Mahathat, Wat Phra Si Sanphet, and other significant historical sites.
+Learn about Thailand's rich history and cultural heritage during the Ayutthaya period.</li>
+            <li><b>Day 4: Flight to Chiang Mai :-</b>
+Fly to Chiang Mai, a city known for its rich Lanna culture and picturesque surroundings.
+Visit Doi Suthep Temple, located on a mountain with panoramic views of Chiang Mai.
+Explore the vibrant Night Bazaar for shopping, local crafts, and street food.</li>
+            <li><b>Day 5: Chiang Mai Cultural Experience :-</b>
+Visit an elephant sanctuary for an ethical and educational elephant encounter.
+Explore the ancient city of Wiang Kum Kam, showcasing ruins and historical sites.
+Participate in a traditional Thai cooking class to learn how to prepare authentic Thai dishes.</li>
+            <li><b>Day 6: Flight to Phuket :-</b>
+Fly to Phuket, a tropical paradise known for its stunning beaches and vibrant nightlife.
+Relax on the beaches of Patong, Karon, or Kata and enjoy water activities like snorkeling or diving.
+Explore Phuket Old Town for its Sino-Portuguese architecture, markets, and cultural attractions.</li>
+            <li><b>Day 7: Phuket Island Tour :-</b>
+
+Take a day trip to Phi Phi Islands for snorkeling, swimming, and exploring the stunning landscapes.
+Visit Phang Nga Bay to see James Bond Island and enjoy a scenic boat tour of the limestone karsts.
+Relax and enjoy the sunset at Promthep Cape before departing from Phuket.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

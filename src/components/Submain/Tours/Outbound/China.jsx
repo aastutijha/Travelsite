@@ -132,18 +132,45 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Beijing</li>
-            <li>Day 2: Beijing City Tour</li>
-            <li>Day 3: Beijing to Xi'an</li>
-            <li>Day 4: Xi'an City Tour</li>
-            <li>Day 5: Xi'an to Guilin</li>
-            <li>Day 6: Guilin to Yangshuo</li>
-            <li>Day 7: Yangshuo to Chengdu</li>
-            <li>Day 8: Chengdu City Tour</li>
-            <li>Day 9: Chengdu to Shanghai</li>
-            <li>Day 10: Shanghai City Tour</li>
-            <li>Day 11: Shanghai to Suzhou</li>
-            <li>Day 12: Departure from Shanghai</li>
+            <li><b>Day 1: Arrival in Beijing :-</b>
+Arrive at Beijing Capital International Airport and transfer to your hotel.
+Rest and acclimate to the local time zone.
+Depending on your arrival time, you may explore nearby attractions like Wangfujing Street or enjoy a welcome dinner.</li>
+            <li><b>Day 2: Beijing - Forbidden City and Tiananmen Square :-</b>
+Visit Tiananmen Square, one of the world's largest public squares.
+Explore the Forbidden City, a UNESCO World Heritage Site and the former imperial palace of China's emperors.
+Optional: Visit Jingshan Park for panoramic views of the Forbidden City.</li>
+            <li><b>Day 3: Beijing - Great Wall of China :-</b>
+Full-day excursion to the Great Wall of China at Mutianyu or Badaling section.
+Hike along the ancient walls, marveling at the stunning landscapes and historical significance.
+Visit the Ming Tombs or stop at a local village for a cultural experience.</li>
+            <li><b>Day 4: Beijing - Temple of Heaven and Hutong Tour :-</b>
+Visit the Temple of Heaven, an iconic symbol of Beijing's imperial past.
+Experience a traditional rickshaw tour through Beijing's historic Hutongs (alleys) to learn about local culture and lifestyle.
+Explore Nanluoguxiang, a lively area with shops, cafes, and traditional architecture.</li>
+            <li><b>Day 5: Beijing to Xi'an :-</b>
+Fly or take a high-speed train to Xi'an, an ancient capital of China.
+Visit the Ancient City Wall of Xi'an, one of the best-preserved city walls in China.
+Explore the Muslim Quarter and try local delicacies like Xi'an's famous dumplings (Jiaozi).</li>
+            <li><b>Day 6: Xi'an - Terracotta Warriors and Big Wild Goose Pagoda :-</b>
+Visit the UNESCO-listed Terracotta Warriors and Horses Museum, marveling at the ancient clay army.
+Explore the Big Wild Goose Pagoda, a Buddhist landmark with cultural relics and beautiful surroundings.
+Optional: Attend a Tang Dynasty Dinner Show for traditional music and dance performances.</li>
+            <li><b>Day 7: Xi'an to Shanghai :-</b>
+Fly or take a high-speed train to Shanghai, China's modern metropolis.
+Explore the Bund, a historic waterfront area with colonial-era buildings and skyline views.
+Visit Yu Garden and Old Town for traditional architecture and shopping.</li>
+            <li><b>Day 8: Shanghai - City Highlights :-</b>
+Visit the Shanghai Museum to explore Chinese art, history, and culture.
+Explore the French Concession for a blend of historic charm and trendy cafes.
+Optional: Take a Huangpu River cruise for panoramic views of Shanghai's skyline.</li>
+            <li><b>Day 9: Shanghai - Day Trip to Suzhou :-</b>
+Take a day trip to Suzhou, known for its classical gardens and canals.
+Visit the Humble Administrator's Garden, a UNESCO World Heritage Site.
+Explore Pingjiang Road and Suzhou Silk Museum for cultural insights.</li>
+            <li><b>Day 10: Departure from Shanghai :-</b>
+Depending on your flight schedule, you may have time for last-minute shopping or sightseeing.
+Transfer to Shanghai Pudong International Airport for your departure.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

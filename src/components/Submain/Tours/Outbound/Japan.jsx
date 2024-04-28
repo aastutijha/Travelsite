@@ -135,11 +135,45 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: ARRIVAL IN OSAKA, JAPAN</li>
-            <li>Day 2: HALF DAY CITY TOUR, TRANSFER TO NARITA AT EVENING</li>
-            <li>Day 3: NARITA FULL DAY CITY TOUR WITH SAWARA, SAKAE & KOZAKI</li>
-            <li>Day 4: NARITA TO TOKYO BY TRAIN, TOKYO HALF DAY CITY TOUR</li>
-            <li>Day 5: HALF DAY FREE FOR SHOPPING, EVENING DEPARTURE</li>
+            <li><b>Day 1: Arrival in Tokyo :-</b>
+Arrive at Tokyo Narita or Haneda International Airport and transfer to your hotel.
+Rest and acclimate to the local time zone.
+Depending on your arrival time, you may explore nearby areas like Shibuya or Shinjuku.</li>
+            <li><b>Day 2: Tokyo - Imperial Palace and Asakusa :-</b>
+Visit the Imperial Palace East Gardens, a tranquil oasis in the heart of Tokyo.
+Explore Asakusa district, including Senso-ji Temple, Nakamise Shopping Street, and Asakusa Shrine.
+Enjoy a river cruise on the Sumida River for scenic views of Tokyo Skytree and bridges.</li>
+            <li><b>Day 3: Tokyo - Tsukiji Market and Meiji Shrine :-</b>
+Visit Tsukiji Outer Market for fresh seafood, sushi breakfast, and culinary delights.
+Explore Meiji Shrine and Yoyogi Park for a peaceful retreat in the bustling city.
+Discover Harajuku district for trendy shops, Takeshita Street, and cosplay culture.</li>
+            <li><b>Day 4: Tokyo to Kyoto :-</b>
+Travel to Kyoto by Shinkansen (bullet train), experiencing Japan's efficient rail system.
+Visit Fushimi Inari Taisha, famous for its thousands of vermilion torii gates.
+Explore Gion district, known for geisha culture, traditional tea houses, and historic streets.</li>
+            <li><b>Day 5: Kyoto - Arashiyama and Kinkaku-ji :-</b>
+Explore Arashiyama Bamboo Grove and Togetsukyo Bridge for scenic views.
+Visit Tenryu-ji Temple and its beautiful garden, a UNESCO World Heritage Site.
+Discover Kinkaku-ji (Golden Pavilion) and its stunning reflection on the pond.</li>
+<li><b>Day 6: Kyoto - Nijo Castle and Philosopher's Path :-</b>
+Visit Nijo Castle, known for its beautiful architecture and historic significance.
+Stroll along the Philosopher's Path, lined with cherry blossoms in spring and colorful foliage in autumn.
+Explore Ginkaku-ji (Silver Pavilion) and nearby tea houses.</li>
+<li><b>Day 7: Kyoto to Hiroshima and Miyajima :-</b>
+Travel to Hiroshima by train and visit the Peace Memorial Park and Museum.
+Take a ferry to Miyajima Island, known for Itsukushima Shrine and iconic torii gate.
+Explore the island's temples, hiking trails, and local delicacies like Hiroshima-style okonomiyaki.</li>
+<li><b>Day 8: Hiroshima to Osaka :-</b>
+Travel to Osaka, known for its vibrant food scene and modern attractions.
+Visit Osaka Castle and its museum for a glimpse into Japan's history.
+Explore Dotonbori district for street food, neon lights, and entertainment.</li>
+<li><b>Day 9: Osaka - Day Trip to Nara :-</b>
+Take a day trip to Nara, famous for its ancient temples and friendly deer.
+Visit Todai-ji Temple, housing the Great Buddha statue, and Nara Park.
+Explore Kasuga Taisha Shrine and Naramachi district for traditional atmosphere.</li>
+<li><b>Day 10: Departure from Osaka :-</b>
+Depending on your flight schedule, you may have time for last-minute shopping or sightseeing.
+Transfer to Kansai International Airport for your departure.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

@@ -137,20 +137,37 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Jakarta</li>
-            <li>Day 2: Jakarta City Tour</li>
-            <li>Day 3: Jakarta to Yogyakarta</li>
-            <li>Day 4: Yogyakarta City Tour</li>
-            <li>Day 5: Yogyakarta to Mount Bromo</li>
-            <li>Day 6: Mount Bromo Sunrise Tour</li>
-            <li>Day 7: Mount Bromo to Bali</li>
-            <li>Day 8: Bali Cultural and Sightseeing Tour</li>
-            <li>Day 9: Bali Beach Day and Water Activities</li>
-            <li>Day 10: Bali Highlands and Volcano Tour</li>
-            <li>Day 11: Bali to Gili Islands</li>
-            <li>Day 12: Gili Islands Relaxation and Water Sports</li>
-            <li>Day 13: Gili Islands to Lombok</li>
-            <li>Day 14: Departure from Lombok</li>
+            <li><b>Day 1: Arrival in Bali :-</b>
+Arrive at Ngurah Rai International Airport in Bali and transfer to your hotel in Kuta or Seminyak.
+Spend the day relaxing on the beach or exploring the local markets and eateries.</li>
+            <li><b>Day 2: Ubud Cultural Tour :-</b>
+
+Visit Ubud, known for its rich cultural heritage and lush landscapes.
+Explore the Ubud Monkey Forest, a sacred sanctuary with playful monkeys and ancient temples.
+Visit traditional art villages like Celuk (silver jewelry), Batuan (paintings), and Mas (wood carvings).
+Enjoy a traditional Balinese dance performance in the evening.</li>
+            <li><b>Day 3: Bali Waterfalls and Rice Terraces :-</b>
+
+Explore Bali's natural beauty with a tour to Tegenungan Waterfall for a refreshing dip.
+Visit the stunning Tegalalang Rice Terraces and learn about traditional Balinese farming practices.
+Optional: Visit the Goa Gajah (Elephant Cave) or Tirta Empul Temple for spiritual experiences.</li>
+            <li><b>Day 4: Nusa Penida Day Trip :-</b>
+
+Take a day trip to Nusa Penida, a picturesque island off the coast of Bali.
+Visit Kelingking Beach for breathtaking views and photo opportunities.
+Explore Broken Beach and Angel's Billabong for natural rock formations and clear waters.
+Relax at Crystal Bay Beach before returning to Bali in the evening.</li>
+            <li><b>Day 5: Jakarta City Tour :-</b>
+Fly to Jakarta, the capital city of Indonesia, and check into your hotel.
+Explore Jakarta's historical sites like the National Monument (Monas), Jakarta Old Town (Kota Tua), and Istiqlal Mosque.
+Visit museums such as the National Museum and Museum Bank Indonesia to learn about Indonesian history and culture.</li>
+            <li><b>Day 6: Shopping and Culinary Experience :-</b>
+Spend the day shopping at Jakarta's vibrant markets like Pasar Baru and Tanah Abang.
+Explore local culinary delights at street food stalls or dine at trendy restaurants offering Indonesian cuisine.
+Optional: Visit Jakarta's modern attractions like Taman Mini Indonesia Indah or Ancol Dreamland for family-friendly entertainment.</li>
+            <li><b>Day 7: Departure from Jakarta :-</b>
+Depending on your flight schedule, explore any remaining attractions or enjoy leisure time at your hotel.
+Transfer to Soekarno-Hatta International Airport for your departure flight.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

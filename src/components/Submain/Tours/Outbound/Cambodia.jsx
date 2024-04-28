@@ -135,13 +135,32 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival Phnom Penh Penh</li>
-            <li>Day 2: Phnom Penh</li>
-            <li>Day 3: PHNOM PENH TO HOCHIMINH BY PUBLIC BUS ( NO GUIDE)</li>
-            <li>Day 4: HO CHI MINH – MEKONG DELTA - HCMC SIC WITH LUNCH</li>
-            <li>Day 5: HO CHI MINH – CITY TOUR - CUCHI – HCM SIC WITH LUNCH</li>
-            <li>Day 6: HO CHI MINH / FREE DAY FOR SHOPPING (B)</li>
-            <li>Day 7: SAI GON DEPARTURE WITHOUT GUIDE (B)</li>
+            <li><b>Day 1: Arrival in Siem Reap :-</b>
+Arrive at Siem Reap International Airport and transfer to your hotel.
+Visit the Angkor National Museum to learn about Khmer history, art, and culture.
+Explore the vibrant Pub Street area for dinner and evening entertainment.</li>
+            <li><b>Day 2: Angkor Archaeological Park :-</b>
+Full-day exploration of the Angkor Archaeological Park, a UNESCO World Heritage Site.
+Visit Angkor Wat, the largest religious monument in the world, known for its stunning architecture and intricate carvings.
+Explore Bayon Temple with its iconic stone faces and Ta Prohm Temple, famous for its tree roots.</li>
+            <li><b>Day 3: Siem Reap Countryside and Floating Village :-</b>
+Take a guided tour of the Siem Reap countryside, visiting local villages and experiencing rural Cambodian life.
+Visit a floating village on Tonle Sap Lake, such as Kampong Phluk or Chong Khneas, to see stilt houses and floating markets.</li>
+            <li><b>Day 4: Travel to Battambang :-</b>
+Travel by road to Battambang, a charming riverside town known for its French colonial architecture and cultural heritage.
+Visit Phare Ponleu Selpak, an NGO supporting Cambodian youth through arts and education.
+Explore the lively Battambang Night Market for local food and handicrafts.</li>
+            <li><b>Day 5: Battambang Cultural Tour :-</b>
+Discover Battambang's cultural sites, including the historic Battambang Provincial Museum and Wat Ek Phnom temple.
+Take a ride on the Bamboo Train (Norry) for a unique railway experience.
+Visit local workshops producing rice paper, pottery, and traditional Khmer textiles.</li>
+            <li><b>Day 6: Phnom Penh City Tour :-</b>
+Travel to Phnom Penh, the capital city of Cambodia.
+Visit the Royal Palace, Silver Pagoda, and National Museum to explore Khmer art, history, and culture.
+Reflect on Cambodia's history at the Tuol Sleng Genocide Museum (S-21) and the Killing Fields of Choeung Ek.</li>
+            <li><b>Day 7: Departure from Phnom Penh :-</b>
+Depending on your flight schedule, you may have time for additional sightseeing or shopping in Phnom Penh.
+Transfer to Phnom Penh International Airport for your departure.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

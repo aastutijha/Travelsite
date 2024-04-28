@@ -135,11 +135,34 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrive Dubai</li>
-            <li>Day 2: Half Day Dubai City Tour, Evening Dhow Cruise Dinner</li>
-            <li>Day 3: Desert Safari with BBQ Dinner & Belly Dance shows</li>
-            <li>Day 4: Day Free & Easy</li>
-            <li>Day 5: Departure</li>
+            <li><b>Day 1: Arrival in Dubai :-</b>
+Arrive in Dubai and check into your hotel.
+Spend the afternoon relaxing or exploring the nearby areas.</li>
+            <li><b>Day 2: Dubai City Tour :-</b>
+Start your day with a visit to the iconic Burj Khalifa, the tallest building in the world.
+Explore the Dubai Mall, a paradise for shopping enthusiasts, and enjoy attractions like the Dubai Aquarium and Underwater Zoo.
+Visit the Dubai Fountain in the evening for a mesmerizing water and light show.</li>
+            <li><b>Day 3: Desert Safari Adventure :-</b>
+Embark on an exciting desert safari adventure with dune bashing, camel rides, and sandboarding.
+Experience traditional Bedouin culture with a desert camp dinner featuring live entertainment like belly dancing and Tanoura shows.</li>
+            <li><b>Day 4: Abu Dhabi Day Trip :-</b>
+Take a day trip to Abu Dhabi, the capital city of the UAE.
+Visit the Sheikh Zayed Grand Mosque, a stunning architectural masterpiece.
+Explore the Louvre Abu Dhabi or the Ferrari World theme park for a fun-filled day.</li>
+            <li><b>Day 5: Dubai Marina and Palm Jumeirah :-</b>
+Spend the day exploring Dubai Marina, known for its waterfront promenade, luxury yachts, and upscale dining options.
+Visit the Palm Jumeirah, an artificial archipelago featuring luxury resorts like Atlantis, The Palm.
+Relax on Jumeirah Beach or indulge in water sports activities.</li>
+            <li><b>Day 6: Cultural and Historical Tour :-</b>
+Discover Dubai's heritage and culture at the Dubai Museum in Al Fahidi Fort.
+Explore the Al Bastakiya Quarter and its narrow lanes filled with art galleries and traditional wind-tower architecture.
+Take an abra (traditional boat) ride across Dubai Creek to explore the spice and gold souks.</li>
+            <li><b>Day 7: Free Day or Optional Activities :-</b>
+Enjoy a free day to relax, shop, or explore any attractions you missed.
+Optional activities include a visit to IMG Worlds of Adventure, Ski Dubai at Mall of the Emirates, or a dinner cruise on Dubai Marina.</li>
+            <li><b>Day 8: Departure from Dubai :-</b>
+Check out of your hotel and transfer to the airport for your departure flight.</li>
+            
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
