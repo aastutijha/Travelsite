@@ -1,5 +1,54 @@
 import React from 'react';
 import './tour.css';
+const TripWeatherForecast = () => {
+  return (
+    <div className="trip-weather-forecast">
+      <div className="header">
+        <h2>Trip Weather Forecast</h2>
+      </div>
+      <div className="location">
+        <h3>CAMBODIA</h3>
+        <div className="current-weather">
+          <span className="temperature">38°C</span>
+          <span className="condition">Mostly sunny</span>
+          <span className="icon">☀️</span>
+        </div>
+      </div>
+      <div className="hourly-forecast">
+        <div className="hour">
+          <span className="time">12:00 H</span>
+          <span className="icon">☀️</span>
+          <span className="temperature">30°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">13:00 H</span>
+          <span className="icon">🌤</span>
+          <span className="temperature">29°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">14:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">27°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">15:00 H</span>
+          <span className="icon">⛅</span>
+          <span className="temperature">25°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">16:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">20°C</span>
+        </div>
+        <div className="hour">
+          <span className="time">17:00 H</span>
+          <span className="icon">☁️</span>
+          <span className="temperature">18°C</span>
+        </div>
+      </div>
+    </div>
+  );
+};
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -153,6 +202,7 @@ Cambodia's people are known for their warmth, hospitality, and resilience, makin
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <TripWeatherForecast />
             <TourRate />
             <AdditionalIncluded />
             <EXCLUDED />
