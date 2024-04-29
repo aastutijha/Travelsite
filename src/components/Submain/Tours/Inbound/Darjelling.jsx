@@ -1,5 +1,6 @@
 import React from 'react';
 import './everest.css';
+import chitwanImage from '../../../../assets/safarii.jpeg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,12 +87,42 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day : 1 Visit Darjeeling</li>
-            <li>Day : 2 Darjeeling - Manay Bhanjang ( 2134m. 1 h 30 mint) by car - Tonglu (3070m)</li>
-            <li>Day : 3 Tonglu - Garibas (2620m) in 4 hours</li>
-            <li>Day : 4 Garibas - Sandakphu (3640m) in 4 hours</li>
-            <li>Day : 5 Sandakphu - Phalut (3600m) in 6 hours</li>
-            <li>Day : 6 Phalut - Raman (2560m) in 5 hours</li>
+            <li><b>Day 1: Arrival in Darjeeling :-</b>
+Arrive at Bagdogra Airport or New Jalpaiguri Railway Station.
+Transfer to your hotel in Darjeeling.
+Spend the evening exploring the local markets and trying some Darjeeling tea.</li>
+            <li><b>Day 2: Darjeeling Sightseeing :-</b>
+Early morning visit to Tiger Hill to witness the sunrise over the Himalayas.
+Visit Batasia Loop, Ghoom Monastery, and War Memorial.
+Explore the Himalayan Mountaineering Institute and the Padmaja Naidu Himalayan Zoological Park.
+Visit the Peace Pagoda and enjoy panoramic views of Darjeeling.</li>
+            <li><b>Day 3: Excursion to Mirik and Pashupati Market :-</b>
+Drive to Mirik and visit Sumendu Lake, Bokar Monastery, and Tea Gardens.
+Explore Pashupati Market on the Nepal border for shopping and local experiences.
+Return to Darjeeling in the evening.</li>
+            <li><b>Day 4: Transfer to Gangtok :-</b>
+Check out from your hotel in Darjeeling.
+Drive to Gangtok, the capital of Sikkim.
+Check into your hotel and rest.
+Spend the evening exploring MG Marg and trying local cuisine.</li>
+            <li><b>Day 5: Gangtok Sightseeing :-</b>
+Visit Tashi Viewpoint for panoramic views of the Himalayas.
+Explore Hanuman Tok and Ganesh Tok.
+Visit Enchey Monastery and Do Drul Chorten Stupa.
+Explore the Namgyal Institute of Tibetology and Flower Exhibition Centre.</li>
+            <li><b>Day 6: Excursion to Tsomgo Lake and Baba Mandir :-</b>
+Full-day excursion to Tsomgo Lake, a glacial lake at an altitude of 12,400 feet.
+Visit Baba Harbhajan Singh Mandir, a sacred shrine near the Indo-China border.
+Enjoy yak rides and local delicacies near Tsomgo Lake.
+Return to Gangtok in the evening.</li>
+<li><b>Day 7: Day Trip to Nathula Pass and Changu Lake :-</b>
+Optional day trip to Nathula Pass, subject to permits and weather conditions.
+Visit Changu Lake (also known as Tsomgo Lake) if Nathula Pass is closed.
+Explore the surrounding areas and enjoy the natural beauty.
+Return to Gangtok and relax in the evening.</li>
+<li><b>Day 8: Departure :-</b>
+Check out from your hotel in Gangtok.
+Transfer to Bagdogra Airport or New Jalpaiguri Railway Station for your onward journey.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -130,9 +161,9 @@ const Darjelling = () => {
     <div>
        <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={chitwanImage}
+            alt="Chitwan Safarii"
             className="w-full h-auto"
           />
         </div>

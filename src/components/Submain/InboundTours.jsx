@@ -12,13 +12,13 @@ import chitwanImage from '../../assets/chitwan.jpg';
 
 const InboundTours = () => {
   const tourCards = [
-    { id: 'everest', image: everestImage, alt: 'Mount Everest, Nepal', title: 'Best of Everest Base Camp', duration: '18N/19D', rating: '&#9733;★★★★' },
-    { id: 'illam', image: IllamImage, alt: 'Illam Tea Garden, Nepal', title: 'Illam Tea Garden', duration: '10N/11D', rating: '&#9733;★★★' },
-    { id: 'langtang', image: langtangImage, alt: 'Langtang Trek, Nepal', title: 'Langtang Trek', duration: '20N/21D', rating: '&#9733;★★' },
-    { id: 'lumbini', image: lumbiniImage, alt: 'Lumbini, Nepal', title: 'Lumbini Tour', duration: '8N/9D', rating: '&#9733;★★' },
-    { id: 'darjeeling', image: darjeelingImage, alt: 'Darjeeling, India', title: 'Darjeeling Sikkim Tour', duration: '11N/12D', rating: '&#9733;★★' },
-    { id: 'rara', image: raralakeImage, alt: 'Rara Lake, Nepal', title: 'Rara Lake Trek', duration: '6N/7D', rating: '&#9733;★★★' },
-    { id: 'chitwan', image: chitwanImage, alt: 'Chitwan, Nepal', title: 'Chitwan Safari', duration: '5N/6D', rating: '&#9733;★' },
+    { id: 'everest', image: everestImage, alt: 'Mount Everest, Nepal', title: 'Best of Everest Base Camp', duration: '14N/15D', rating: '&#9733;★★★★' },
+    { id: 'illam', image: IllamImage, alt: 'Illam Tea Garden, Nepal', title: 'Illam Tea Garden', duration: '5N/6D', rating: '&#9733;★★★' },
+    { id: 'langtang', image: langtangImage, alt: 'Langtang Trek, Nepal', title: 'Langtang Trek', duration: '7N/8D', rating: '&#9733;★★' },
+    { id: 'lumbini', image: lumbiniImage, alt: 'Lumbini, Nepal', title: 'Lumbini Tour', duration: '4N/5D', rating: '&#9733;★★' },
+    { id: 'darjeeling', image: darjeelingImage, alt: 'Darjeeling, India', title: 'Darjeeling Sikkim Tour', duration: '7N/8D', rating: '&#9733;★★' },
+    { id: 'rara', image: raralakeImage, alt: 'Rara Lake, Nepal', title: 'Rara Lake Trek', duration: '5N/6D', rating: '&#9733;★★★' },
+    { id: 'chitwan', image: chitwanImage, alt: 'Chitwan, Nepal', title: 'Chitwan Safari', duration: '3N/4D', rating: '&#9733;★' },
   ];
 
   return (
