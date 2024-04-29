@@ -4,7 +4,7 @@ import underwaterImage from '../../assets/underwater.jpg';
 import londonImage from '../../assets/london.jpg';
 import australiaImage from '../../assets/australia.jpg';
 import parisImage from '../../assets/paris.jpg';
-import tokyoImage from '../../assets/tokyo.jpg';
+import tokyoImage from '../../assets/tokyoo.jpg';
 import CoxsBazarSea from '../Submain/Tours/Popular Outbound/CoxsBazarSea';
 import London from '../Submain/Tours/Popular Outbound/London';
 import Australia from '../Submain/Tours/Popular Outbound/Australia';

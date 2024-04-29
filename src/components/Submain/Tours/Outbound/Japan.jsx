@@ -1,5 +1,6 @@
 import React from 'react';
 import './tour.css';
+import japanImage from '../../../../assets/tokyo.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -213,9 +214,9 @@ const Japan = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={japanImage}
+            alt="Japan"
             className="w-full h-auto"
           />
         </div>
