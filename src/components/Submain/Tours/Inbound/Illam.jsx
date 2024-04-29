@@ -1,5 +1,6 @@
 import React from 'react';
 import './everest.css';
+import illamImage from '../../../../assets/teagarden.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -196,9 +197,9 @@ const Illam = () => {
     <div>
        <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={illamImage}
+            alt="Illam Tea Garden"
             className="w-full h-auto"
           />
         </div>

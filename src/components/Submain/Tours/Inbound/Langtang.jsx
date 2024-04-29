@@ -1,5 +1,6 @@
 import React from 'react';
 import './everest.css';
+import langtangImage from '../../../../assets/langtangvalley.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -210,11 +211,11 @@ const  EXCLUDED = () => {
      <div>
         <div className="flex flex-col items-center">
          <div className="mb-4">
-           <img
-             src="../../assets/everst.jpg"
-             alt="Everest Base Camp Trek"
-             className="w-full h-auto"
-           />
+         <img
+            src={langtangImage}
+            alt="Langtang Valley Trek"
+            className="w-full h-auto"
+          />
          </div>
          <h1 className="text-3xl font-bold mb-2">Langtang Trek</h1>
          <p className="mb-4">

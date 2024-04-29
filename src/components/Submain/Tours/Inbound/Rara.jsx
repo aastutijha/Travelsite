@@ -1,5 +1,6 @@
 import React from 'react';
 import './everest.css';
+import raraImage from '../../../../assets/Rara-Lake.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -201,9 +202,9 @@ const Rara = () => {
     <div>
        <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={raraImage}
+            alt="Rara Lake"
             className="w-full h-auto"
           />
         </div>
