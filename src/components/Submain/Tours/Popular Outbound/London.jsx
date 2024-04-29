@@ -1,5 +1,6 @@
 import React from 'react';
 //import './tour.css';
+import londanImage from '../../../../assets/londonn.jpg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,15 +87,29 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in London</li>
-            <li>Day 2: Central London Sightseeing</li>
-            <li>Day 3: Museums and Galleries</li>
-            <li>Day 4: Tower of London and Tower Bridge</li>
-            <li>Day 5: West End and Shopping</li>
-            <li>Day 6: Royal Parks and Palaces</li>
-            <li>Day 7: River Thames Cruise and Greenwich</li>
-            <li>Day 8: Day Trip to Windsor Castle</li>
-            <li>Day 9: Departure</li>
+            <li><b>Day 1: Arrival in London :- </b>Arrive in London and check into your hotel.
+Spend the afternoon exploring the immediate area around your hotel to get acquainted with the surroundings.
+In the evening, take a leisurely stroll along the Thames River, passing iconic landmarks like the London Eye and Big Ben (Elizabeth Tower).</li>
+            <li><b>Day 2: Historic London :-</b>
+Start your day with a visit to the Tower of London, home to the Crown Jewels and steeped in history.
+Afterward, head to the nearby Tower Bridge Exhibition to learn about the bridge's engineering and enjoy panoramic views from the walkways.
+Explore the historic area of Westminster, visiting Westminster Abbey and the Houses of Parliament.
+End the day with a relaxing walk through St. James's Park or Hyde Park, depending on your location.</li>
+            <li><b>Day 3: Cultural Exploration :-</b>
+Begin with a visit to the British Museum, home to a vast collection of art and artifacts from around the world.
+After lunch, head to the National Gallery in Trafalgar Square to admire masterpieces by artists like Van Gogh, Da Vinci, and Rembrandt.
+In the evening, consider catching a West End show in London's famous theatre district.</li>
+            <li><b>Day 4: Royal London :-</b>
+Start your day with a tour of Buckingham Palace, the official residence of the British monarch.
+Explore the nearby Royal Parks, including Green Park and Kensington Gardens.
+Visit Kensington Palace, a historic royal residence with beautiful gardens and exhibitions.
+End the day with a visit to Harrods or another iconic London department store for some shopping.</li>
+            <li><b>Day 5: Modern London and Departure :-</b>
+Spend your last day exploring modern London. Visit the Shard for panoramic city views from the observation deck.
+Explore the vibrant neighborhoods of Soho and Covent Garden, known for their shops, restaurants, and street performers.
+Depending on your flight schedule, you may have time for a visit to the Tate Modern or a Thames River cruise.
+Transfer to the airport for your departure, concluding your memorable trip to London.</li>
+
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -134,9 +149,9 @@ const London = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={londanImage}
+            alt="Londan"
             className="w-full h-auto"
           />
         </div>
@@ -151,9 +166,6 @@ The city's royal connections extend to Buckingham Palace, the official residence
 London's cultural scene is vibrant and diverse, with world-class museums and galleries such as the British Museum, Tate Modern, National Gallery, and Victoria and Albert Museum showcasing art and artifacts from across the globe. The West End district is renowned for its theatres, hosting top-notch productions of musicals, plays, and performances.
 
 London's culinary scene is a melting pot of flavors, offering everything from traditional British fare like fish and chips to international cuisines representing cultures from around the world. Food markets like Borough Market and Camden Market are foodie havens, showcasing a plethora of culinary delights.
-
-For history enthusiasts, London's historic sites such as Westminster Abbey, St. Paul's Cathedral, and the Houses of Parliament offer glimpses into the city's past and architectural grandeur. The iconic London Eye provides panoramic views of the city skyline from its observation capsules.
-
 London's transport network, including the famous red double-decker buses, Underground (Tube), and Thames River cruises, makes navigating the city convenient for tourists, allowing easy access to its many attractions and hidden gems.
         </p>
         <div className="flex justify-center items-center h-screen">

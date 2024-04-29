@@ -1,5 +1,6 @@
 import React from 'react';
 //import './tour.css';
+import tokyoImage from '../../../../assets/tokyooo.jpg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -86,18 +87,51 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Tokyo</li>
-            <li>Day 2: Central Tokyo Exploration</li>
-            <li>Day 3: Tokyo Disney Resort</li>
-            <li>Day 4: Harajuku and Shibuya</li>
-            <li>Day 5: Tsukiji Fish Market and Ginza</li>
-            <li>Day 6: Ueno Park and Museums</li>
-            <li>Day 7: Tokyo Skytree and Sumida River Cruise</li>
-            <li>Day 8: Odaiba Island</li>
-            <li>Day 9: Day Trip to Kamakura</li>
-            <li>Day 10: Akihabara and Electronic District</li>
-            <li>Day 11: Imperial Palace and Marunouchi shopping streets</li>
-            <li>Day 12: Departure from Tokyo</li>
+            <li><b>Day 1: Arrival in Tokyo :-</b>
+Arrive in Tokyo and check into your accommodation.
+Take a leisurely stroll around your neighborhood to get acquainted with the surroundings.
+Enjoy dinner at a local izakaya (Japanese pub) or try some street food.</li>
+            <li><b>Day 2: Tokyo City Exploration :-</b>
+Visit the historic Asakusa district, including Senso-ji Temple and Nakamise Shopping Street.
+Explore the Tokyo Skytree for panoramic city views.
+Spend the evening in Akihabara, known for electronics, anime, and gaming culture.</li>
+            <li><b>Day 3: Harajuku and Shibuya :-</b>
+Visit Meiji Shrine in the morning, located in a peaceful forested area near Harajuku.
+Explore Takeshita Street in Harajuku for quirky fashion and treats.
+Visit Omotesando for upscale shopping and architecture.
+Experience the famous Shibuya Crossing and explore Shibuya Center Street for shopping and dining.</li>
+            <li><b>Day 4: Imperial Palace and Ginza :-</b>
+Visit the Imperial Palace East Gardens for a glimpse of Tokyo's history and gardens.
+Explore the upscale shopping district of Ginza for luxury brands and department stores.
+Visit Kabuki-za Theater for a traditional kabuki performance or opt for a tea ceremony experience.</li>
+            <li><b>Day 5: Ueno Park and Museums :-</b>
+Spend the morning at Ueno Park, visiting attractions like Ueno Zoo, Tokyo National Museum, and Ueno Toshogu Shrine.
+Explore Ameya-Yokocho market for street food and shopping.
+Visit the futuristic Tokyo National Museum of Emerging Science and Innovation (Miraikan) in Odaiba.</li>
+            <li><b>Day 6: Day Trip to Nikko :-</b>
+Take a day trip to Nikko to visit UNESCO World Heritage sites like Toshogu Shrine and Rinno-ji Temple.
+Explore Nikko National Park for nature walks and scenic beauty.
+Return to Tokyo in the evening.</li>
+            <li><b>Day 7: Tokyo Disney Resort :-</b>
+Spend a fun-filled day at Tokyo Disneyland or Tokyo DisneySea (choose based on your preference).
+Enjoy thrilling rides, entertainment, and themed attractions.
+Stay for the evening parade and fireworks show.</li>
+            <li><b>Day 8: Tsukiji Outer Market and Odaiba :-</b>
+Visit Tsukiji Outer Market for fresh seafood breakfast and local snacks.
+Explore Odaiba for attractions like teamLab Borderless (digital art museum), Odaiba Seaside Park, and Palette Town.
+Optional: Visit Oedo Onsen Monogatari for a traditional Japanese hot spring experience.</li>
+            <li><b>Day 9: Tokyo Tower and Roppongi :-</b>
+Visit Tokyo Tower for iconic views and a glimpse of Tokyo's skyline.
+Explore Roppongi Hills for shopping, dining, and Mori Art Museum.
+Enjoy nightlife in Roppongi with its bars, clubs, and entertainment options.</li>
+            <li><b>Day 10: Sumida River Cruise and Tokyo DisneySea :-</b>
+Take a Sumida River cruise for a different perspective of Tokyo's landmarks.
+Visit Tokyo DisneySea for a second day of theme park fun and exploration.
+Enjoy a farewell dinner at a traditional Japanese restaurant.</li>
+            <li><b>Day 11: Departure from Tokyo :-</b>
+Depending on your flight time, explore local markets for last-minute souvenirs.
+Transfer to Haneda or Narita Airport for departure.</li>
+           
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -137,9 +171,9 @@ const Tokyo = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={tokyoImage}
+            alt="Tokyo"
             className="w-full h-auto"
           />
         </div>

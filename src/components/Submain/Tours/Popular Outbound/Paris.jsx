@@ -1,6 +1,6 @@
-
 import React from 'react';
 //import './tour.css';
+import parisImage from '../../../../assets/pariss.jpg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -87,18 +87,26 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Paris</li>
-            <li>Day 2: Paris City Highlights </li>
-            <li>Day 3: Louvre Museum and Tuileries Gardens</li>
-            <li>Day 4: Montmartre and Sacré-Cœur</li>
-            <li>Day 5: Champs-Élysées and Arc de Triomphe</li>
-            <li>Day 6: Palace of Versailles</li>
-            <li>Day 7: Seine River Cruise and Museums</li>
-            <li>Day 8: Latin Quarter and Luxembourg Gardens</li>
-            <li>Day 9: Marais District and Picasso Museum</li>
-            <li>Day 10: Disneyland Paris</li>
-            <li>Day 11: Opera Garnier and Galeries Lafayette</li>
-            <li>Day 12: Departure from Paris</li>
+            <li><b>Day 1: Arrival and Introduction to Paris :-</b>
+Morning: Arrive in Paris and check into your hotel.
+Afternoon: Visit the Eiffel Tower for stunning views of the city. Consider taking a Seine River cruise for a different perspective.
+Evening: Explore the charming streets of Montmartre, visit Sacré-Cœur Basilica, and enjoy dinner at a local bistro.</li>
+            <li><b>Day 2: Cultural Exploration :-</b>
+Morning: Explore the Louvre Museum, home to iconic artworks like the Mona Lisa and Venus de Milo.
+Afternoon: Visit Notre-Dame Cathedral (currently under restoration, check for access) and wander around the Latin Quarter.
+Evening: Take a leisurely walk along the Seine River and enjoy dinner at a riverside restaurant. </li>
+            <li><b>Day 3: Art and Gardens :-</b>
+Morning: Visit Musée d'Orsay to admire Impressionist and Post-Impressionist masterpieces.
+Afternoon: Stroll through the Tuileries Garden and visit Place de la Concorde and Champs-Élysées.
+Evening: Experience a cabaret show at Moulin Rouge or Lido for a memorable night out.</li>
+            <li><b>Day 4: Palace of Versailles Day Trip :-</b>
+Morning: Take a day trip to the Palace of Versailles, exploring its grandeur and gardens.
+Afternoon: Return to Paris and visit the Arc de Triomphe and walk down Champs-Élysées.
+Evening: Enjoy dinner at a classic French brasserie.</li>
+            <li><b>Day 5: Modern Paris and Departure :-</b>
+Morning: Visit the Centre Pompidou for contemporary art and rooftop views.
+Afternoon: Explore the Marais district, including the Picasso Museum and trendy boutiques.
+Evening: Relax at Luxembourg Gardens or enjoy a farewell meal at a Michelin-starred restaurant.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -138,9 +146,9 @@ const Paris = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={parisImage}
+            alt="Paris"
             className="w-full h-auto"
           />
         </div>

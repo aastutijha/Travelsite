@@ -1,5 +1,6 @@
 import React from 'react';
 //import './tour.css';
+import bangladeshImage from '../../../../assets/dhaka.jpg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -135,9 +136,9 @@ const CoxsBazarSea = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={bangladeshImage}
+            alt="Bangladesh"
             className="w-full h-auto"
           />
         </div>

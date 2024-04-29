@@ -8,9 +8,10 @@ const TripWeatherForecast = () => {
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
-        <h3>Langtang</h3>
+        <h3>Everest Base Camp, Khumjung
+</h3>
         <div className="current-weather">
-          <span className="temperature">6°C</span>
+          <span className="temperature">5°C</span>
           <span className="condition">Partly cloudy</span>
           <span className="icon">🌨</span>
         </div>

@@ -19,7 +19,8 @@ body {
 }
 
 .items-center {
-    align-items: left;
+    align-items: center;
+    /* Adjusted from 'left' to 'center' */
 }
 
 .mb-4 {
@@ -32,6 +33,9 @@ body {
 .mb-4 img {
     width: 100%;
     height: auto;
+    /* Adjusted to 'auto' for responsive height */
+    max-height: 800px;
+    /* Adjusted max-height for the image */
 }
 
 

@@ -1,6 +1,6 @@
-
 import React from 'react';
-
+//import './tour.css';
+import australiaImage from '../../../../assets/austr.jpeg';
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
@@ -87,18 +87,70 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Sydney</li>
-            <li>Day 2: Sydney City Tour</li>
-            <li>Day 3: Blue Mountains Day Trip</li>
-            <li>Day 4: Flight to Melbourne</li>
-            <li>Day 5: Melbourne City Tour</li>
-            <li>Day 6: Great Ocean Road Day Trip</li>
-            <li>Day 7: Flight to Cairns</li>
-            <li>Day 8: Great Barrier Reef Experience</li>
-            <li>Day 9: Daintree Rainforest Tour</li>
-            <li>Day 10: Flight to Uluru (Ayers Rock)</li>
-            <li>Day 11: Alice Springs and Outback Experience</li>
-            <li>Day 12: Return to Sydney or Departure</li>
+            <li><b>Day 1: Arrival in Sydney :-</b>
+Arrive in Sydney and check into your accommodation.
+Explore Circular Quay, Sydney Harbour Bridge, and Sydney Opera House.
+Enjoy a leisurely evening walk along the waterfront.</li>
+            <li><b>Day 2: Sydney Exploration :-</b>
+Visit Bondi Beach for a morning walk and beach experience.
+Explore Darling Harbour, including attractions like SEA LIFE Sydney Aquarium and Wild Life Sydney Zoo.
+Optional: Climb the Sydney Harbour Bridge for panoramic views.</li>
+            <li><b>Day 3: Blue Mountains Day Trip :-</b>
+Take a day trip to the Blue Mountains.
+Visit Echo Point for views of the Three Sisters rock formation.
+Explore Scenic World for rides and bushwalks.
+Visit Leura village for shopping and dining.</li>
+            <li><b>Day 4: Sydney to Cairns :-</b>
+Fly from Sydney to Cairns.
+Relax in Cairns Esplanade and explore the Cairns Botanic Gardens.
+Enjoy dinner at a waterfront restaurant overlooking the marina.</li>
+            <li><b>Day 5: Great Barrier Reef :-</b>
+Take a full-day tour to the Great Barrier Reef.
+Snorkel or dive to experience the vibrant marine life and coral reefs.
+Enjoy a reef pontoon experience with activities like underwater observatory and semi-submersible rides.</li>
+            <li><b>Day 6: Cairns to Brisbane :-</b>
+Fly from Cairns to Brisbane.
+Explore South Bank Parklands, including Streets Beach and the Wheel of Brisbane.
+Visit Queensland Museum and Sciencentre.</li>
+            <li><b>Day 7: Brisbane to Gold Coast :-</b>
+Take a day trip to the Gold Coast.
+Visit Surfers Paradise for beach activities and shopping.
+Explore theme parks like Dreamworld, Movie World, or Wet'n'Wild.</li>
+            <li><b>Day 8: Brisbane City Exploration :-</b>
+Explore Brisbane City Hall and King George Square.
+Visit Lone Pine Koala Sanctuary for koala encounters and Australian wildlife.
+Enjoy an evening river cruise along Brisbane River.</li>
+            <li><b>Day 9: Brisbane to Melbourne :-</b>
+Fly from Brisbane to Melbourne.
+Explore Federation Square, National Gallery of Victoria, and Melbourne Cricket Ground (MCG).
+Stroll along the Yarra River and enjoy dinner at one of Melbourne's laneway restaurants.</li>
+            <li><b>Day 10: Melbourne City Tour :-</b>
+Visit Queen Victoria Market for fresh produce and local goods.
+Explore Melbourne's laneways like Degraves Street and Hardware Lane for coffee and street art.
+Optional: Visit Phillip Island for the Penguin Parade.</li>
+            <li><b>Day 11: Melbourne to Adelaide :-</b>
+Fly from Melbourne to Adelaide.
+Explore Adelaide Central Market for gourmet food and local produce.
+Visit Adelaide Botanic Garden and Adelaide Zoo.</li>
+            <li><b>Day 12: Barossa Valley Wine Tour :-</b>
+Take a day trip to Barossa Valley for wine tasting and vineyard tours.
+Enjoy lunch at a winery restaurant.
+Visit Hahndorf, Australia's oldest surviving German settlement.</li>
+<li><b>Day 13: Adelaide to Perth :-</b>
+Fly from Adelaide to Perth.
+Explore Kings Park and Botanic Garden for panoramic city views.
+Visit Fremantle for its historic charm, markets, and waterfront.</li>
+<li><b>Day 14: Rottnest Island Day Trip :-</b>
+Take a ferry to Rottnest Island.
+Enjoy cycling around the island, visit beaches, and spot quokkas.
+Snorkel or swim in the clear waters.</li>
+<li><b>Day 15: Perth City Tour :-</b>
+Explore Perth CBD, including Elizabeth Quay and Perth Cultural Centre.
+Visit Perth Mint and learn about Western Australian gold history.
+Relax at Cottesloe Beach for sunset.</li>
+<li><b>Day 16: Departure :-</b>
+Depending on your flight time, explore more of Perth or do last-minute shopping.
+Transfer to Perth Airport for departure.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
@@ -138,9 +190,9 @@ const Australia = () => {
     <div>
       <div className="flex flex-col items-center">
         <div className="mb-4">
-          <img
-            src="../../assets/everst.jpg"
-            alt="Everest Base Camp Trek"
+        <img
+            src={australiaImage}
+            alt="Australia"
             className="w-full h-auto"
           />
         </div>
