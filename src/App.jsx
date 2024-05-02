@@ -22,6 +22,7 @@ function App() {
     <Main />
     <TripWeatherForecast />
     <SubMain />
+    <ChoiceCard/>
     <InformationBar/>
     <Footer />
     </>
