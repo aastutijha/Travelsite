@@ -8,7 +8,9 @@ const BookingForm = ({ onClose, onSubmit }) => {
     adult: 0,
     children: 0,
     infant: 0,
+    name: '', // Adding name field to formData state
   });
+  const [submitted, setSubmitted] = useState(false); // Track form submission
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,6 +26,7 @@ const BookingForm = ({ onClose, onSubmit }) => {
       return;
     }
     onSubmit(formData);
+    setSubmitted(true); // Set form submission status to true
   };
 
   const calculateTotalAmount = () => {
@@ -31,77 +34,91 @@ const BookingForm = ({ onClose, onSubmit }) => {
     return 0;
   };
 
+  const ThankYouMessage = () => {
+    return (
+      <div className="thank-you-message">
+        <h2>Thank You!</h2>
+        <p>Dear {formData.name}, your booking has been confirmed.</p>
+      </div>
+    );
+  };
+
   return (
     <div className="booking-form-container">
-      <div className="booking-form">
-        <h2> Book a Tour </h2>
-        <div className="form-group">
-          <label>Tour Date</label>
-          <input
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-          />
+      {submitted ? (
+        <ThankYouMessage />
+      ) : (
+        <div className="booking-form">
+          <h2> Book a Tour </h2>
+         
+          <div className="form-group">
+            <label>Tour Date</label>
+            <input
+              type="date"
+              name="date"
+              value={formData.date}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Destination</label>
+            <input
+              type="text"
+              name="destination"
+              value={formData.destination}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="form-group">
+            <label>Adult</label>
+            <select name="adult" value={formData.adult} onChange={handleChange}>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Children</label>
+            <select
+              name="children"
+              value={formData.children}
+              onChange={handleChange}
+            >
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Infant 0-3 yrs</label>
+            <select name="infant" value={formData.infant} onChange={handleChange}>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              {/* Add more options as needed */}
+            </select>
+          </div>
+          <div className="total-amount">
+            <span>Total Amount:</span>
+            <span>{calculateTotalAmount()}</span>
+          </div>
+          <div className="button-group">
+            <button type="submit" onClick={handleSubmit} className="book-now">
+              Book Now
+            </button>
+            <button className="close-button" onClick={onClose}>
+              Close
+            </button>
+          </div>
         </div>
-        <div className="form-group">
-          <label>Destination</label>
-          <input
-            type="text"
-            name="destination"
-            value={formData.destination}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label>Adult</label>
-          <select name="adult" value={formData.adult} onChange={handleChange}>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        <div className="form-group">
-          <label>Children</label>
-          <select
-            name="children"
-            value={formData.children}
-            onChange={handleChange}
-          >
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        <div className="form-group">
-          <label>Infant 0-3 yrs</label>
-          <select name="infant" value={formData.infant} onChange={handleChange}>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            {/* Add more options as needed */}
-          </select>
-        </div>
-        <div className="total-amount">
-          <span>Total Amount:</span>
-          <span>{calculateTotalAmount()}</span>
-        </div>
-        <div className="button-group">
-          <button type="submit" onClick={handleSubmit} className="book-now">
-            Book Now
-          </button>
-          <button className="close-button" onClick={onClose}>
-          Close
-        </button>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
