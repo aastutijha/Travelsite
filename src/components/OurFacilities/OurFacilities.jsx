@@ -19,6 +19,7 @@ const OurFacilities = () => {
     };
   }, []);
   return (
+     <div className="container" id="facilities">
      <div className="our-facilities-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
         <h1 className="title">Our Facilities</h1>
     <div className="our-facilities">
@@ -62,6 +63,7 @@ const OurFacilities = () => {
         <h3>24/7 Support</h3>
         <p>"Round-the-clock assistance and support to ensure a seamless and worry-free travel experience."</p>
       </div>
+    </div>
     </div>
     </div>
   );

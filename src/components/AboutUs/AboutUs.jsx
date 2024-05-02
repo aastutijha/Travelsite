@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import './AboutUs.css';
 import imgPlaceholder from '../../assets/group.jpg';
@@ -6,7 +7,7 @@ const AboutUs = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="container" id="products">
+    <div className="container" id="aboutus">
       <section className="title">
       <div className="title-wrapper">
         <h1>Who Are We?</h1>
