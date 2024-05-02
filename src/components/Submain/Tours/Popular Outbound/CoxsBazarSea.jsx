@@ -87,16 +87,47 @@ const AdditionalIncluded = () => {
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
-            <li>Day 1: Arrival in Dhaka</li>
-            <li>Day 2: Dhaka City Tour</li>
-            <li>Day 3: Old Dhaka Exploration</li>
-            <li>Day 4: Journey to Sylhet</li>
-            <li>Day 5: Sylhet Sightseeing</li>
-            <li>Day 6: Cox's Bazar Beach</li>
-            <li>Day 7: Saint Martin's Island</li>
-            <li>Day 8: Chittagong City Tour</li>
-            <li>Day 9: Return to Dhaka</li>
-            <li>Day 10: Departure</li>
+            <li><b>Day 1: Arrival in Dhaka :-</b>
+Arrive at Hazrat Shahjalal International Airport in Dhaka.
+Check into your hotel and rest after your journey.
+In the evening, explore local markets like New Market or Bashundhara City Mall for shopping and dining.
+Overnight stay in Dhaka.</li>
+            <li><b>Day 2: Dhaka Sightseeing :-</b>
+Visit Lalbagh Fort, a historical Mughal fortification.
+Explore Ahsan Manzil (Pink Palace), a beautiful 19th-century architectural marvel.
+Take a boat ride on the Buriganga River to experience the vibrant river life.
+Visit the National Museum to learn about Bangladesh's rich history and culture.
+Overnight stay in Dhaka.</li>
+            <li><b>Day 3: Day Trip to Sonargaon :-</b>
+Take a day trip to Sonargaon, known for its historical significance.
+Visit Panam City, an ancient ghost town with well-preserved architecture.
+Explore the Folk Art Museum and the Sonargaon Museum to learn about the region's heritage.
+Return to Dhaka in the evening.
+Overnight stay in Dhaka.</li>
+            <li><b>Day 4: Dhaka to Sylhet :-</b>
+Take a morning flight or drive to Sylhet.
+Check into your hotel and relax.
+Visit the famous Ratargul Swamp Forest, known for its natural beauty and boat rides.
+Explore Jaflong, a picturesque spot with rivers, hills, and tea gardens.
+Overnight stay in Sylhet.</li>
+            <li><b>Day 5: Sylhet Excursion :-</b>
+Visit the Lawachara National Park for nature walks and wildlife spotting.
+Explore Madhabkunda Waterfall, one of the largest waterfalls in Bangladesh.
+Visit the Shahjalal University of Science and Technology campus for its scenic beauty.
+Return to your hotel and relax.
+Overnight stay in Sylhet.</li>
+            <li><b>Day 6: Sylhet to Cox's Bazar :-</b>
+Take a morning flight or drive to Cox's Bazar, known for its long sandy beach.
+Check into your hotel and enjoy beach activities like swimming and sunbathing.
+Visit Himchari National Park and enjoy the scenic beauty and waterfalls.
+Explore Inani Beach and enjoy the sunset.
+Overnight stay in Cox's Bazar.</li>
+            <li><b>Day 7: Cox's Bazar and Departure :-</b>
+Visit the world's longest natural sandy beach in Cox's Bazar.
+Explore nearby attractions like Laboni Beach, Kolatoli Beach, and Cox's Bazar Beach.
+Enjoy local seafood delicacies for lunch.
+Relax on the beach or indulge in water sports like surfing and jet skiing.
+Depart from Cox's Bazar or extend your stay as per your travel plans.</li>
           </ul>
       <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">

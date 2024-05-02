@@ -1,5 +1,4 @@
 /* Body styles */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,9 +6,7 @@ body {
     height: 100vh;
 }
 
-
 /* Container styles */
-
 .flex {
     display: flex;
 }
@@ -26,17 +23,13 @@ body {
     margin-bottom: 1rem;
 }
 
-
 /* Image styles */
-
 .mb-4 img {
     width: 100%;
     height: auto;
 }
 
-
 /* Title styles */
-
 .text-3xl {
     font-size: 1.875rem;
 }
@@ -45,16 +38,12 @@ body {
     font-weight: bold;
 }
 
-
 /* Paragraph styles */
-
 .mb-4 p {
     margin-bottom: 1rem;
 }
 
-
 /* TourRate and AdditionalIncluded container styles */
-
 .grid {
     display: grid;
 }
@@ -67,9 +56,7 @@ body {
     gap: 1rem;
 }
 
-
 /* Styles for the left-aligned rounded-md box */
-
 .left-box {
     width: 70%;
     margin-right: auto;
@@ -82,16 +69,12 @@ body {
     /* Added box shadow */
 }
 
-
 /* Add space at the bottom of TourRate, AdditionalIncluded, and EXCLUDED boxes */
-
 .left-box:not(:last-child) {
     margin-bottom: 2rem;
 }
 
-
 /* Adjustments for responsiveness */
-
 @media (max-width: 768px) {
     .left-box {
         width: 90%;
@@ -99,9 +82,7 @@ body {
     }
 }
 
-
 /* Background color styles */
-
 .bg-white {
     background-color: #fff;
 }
@@ -114,9 +95,7 @@ body {
     background-color: #f97316;
 }
 
-
 /* Text color styles */
-
 .text-white {
     color: #ffffff;
 }
@@ -133,9 +112,7 @@ body {
     color: #374151;
 }
 
-
 /* Font styles */
-
 .font-semibold {
     font-weight: 600;
 }
@@ -144,9 +121,7 @@ body {
     font-weight: 500;
 }
 
-
 /* Button styles */
-
 .bg-blue-500 {
     background-color: #3b82f6;
 }
@@ -167,9 +142,7 @@ body {
     font-weight: 700;
 }
 
-
 /* Input styles */
-
 .block {
     display: block;
 }
@@ -191,9 +164,7 @@ body {
     border-color: #e2e8f0;
 }
 
-
 /* List styles */
-
 .list-disc {
     list-style-type: disc;
     padding-left: 1rem;
@@ -203,16 +174,78 @@ body {
     list-style-position: inside;
 }
 
-
 /* SVG icon styles */
-
 .bg-orange-500 svg {
     fill: #ffffff;
 }
 
-
 /* Contact details styles */
-
 .enquiry-button:hover {
     text-decoration: underline;
+}
+
+/* Tour Rate styles */
+.tour-rate {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.tour-rate__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.tour-rate__header-item {
+    flex: 1;
+    text-align: center;
+}
+
+.tour-rate__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.tour-rate__input,
+.tour-rate__select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.tour-rate__total {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tour-rate__actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.tour-rate__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tour-rate__button--primary {
+    background-color: #2196f3;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+.tour-rate__button--secondary {
+    background-color: #e0e0e0;
+    color: #333;
 }
