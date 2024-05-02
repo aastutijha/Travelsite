@@ -191,7 +191,7 @@ const  EXCLUDED = () => {
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
-  <li>Cruise Dinner &amp; Music Event</li>
+  <li> Music Event</li>
   <li>Visit 7 Best Places in the City With Group</li>
 </ul>
 </div>
