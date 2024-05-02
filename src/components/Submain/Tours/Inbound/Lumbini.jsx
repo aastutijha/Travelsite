@@ -157,13 +157,7 @@ Spend your evening in meditation or attending a discourse on Buddhism, offered b
 Depending on your departure schedule, you may have some free time in the morning to revisit any sites of interest or indulge in souvenir shopping.
 Depart from Lumbini, either by road or air, concluding your spiritual journey to the birthplace of Lord Buddha.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
-      <ul className="list-disc list-inside">
-        <li>Pick and Drop Services</li>
-        <li>1 Meal Per Day</li>
-        <li>Cruise Dinner &amp; Music Event</li>
-        <li>Visit 7 Best Places in the City With Group</li>
-      </ul>
+     
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -183,7 +177,7 @@ const  EXCLUDED = () => {
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
-  <li>Cruise Dinner &amp; Music Event</li>
+  <li>Music Event</li>
   <li>Visit 7 Best Places in the City With Group</li>
 </ul>
 </div>

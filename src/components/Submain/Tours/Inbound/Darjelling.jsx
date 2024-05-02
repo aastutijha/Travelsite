@@ -198,13 +198,7 @@ Attend a farewell dinner with your trekking team and celebrate the successful Ev
 Depending on your flight schedule, explore more of Kathmandu or relax at your hotel.
 Transfer to Tribhuvan International Airport for your departure, concluding your Everest Base Camp trekking experience.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
-      <ul className="list-disc list-inside">
-        <li>Pick and Drop Services</li>
-        <li>1 Meal Per Day</li>
-        <li>Cruise Dinner &amp; Music Event</li>
-        <li>Visit 7 Best Places in the City With Group</li>
-      </ul>
+      
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -224,7 +218,7 @@ const  EXCLUDED = () => {
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
-  <li>Cruise Dinner &amp; Music Event</li>
+  <li> Music Event</li>
   <li>Visit 7 Best Places in the City With Group</li>
 </ul>
 </div>
@@ -244,15 +238,7 @@ const Darjelling = () => {
         </div>
         <h1 className="text-3xl font-bold mb-2">The Best of Everest Base Camp Trek / Kalapathar Trekking</h1>
         <p className="mb-4">
-        The Everest Base Camp trek is an iconic and challenging journey that attracts adventurers and nature enthusiasts from around the globe. Situated in the heart of the Himalayas, the Everest Base Camp (EBC) serves as the starting point for climbers aiming to conquer Mount Everest, the world's highest peak.
-
-The trek to Everest Base Camp is a remarkable blend of natural beauty, cultural immersion, and physical endurance. It typically begins with a scenic flight from Kathmandu to Lukla, a small mountain airstrip nestled among towering peaks. From Lukla, trekkers embark on a multi-day trek through picturesque Sherpa villages, lush forests, and high-altitude landscapes.
-
-As trekkers ascend higher into the Khumbu region, they experience the rugged beauty of the Himalayan terrain, crossing suspension bridges over roaring rivers, ascending steep ridges, and navigating rocky paths. Acclimatization stops in villages like Dingboche and Lobuche help hikers adjust to the altitude and prevent altitude-related illnesses.
-
-Reaching Everest Base Camp itself is a momentous achievement, as trekkers stand in the shadow of the world's highest mountain. The base camp is a hive of activity during the climbing season, with expedition teams preparing for their summit attempts and mountaineers sharing stories of their adventures.
-
-The trek also offers opportunities to explore nearby attractions like Kala Patthar, a renowned vantage point offering panoramic views of Everest, Lhotse, Nuptse, and other Himalayan giants. The Khumbu Glacier, icefalls, and mountain vistas create a surreal and awe-inspiring backdrop throughout the journey.
+        Darjeeling, a serene hill station nestled in the Lesser Himalayas, captivates visitors with its breathtaking beauty and cultural richness. Situated at an elevation of around 2,000 meters above sea level, Darjeeling offers panoramic views of snow-clad peaks, including the majestic Mount Kanchenjunga. Its temperate climate, characterized by cool summers and chilly winters, makes it a year-round destination, although spring and autumn are particularly pleasant for tourists. The town is renowned for its vast tea gardens, producing the world-famous Darjeeling tea, and visitors can explore these lush estates while soaking in the scenic landscapes. Darjeeling is also home to a diverse population, contributing to its vibrant festivals, traditional music, dance forms, and delectable cuisine. Tourists can immerse themselves in adventure activities like trekking, paragliding, and river rafting, or visit iconic landmarks such as Tiger Hill for sunrise views, the Batasia Loop, and the Japanese Peace Pagoda. Colonial-era architecture, heritage sites like the Himalayan Mountaineering Institute, and the enchanting Darjeeling Himalayan Railway further add to the town's allure, creating a captivating blend of natural splendor, cultural heritage, and adventure opportunities for visitors to explore and enjoy.
         </p>
         <div className="flex justify-center items-center h-screen">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
