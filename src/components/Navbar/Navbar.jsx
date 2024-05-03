@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
-import{NavLink} from "react-router-dom"
+import{NavLink} from "react-router-dom";
 import { FaBars } from 'react-icons/fa'; // Import the hamburger icon
 import './navbar.css';
 //import HamburgerIcon from '../../assets/HamburgerIcon.svg';
@@ -61,8 +61,8 @@ import company from '../../assets/logo.png';
 {/* this is main desktop view navbar */}
       <div className="middle">
         <div className={`navItems ${showMenu ? 'show' : ''}`}>
-          <NavLink activeClass='active' to="Main" spy={true} smooth={true} offset={-60} duration={400} className="navItem"><span className='navLink'>Home</span></NavLink>
-          <NavLink activeClass='active' to="Submain" spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</NavLink>
+          <Link activeClass='active' to="Main" spy={true} smooth={true} offset={-60} duration={400} className="navItem"><span className='navLink'>Home</span></Link>
+          <Link activeClass='active' to="Submain" spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</Link>
           <NavLink activeClass='active' to="AboutUs" spy={true} smooth={true} offset={-60} duration={400} className="navItem">About</NavLink>
           <NavLink activeClass='active' to='Clientsection' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Clients</NavLink>
           <NavLink activeClass='active' to='OurFacilities' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Facilities</NavLink>

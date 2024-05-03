@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Main from './components/Main/Main.jsx'
 import TripWeatherForecast from './components/TripWeatherForecast/TripWeatherForecast.jsx'
 import SubMain from './components/Submain/Submain.jsx'
-//import AboutUs from './components/AboutUs/AboutUs.jsx'
+import AboutUs from './components/AboutUs/AboutUs.jsx'
 import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 import ChoiceCard from './components/ChoiceCard/ChoiceCard.jsx'
@@ -22,6 +22,7 @@ function App() {
     <Main />
     <TripWeatherForecast />
     <SubMain />
+    <AboutUs/>
     <OurFacilities/>
     <Clientsection/>
     <ChoiceCard/>
