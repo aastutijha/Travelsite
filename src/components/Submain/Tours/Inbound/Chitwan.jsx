@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{usestate} from 'react';
 import './everest.css';
 import chitwanImage from '../../../../assets/safarii.jpeg';
 const TripWeatherForecast = () => {
@@ -129,32 +129,21 @@ const TourRate = () => {
 const AdditionalIncluded = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
-          <ul className="list-disc pl-6">
-            <li><b>Day 1: Arrival in Chitwan :-</b>
-Arrive in Chitwan, either by road or air from Kathmandu or Pokhara.
-Check into your safari lodge or hotel in Sauraha, the main gateway to Chitwan National Park.
-Rest and freshen up after your journey.
-In the evening, enjoy a cultural program featuring Tharu traditional dance and music.</li>
-            <li><b>Day 2: Chitwan National Park Safari :-</b>
-Start your day with an early morning jungle walk or bird watching tour with experienced guides.
-After breakfast, embark on a canoe ride along the Rapti River, observing aquatic wildlife and birds.
-Visit the Elephant Breeding Center to learn about elephant conservation efforts.
-Enjoy a delicious lunch at your lodge.
-In the afternoon, experience an elephant-back safari through the grasslands and forests of Chitwan, spotting wildlife such as rhinos, deer, and maybe even tigers (if lucky).
-Return to your lodge for dinner and overnight stay.</li>
-               <li><b>Day 3: Jeep Safari and Nature Walk :-</b>
-Begin your day with a thrilling jeep safari deep into the heart of Chitwan National Park, exploring diverse habitats and encountering wildlife in their natural habitat.
-Stop for a picnic lunch amidst the wilderness.
-Afternoon nature walk with naturalists to learn about flora, fauna, and jungle survival skills.
-Enjoy a sunset view over the park from a designated viewpoint.
-Return to your lodge for dinner and relaxation.</li>
-               <li><b>Day 4: Elephant Interaction and Departure :-</b>
-Participate in an elephant interaction program where you can feed, bathe, and learn about the daily care of elephants from mahouts (elephant keepers).
-Have a farewell breakfast at your lodge.
-Check out from your accommodation and depart for your onward journey, whether back to Kathmandu, Pokhara, or another destination. </li>
-          </ul>
-      
+      <h2 className="text-lg font-semibold mb-4">Additional Included</h2>
+      <ul className="list-disc pl-6">
+        <li>
+          <b>Day 1: Arrival in Chitwan :-</b> Arrive in Chitwan, either by road or air from Kathmandu or Pokhara. Check into your safari lodge or hotel in Sauraha, the main gateway to Chitwan National Park. Rest and freshen up after your journey. In the evening, enjoy a cultural program featuring Tharu traditional dance and music.
+        </li>
+        <li>
+          <b>Day 2: Chitwan National Park Safari :-</b> Start your day with an early morning jungle walk or bird watching tour with experienced guides. After breakfast, embark on a canoe ride along the Rapti River, observing aquatic wildlife and birds. Visit the Elephant Breeding Center to learn about elephant conservation efforts. Enjoy a delicious lunch at your lodge. In the afternoon, experience an elephant-back safari through the grasslands and forests of Chitwan, spotting wildlife such as rhinos, deer, and maybe even tigers (if lucky). Return to your lodge for dinner and overnight stay.
+        </li>
+        <li>
+          <b>Day 3: Jeep Safari and Nature Walk :-</b> Begin your day with a thrilling jeep safari deep into the heart of Chitwan National Park, exploring diverse habitats and encountering wildlife in their natural habitat. Stop for a picnic lunch amidst the wilderness. Afternoon nature walk with naturalists to learn about flora, fauna, and jungle survival skills. Enjoy a sunset view over the park from a designated viewpoint. Return to your lodge for dinner and relaxation.
+        </li>
+        <li>
+          <b>Day 4: Elephant Interaction and Departure :-</b> Participate in an elephant interaction program where you can feed, bathe, and learn about the daily care of elephants from mahouts (elephant keepers). Have a farewell breakfast at your lodge. Check out from your accommodation and depart for your onward journey, whether back to Kathmandu, Pokhara, or another destination.
+        </li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
