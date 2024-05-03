@@ -21,7 +21,7 @@ const Main = () => {
   };
 
   return (
-    <div className='main' id='main' style={{ backgroundImage: `url(${background})` }}>
+    <div className='main' id="main" style={{ backgroundImage: `url(${background})` }}>
       <div className="center-main">
         <div className="text1">
           Wonders are waiting....

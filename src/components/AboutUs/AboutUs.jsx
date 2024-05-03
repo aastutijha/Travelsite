@@ -6,7 +6,7 @@ const AboutUs = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="container" id="products">
+    <div className="container" id="aboutus">
       <section className="title">
       <div className="title-wrapper">
         <h1>Who Are We?</h1>
