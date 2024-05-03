@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import{NavLink} from "react-router-dom";
@@ -8,14 +9,11 @@ import company from '../../assets/logo.png';
 //import companyInv from '../../assets/logoInv.png';
 
   const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [theme, setTheme] = useState('light-mode');
+    const [theme] = useState('light-mode');
     const [showMenu, setShowMenu] = useState(false); // Set initial state to false
     const menuRef = useRef();
 
-  const switchTheme = () => {
-    setTheme(theme === 'light-mode' ? 'dark-mode' : 'light-mode');
-  }
+
   useEffect(() => { 
     // Close the menu by default when the component mounts
     setShowMenu(true);
@@ -50,45 +48,36 @@ import company from '../../assets/logo.png';
   return (
    
     <div className='navbar'>
-         <div className="left">
-        { <div className="company">
-          <img src={theme=='light-mode'?company:companyInv} alt="Logo" className='logoImage' />
-        </div> }
-        <div className="name">
-          Travel holidays
+           <div className="left">
+          { <div className="company">
+            <img src={theme === 'light-mode' ? company : companyInv} alt="Logo" className='logoImage' />
+          </div> }
+          <div className="name">
+            Travel holidays
+          </div>
+        </div>
+{/* this is main desktop view navbar */}
+<div className="middle">
+        <div className={`navItems ${showMenu ? 'show' : ''}`}>
+          <Link activeClass='active' to='Main' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Home</Link>
+          <Link activeClass='active' to='Submain' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</Link>
+          <Link activeClass='active' to='AboutUs' spy={true} smooth={true} offset={-60} duration={400} className="navItem">About</Link>
+          <Link activeClass='active' to='Clientsection' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Clients</Link>
+          <Link activeClass='active' to='OurFacilities' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Facilities</Link>
+          <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Contact</Link>
         </div>
       </div>
-{/* this is main desktop view navbar */}
-      <div className="middle">
-        <div className={`navItems ${showMenu ? 'show' : ''}`}>
-          <Link activeClass='active' to="Main" spy={true} smooth={true} offset={-60} duration={400} className="navItem"><span className='navLink'>Home</span></Link>
-          <Link activeClass='active' to="Submain" spy={true} smooth={true} offset={-60} duration={400} className="navItem">Places</Link>
-          <NavLink activeClass='active' to="AboutUs" spy={true} smooth={true} offset={-60} duration={400} className="navItem">About</NavLink>
-          <NavLink activeClass='active' to='Clientsection' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Clients</NavLink>
-          <NavLink activeClass='active' to='OurFacilities' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Facilities</NavLink>
-          <NavLink activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="navItem">Contact</NavLink>
-        </div>
-        </div>
-        <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
-        <FaBars /> {/* Use the hamburger icon from React Icons */}
-        {/* <img src={HamburgerIcon} alt="Hamburger icon" />*/ }
+      <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
+        <FaBars />
         <div className={` ${showMenu?'showMobMenu':'myMobMenu'} `}>
-          {/* this is mobile view navbar */}
-          <Link onClick={toggleMenu} activeClass='active' to='Main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem"><span className='navLink'>Home</span></Link>
+          <Link onClick={toggleMenu} activeClass='active' to='Main' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Home</Link>
           <Link onClick={toggleMenu} activeClass='active' to='Submain' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Places</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='products' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">About</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Cilents</Link>
-          <Link onClick={toggleMenu} activeClass='active' to='clients' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Facilities</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='AboutUs' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">About</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='Clientsection' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Clients</Link>
+          <Link onClick={toggleMenu} activeClass='active' to='OurFacilities' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Facilities</Link>
           <Link onClick={toggleMenu} activeClass='active' to='contact' spy={true} smooth={true} offset={-60} duration={400} className="mobItem">Contact</Link>
         </div>
       </div>
-        {/* <div className="right">
-        <div className={`container ${theme === 'light-mode' ? 'IsLight' : 'IsDark'}`} onClick={switchTheme}>
-          <input type="checkbox" id="switch" checked={theme === 'dark-mode'} />
-          <div>
-          </div> */}
-        {/* </div> */}
-      {/* </div> */}
     </div>
   )
 }
