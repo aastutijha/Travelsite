@@ -128,7 +128,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="Main"
+            to="main"
             spy={true}
             smooth={true}
             offset={-60}
@@ -140,7 +140,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="Submain"
+            to="sub-main"
             spy={true}
             smooth={true}
             offset={-60}
@@ -152,7 +152,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="AboutUs"
+            to="aboutus"
             spy={true}
             smooth={true}
             offset={-60}
@@ -164,7 +164,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="Clientsection"
+            to="clients-section"
             spy={true}
             smooth={true}
             offset={-60}
@@ -176,7 +176,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="OurFacilities"
+            to="ourfacilities"
             spy={true}
             smooth={true}
             offset={-60}
