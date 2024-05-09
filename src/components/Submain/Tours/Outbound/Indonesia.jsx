@@ -206,7 +206,7 @@ const  EXCLUDED = () => {
 const Indonesia = () => {
   return (
     <div>
-      <div className="flex flex-col items-center">
+     <div className="bg-white p-4 rounded-md shadow-md center-box">
         <div className="mb-4">
         <img
             src={indonesiaImage}

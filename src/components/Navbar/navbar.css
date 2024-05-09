@@ -86,7 +86,7 @@ body,
 
 /* Media Queries */
 
-@media (max-width: 1200px) {
+@media (max-width: 780px) {
     .navbar {
         display: flex;
         width: 100%;

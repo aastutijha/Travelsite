@@ -1,4 +1,5 @@
 /* Body styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +7,9 @@ body {
     height: 100vh;
 }
 
+
 /* Container styles */
+
 .flex {
     display: flex;
 }
@@ -23,13 +26,17 @@ body {
     margin-bottom: 1rem;
 }
 
+
 /* Image styles */
+
 .mb-4 img {
     width: 100%;
     height: auto;
 }
 
+
 /* Title styles */
+
 .text-3xl {
     font-size: 1.875rem;
 }
@@ -38,12 +45,20 @@ body {
     font-weight: bold;
 }
 
+
 /* Paragraph styles */
+
 .mb-4 p {
     margin-bottom: 1rem;
+    text-align: justify;
+    /* Align paragraphs in a justified manner */
+    line-height: 1.5;
+    /* Add line spacing of 1.5 */
 }
 
+
 /* TourRate and AdditionalIncluded container styles */
+
 .grid {
     display: grid;
 }
@@ -56,25 +71,28 @@ body {
     gap: 1rem;
 }
 
+
 /* Styles for the left-aligned rounded-md box */
+
 .left-box {
     width: 70%;
     margin-right: auto;
     margin-left: 5rem;
     padding: 1rem;
-    /* Added padding to match the design */
     border-radius: 0.75rem;
-    /* Added border radius */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Added box shadow */
 }
 
+
 /* Add space at the bottom of TourRate, AdditionalIncluded, and EXCLUDED boxes */
+
 .left-box:not(:last-child) {
     margin-bottom: 2rem;
 }
 
+
 /* Adjustments for responsiveness */
+
 @media (max-width: 768px) {
     .left-box {
         width: 90%;
@@ -82,7 +100,9 @@ body {
     }
 }
 
+
 /* Background color styles */
+
 .bg-white {
     background-color: #fff;
 }
@@ -95,7 +115,9 @@ body {
     background-color: #f97316;
 }
 
+
 /* Text color styles */
+
 .text-white {
     color: #ffffff;
 }
@@ -112,7 +134,9 @@ body {
     color: #374151;
 }
 
+
 /* Font styles */
+
 .font-semibold {
     font-weight: 600;
 }
@@ -121,7 +145,9 @@ body {
     font-weight: 500;
 }
 
+
 /* Button styles */
+
 .bg-blue-500 {
     background-color: #3b82f6;
 }
@@ -142,7 +168,9 @@ body {
     font-weight: 700;
 }
 
+
 /* Input styles */
+
 .block {
     display: block;
 }
@@ -164,7 +192,9 @@ body {
     border-color: #e2e8f0;
 }
 
+
 /* List styles */
+
 .list-disc {
     list-style-type: disc;
     padding-left: 1rem;
@@ -174,17 +204,23 @@ body {
     list-style-position: inside;
 }
 
+
 /* SVG icon styles */
+
 .bg-orange-500 svg {
     fill: #ffffff;
 }
 
+
 /* Contact details styles */
+
 .enquiry-button:hover {
     text-decoration: underline;
 }
 
+
 /* Tour Rate styles */
+
 .tour-rate {
     background-color: #f5f5f5;
     padding: 1rem;

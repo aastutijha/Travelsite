@@ -120,6 +120,17 @@ const Navbar = () => {
           >
             Contact
           </Link>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={400}
+            className="navItem"
+          >
+            Login
+          </Link>
         </div>
       </div>
       <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
