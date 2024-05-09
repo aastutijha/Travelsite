@@ -1,5 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import LoginForm from "./components/Login/LoginForm.jsx";
+import Register from './components/Register/Register.jsx'
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Main from './components/Main/Main.jsx'
@@ -19,6 +21,8 @@ function App() {
   return (
     
     <>
+    <LoginForm/>
+    <Register/>
     <Navbar />
     <Main />
     <TripWeatherForecast />
