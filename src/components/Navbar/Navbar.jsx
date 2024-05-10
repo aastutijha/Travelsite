@@ -36,7 +36,17 @@ const Navbar = () => {
     setShowMenu(!showMenu);
     document.body.classList.toggle("showMenu", showMenu);
   };
+  window.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar');
+    var scrollTop = window.scrollY;
 
+    // Change background color based on scroll position
+    if (scrollTop === 0) {
+        navbar.classList.add('transparent-box'); // Add transparent background class
+    } else {
+        navbar.classList.remove('transparent-box'); // Remove transparent background class
+    }
+});
   return (
     <div className="navbar">
       <div className="left">

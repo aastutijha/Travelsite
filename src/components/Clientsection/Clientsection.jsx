@@ -4,7 +4,7 @@ import backgroundImage from "../../assets/camera.jpg"; // Import your background
 
 const Clientsection = () => {
   return (
-    <div className="clients-section" style={{ backgroundImage: `url(${backgroundImage})` }} id="clients">
+    <div className="clients-section" id="clients">
         <h2>Read The Top Travel Reviews</h2>
       <p className="subtitle">
       </p>

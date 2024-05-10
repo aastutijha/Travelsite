@@ -9,7 +9,7 @@ body,
     justify-content: space-between;
     align-items: center;
     background-color: var(--body-background);
-    color: var(--font-color);
+    color: #e7a814;
     padding: 0 1rem;
     position: fixed;
     top: 0;
@@ -17,6 +17,13 @@ body,
     z-index: 100;
     border-bottom: none;
     /* Remove the black line */
+}
+
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0);
+    /* Transparent background color */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for color change */
 }
 
 .left,
@@ -37,7 +44,7 @@ body,
 }
 
 .navItem:hover {
-    color: #e7a814;
+    color: black;
 }
 
 .logoImage {
@@ -62,12 +69,11 @@ body,
 
 .navItem {
     margin: 0 1rem;
-    color: var(--font-color);
+    color: #e7a814;
 }
 
 .active {
-    color: #e7a814;
-    border-radius: 2rem;
+    color: black;
     display: inline-block;
 }
 

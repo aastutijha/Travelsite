@@ -6,6 +6,10 @@ body {
 }
 
 .our-facilities {
+    background-size: cover;
+    background-position: center;
+    padding: 5vw 0;
+    margin: 0 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -20,6 +24,10 @@ body {
 .our-facilities-section {
     /* Existing styles for .our-facilities-section */
     /* Add transition for smooth scroll animation */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
     transition: transform 0.5s ease;
 }
 
