@@ -1,0 +1,115 @@
+.desktop-1-child {
+    position: absolute;
+    top: 658.5px;
+    right: -250px;
+    border-radius: 214.1px;
+    background-color: #c25b2f;
+    width: 550.5px;
+    height: 827.9px;
+    transform: rotate(-125deg);
+    transform-origin: 0 0;
+}
+
+.travel-holidays {
+    position: absolute;
+    top: 64px;
+    left: 196px;
+    font-size: 32px;
+}
+
+.to-the-any {
+    white-space: pre-wrap;
+}
+
+.span {
+    color: var(--color-black);
+}
+
+.the-world {
+    color: #e68f3f;
+}
+
+.best-destination-around,
+.to-the-any-container {
+    position: absolute;
+    left: calc(50% - 622px);
+    top: 100px;
+    /* Adjusted top value */
+    display: inline-block;
+    color: #163457;
+}
+
+.to-the-any-container {
+    top: 370px;
+    /* Adjusted top value */
+    font-size: 55px;
+    width: 676px;
+    height: 246px;
+    margin-left: 35px;
+    font-family: "Montserrat";
+    /* Added font-family property */
+}
+
+.best-destination-around {
+    top: 160px;
+    /* Adjusted top value */
+    font-size: 18px;
+    width: 1237px;
+    color: #163457;
+    margin-left: 35px;
+    font-family: "Montserrat";
+    /* Added font-family property */
+}
+
+.image-1-icon {
+    top: 180px;
+    /* Adjusted top value */
+    position: absolute;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+.image-3-icon {
+    /* Adjusted top value */
+    position: absolute;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+
+.image-4-icon {
+    position: absolute;
+    top: 358px;
+    left: 69px;
+    width: 700px;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+.image-3-icon,
+.image-4-icon {
+    top: 255px;
+    left: 845px;
+    width: 330px;
+    height: 300px;
+}
+
+.desktop-1 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 640px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-5xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+}
+
+font-family: var(--font-inter);
+
+}

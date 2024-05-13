@@ -1,8 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import './App.css'
+import Mains from './components/Mains/Mains.jsx'
+import Login from './components/Login/login.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
-import Main from './components/Main/Main.jsx'
+//import Main from './components/Main/Main.jsx'
 import TripWeatherForecast from './components/TripWeatherForecast/TripWeatherForecast.jsx'
 import SubMain from './components/Submain/Submain.jsx'
 import AboutUs from './components/AboutUs/AboutUs.jsx'
@@ -20,7 +22,7 @@ function App() {
     
     <>
     <Navbar />
-    <Main />
+    <Mains/>
     <TripWeatherForecast />
     <SubMain />
     <AboutUs/>
@@ -30,6 +32,7 @@ function App() {
     <Contact/>
     <InformationBar/>
     <Footer />
+    <Login/>
     </>
   )
 }

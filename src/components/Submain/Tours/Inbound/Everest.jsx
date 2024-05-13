@@ -134,6 +134,7 @@ const TourRate = () => {
 };
 
 const AdditionalIncluded = () => {
+  
   return (
     <div className="bg-white p-4 rounded-md shadow-md left-box">
        <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>

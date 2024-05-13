@@ -32,6 +32,9 @@ body {
 .mb-4 img {
     width: 100%;
     height: auto;
+    margin-left: auto;
+    /* Center image */
+    margin-right: auto;
 }
 
 
@@ -54,6 +57,10 @@ body {
     /* Align paragraphs in a justified manner */
     line-height: 1.5;
     /* Add line spacing of 1.5 */
+    margin-left: 10%;
+    /* Add space on the left side */
+    margin-right: 10%;
+    /* Add space on the right side */
 }
 
 

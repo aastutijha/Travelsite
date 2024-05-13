@@ -1,148 +1,157 @@
 body {
-  font-family: Arial, sans-serif;
-  margin-top: 0;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8; /* Background color for the entire page */
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    /* Background color for the entire page */
+    color: #333;
 }
 
 .container {
-  /* max-width: 3000px; */
-  margin: 0 auto;
-  padding: 20px;
-  background-color: rgb(254, 251, 251); /* Red background color for the container */
+    /* max-width: 3000px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(254, 251, 251);
+    /* Red background color for the container */
 }
 
+
 /* Section styles */
+
 .title {
-  text-align: center;
-  margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .title h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .title-wrapper {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; /* Center-align text within the container */
-  background-color: white; /* Background color for the content area */
-  padding: 20px; /* Padding for the content area */
-  border-radius: 10px; /* Rounded corners for the content area */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the content area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Center-align text within the container */
+    background-color: white;
+    /* Background color for the content area */
+    padding: 20px;
+    /* Padding for the content area */
+    border-radius: 10px;
+    /* Rounded corners for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow for the content area */
 }
 
 .image-content {
-  margin-bottom: 20px;
-  margin-right: 40px;
-  animation: slideRight 1s forwards ease-in-out;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    animation: slideRight 1s forwards ease-in-out;
 }
 
 @keyframes slideRight {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .image-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .text-content {
-  padding: 0 20px;
-  margin-right: 20px;
-  text-align: center;
-  animation: slideDown 1s forwards ease-in-out;
+    padding: 0 20px;
+    margin-right: 20px;
+    text-align: center;
+    animation: slideDown 1s forwards ease-in-out;
 }
 
 @keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .text-content p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 20px;
-  text-align: justify;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .learn-more-btn {
-  background-color: #e7a814;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  animation: slideUp 1s forwards ease-in-out;
+    background-color: #e7a814;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    animation: slideUp 1s forwards ease-in-out;
 }
 
 @keyframes slideUp {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .learn-more-btn:hover {
-  background-color: #e7a814;
+    background-color: #e7a814;
 }
-   @media (min-width: 768px) {
+
+@media (min-width: 768px) {
     .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto; /* This makes the container take up the full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        /* This makes the container take up the full viewport height */
     }
-  
     .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 90vw;
-      margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin: 0 auto;
     }
-  
     .image-content {
-      margin-bottom: 20px;
-      flex: 0 0 40%;
+        margin-bottom: 20px;
+        flex: 0 0 40%;
     }
-  
     .text-content {
-      flex: 1;
-      text-align: center; /* Center the text */
-      padding: 0 20px;
-      margin-right: 0;
+        flex: 1;
+        text-align: center;
+        /* Center the text */
+        padding: 0 20px;
+        margin-right: 0;
     }
-  }
+}

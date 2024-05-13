@@ -3,7 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa"; // Import the hamburger icon
 import "./navbar.css";
-import company from "../../assets/logo.png";
+import company from "../../assets/logo.png";import { Link as RouterLink } from 'react-router-dom'; // Import the Link component from React Router
+
+
 
 const Navbar = () => {
   const [theme] = useState("light-mode");
@@ -66,7 +68,7 @@ const Navbar = () => {
         <div className={`navItems ${showMenu ? "show" : ""}`}>
           <Link
             activeClass="active"
-            to="main"
+            to="mains"
             spy={true}
             smooth={true}
             offset={-60}
@@ -130,17 +132,10 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-60}
-            duration={400}
-            className="navItem"
-          >
+           {/* Link to the Login page */}
+           <RouterLink to="/login" className="navItem">
             Login
-          </Link>
+          </RouterLink>
         </div>
       </div>
       <div className="hamburger" onClick={toggleMenu} ref={menuRef}>
@@ -149,7 +144,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="main"
+            to="mains"
             spy={true}
             smooth={true}
             offset={-60}
