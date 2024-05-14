@@ -30,6 +30,33 @@ body {
     margin-bottom: 3rem;
 }
 
+.image-3-icon {
+    /* Adjusted top value */
+    position: absolute;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 3px;
+    margin-left: 20px;
+}
+
+.image-4-icon {
+    position: absolute;
+    top: 358px;
+    left: 69px;
+    width: 700px;
+    height: 204px;
+    object-fit: cover;
+    margin-bottom: 3px;
+}
+
+.image-3-icon,
+.image-4-icon {
+    top: 335px;
+    left: 865px;
+    width: 330px;
+    height: 350px;
+}
+
 .feedback-container {
     display: flex;
     flex-wrap: wrap;
