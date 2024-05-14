@@ -68,7 +68,7 @@ const Navbar = () => {
         <div className={`navItems ${showMenu ? "show" : ""}`}>
           <Link
             activeClass="active"
-            to="mains"
+            to="desktop-1"
             spy={true}
             smooth={true}
             offset={-60}
@@ -90,7 +90,7 @@ const Navbar = () => {
           </Link>
           <Link
             activeClass="active"
-            to="aboutus"
+            to="about-us"
             spy={true}
             smooth={true}
             offset={-60}
@@ -98,6 +98,18 @@ const Navbar = () => {
             className="navItem"
           >
             About
+          </Link>
+          
+          <Link
+            activeClass="active"
+            to="ourfacilities"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={400}
+            className="navItem"
+          >
+            Facilities
           </Link>
           <Link
             activeClass="active"
@@ -109,17 +121,6 @@ const Navbar = () => {
             className="navItem"
           >
             Clients
-          </Link>
-          <Link
-            activeClass="active"
-            to="ourfacilities"
-            spy={true}
-            smooth={true}
-            offset={-60}
-            duration={400}
-            className="navItem"
-          >
-            Facilities
           </Link>
           <Link
             activeClass="active"
@@ -144,7 +145,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="mains"
+            to="desktop-1"
             spy={true}
             smooth={true}
             offset={-60}
@@ -168,7 +169,7 @@ const Navbar = () => {
           <Link
             onClick={toggleMenu}
             activeClass="active"
-            to="aboutus"
+            to="about-us"
             spy={true}
             smooth={true}
             offset={-60}

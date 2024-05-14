@@ -1,0 +1,140 @@
+.hero-image {
+    width: 1450px;
+    height: 70%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    bottom: 0;
+    left: -12px;
+    background-color: white;
+    mix-blend-mode: multiply;
+}
+
+.who-are-we {
+    margin: 0;
+    position: relative;
+    font-weight: 900;
+    z-index: 1;
+    top: -50px;
+    color: #163457;
+    font-size: 64px;
+    font-family: "Montserrat";
+}
+
+.who-are-we-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-11xs);
+}
+
+.we-are-travel {
+    position: relative;
+    font-weight: 600;
+    z-index: 1;
+    top: -50px;
+    color: #c25b2f;
+    font-family: "Montserrat";
+}
+
+.we-are-travel-experts-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 var(--padding-11xs);
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.to-curate-personalized,
+.travel-holidays-offers,
+.we-are-more,
+.we-carefully-select,
+.whether-you-prefer {
+    margin-bottom: 0;
+}
+
+.travel-holidays-offers-unique {
+    margin: 0;
+    padding-left: 25px;
+    font-family: "Montserrat";
+    color: #163457;
+    font-size: 20px;
+}
+
+.travel-holidays-offers-container {
+    align-self: stretch;
+    position: relative;
+    font-size: 23px;
+    font-weight: 600;
+    z-index: 1;
+    top: -60px;
+}
+
+.frame-parent,
+.hero-image-parent {
+    width: 807px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    max-width: 100%;
+    font-size: 32px;
+}
+
+.hero-image-parent {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 1328px;
+    padding: 48px 87px 318px;
+    box-sizing: border-box;
+    gap: 46px;
+    text-align: left;
+    font-size: 36px;
+    color: var(--color-white);
+    font-family: var(--font-inter);
+}
+
+.marten-bjork-wgu1pzdsm3g-unspl-icon {
+    position: absolute;
+    top: 100px;
+    left: 880px;
+    width: 300px;
+    height: 310px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.about-us {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    line-height: normal;
+    letter-spacing: normal;
+    top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .who-are-we {
+        font-size: 29px;
+    }
+    .we-are-travel {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .who-are-we {
+        font-size: 22px;
+    }
+    .travel-holidays-offers-container,
+    .we-are-travel {
+        font-size: var(--font-size-lgi);
+    }
+}

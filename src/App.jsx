@@ -7,8 +7,10 @@ import Navbar from './components/Navbar/Navbar.jsx'
 //import Main from './components/Main/Main.jsx'
 import TripWeatherForecast from './components/TripWeatherForecast/TripWeatherForecast.jsx'
 import SubMain from './components/Submain/Submain.jsx'
-import AboutUs from './components/AboutUs/AboutUs.jsx'
+import AboutUss from './components/AboutUss/Aboutuss.jsx'
+//import AboutUs from './components/AboutUs/AboutUs.jsx'
 import OurFacilities from './components/OurFacilities/OurFacilities.jsx'
+//import Clients from './components/Clientss/Clients.jsx'
 import Clientsection from './components/Clientsection/Clientsection.jsx'
 import ChoiceCard from './components/ChoiceCard/ChoiceCard.jsx'
 //import Team from './components/Team/Team.jsx'
@@ -25,7 +27,7 @@ function App() {
     <Mains/>
     <TripWeatherForecast />
     <SubMain />
-    <AboutUs/>
+    <AboutUss/>
     <OurFacilities/>
     <Clientsection/>
     <ChoiceCard/>

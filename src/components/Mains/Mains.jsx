@@ -14,7 +14,7 @@ const Mains = () => {
         Best destination around the world
       </b>
       <img className="image-1-icon" alt="" src="src\assets\travel.png" />
-      <img className="image-3-icon" alt="" src="src\assets\bag-fotor-bg-remover-20240513174322.png" />
+      <img className="image-3-icon" alt="" src="src\assets\bags-fotor-bg-remover-20240514133739.png" />
       
     </div>
   );

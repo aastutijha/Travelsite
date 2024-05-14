@@ -17,7 +17,8 @@ body {
     padding: 40px 0;
     margin-bottom: 50px;
     text-align: center;
-    color: #000;
+    color: #163457;
+    font-family: "Montserrat";
     transition: transform 2.5s ease;
 }
 
@@ -43,7 +44,8 @@ body {
     margin-bottom: 20px;
     text-align: center;
     margin-top: 10px;
-    color: #000;
+    color: #163457;
+    font-family: "Montserrat";
 }
 
 .facility {
@@ -52,8 +54,8 @@ body {
     padding: 20px;
     border: 1px solid #0f0f0f;
     border-radius: 5px;
-    background-color: #ffd27f;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #c25b2fee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.61);
     margin-bottom: 20px;
 }
 

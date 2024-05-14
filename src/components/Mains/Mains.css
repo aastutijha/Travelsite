@@ -92,10 +92,10 @@
 
 .image-3-icon,
 .image-4-icon {
-    top: 255px;
-    left: 845px;
+    top: 335px;
+    left: 865px;
     width: 330px;
-    height: 300px;
+    height: 350px;
 }
 
 .desktop-1 {
@@ -108,8 +108,4 @@
     font-size: var(--font-size-5xl);
     color: var(--color-black);
     font-family: var(--font-inter);
-}
-
-font-family: var(--font-inter);
-
 }
