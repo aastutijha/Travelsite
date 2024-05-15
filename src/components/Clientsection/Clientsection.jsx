@@ -5,7 +5,10 @@ import backgroundImage from "../../assets/camera.jpg"; // Import your background
 const Clientsection = () => {
   return (
     <div className="clients-section" id="clients">
-        <h2>Read The Top Travel Reviews</h2>
+        <h2>
+    <span className="blue">Read The Top</span>{" "}
+    <span className="orange">Reviews</span>
+</h2>
       <p className="subtitle">
       </p>
       <div className="feedback-container">

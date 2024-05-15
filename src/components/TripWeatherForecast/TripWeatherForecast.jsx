@@ -11,8 +11,8 @@ const TripWeatherForecast = () => {
         <h3>Kathmandu</h3>
         <div className="current-weather">
           <span className="temperature">22°C</span>
-          <span className="condition">Partly Cloudy</span>
-          <span className="icon">☁️</span>
+          <span className="condition">Partly Cloudy ☁️</span>
+         
         </div>
       </div>
       <div className="hourly-forecast">

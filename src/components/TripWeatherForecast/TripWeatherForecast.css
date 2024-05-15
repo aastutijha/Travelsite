@@ -1,8 +1,8 @@
 .trip-weather-forecast {
     background-color: #f0f8ff;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 6px;
     font-family: Arial, sans-serif;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .current-weather .condition {
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 .hourly-forecast {

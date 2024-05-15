@@ -34,7 +34,7 @@
     font-weight: 600;
     z-index: 1;
     top: -50px;
-    color: #c25b2f;
+    color: #e68f3f;
     font-family: "Montserrat";
 }
 
@@ -122,19 +122,70 @@
 
 @media screen and (max-width: 767px) {
     .who-are-we {
-        font-size: 29px;
+        font-size: 60px;
+        top: -90px;
     }
+    .travel-holidays-offers-container,
     .we-are-travel {
         font-size: 26px;
+        top: -70px;
+    }
+    .marten-bjork-wgu1pzdsm3g-unspl-icon {
+        position: absolute;
+        top: 20px;
+        left: 440px;
+        width: 200px;
+        height: 210px;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .about-us {
+        width: 100%;
+        height: 550px;
+        position: relative;
+        background-color: var(--color-white);
+        overflow: hidden;
+        line-height: normal;
+        letter-spacing: normal;
+        top: 3px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .who-are-we {
-        font-size: 22px;
+        font-size: 36px;
+        top: -px;
+        left: -50px;
     }
-    .travel-holidays-offers-container,
+    .travel-holidays-offers-container {
+        font-size: 24px;
+        top: -100px;
+        left: -10px;
+        text-align: inherit;
+        font-weight: 600;
+    }
     .we-are-travel {
-        font-size: var(--font-size-lgi);
+        font-size: 24px;
+        top: -100px;
+        left: -50px;
+    }
+    .marten-bjork-wgu1pzdsm3g-unspl-icon {
+        position: absolute;
+        top: 15px;
+        left: 260px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .about-us {
+        width: 100%;
+        height: 830px;
+        position: relative;
+        background-color: var(--color-white);
+        overflow: hidden;
+        line-height: normal;
+        letter-spacing: normal;
+        top: 3px;
     }
 }
