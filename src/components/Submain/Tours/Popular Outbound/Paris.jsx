@@ -3,8 +3,8 @@ import React from 'react';
 import parisImage from '../../../../assets/pariss.jpg';
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -84,8 +84,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival and Introduction to Paris :-</b>
 Morning: Arrive in Paris and check into your hotel.
@@ -108,7 +108,7 @@ Morning: Visit the Centre Pompidou for contemporary art and rooftop views.
 Afternoon: Explore the Marais district, including the Picasso Museum and trendy boutiques.
 Evening: Relax at Luxembourg Gardens or enjoy a farewell meal at a Michelin-starred restaurant.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -129,8 +129,8 @@ Evening: Relax at Luxembourg Gardens or enjoy a farewell meal at a Michelin-star
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -152,7 +152,7 @@ const Paris = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Paris</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Paris</h1>
         <p className="mb-4">
         Paris, often referred to as the "City of Light," is a global center of art, culture, fashion, and history. Situated along the banks of the Seine River in northern France, Paris is renowned for its iconic landmarks, romantic ambiance, and rich cultural heritage.
 

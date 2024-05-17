@@ -3,8 +3,8 @@ import React from 'react';
 import bangladeshImage from '../../../../assets/dhaka.jpg';
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -84,8 +84,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Dhaka :-</b>
 Arrive at Hazrat Shahjalal International Airport in Dhaka.
@@ -129,7 +129,7 @@ Enjoy local seafood delicacies for lunch.
 Relax on the beach or indulge in water sports like surfing and jet skiing.
 Depart from Cox's Bazar or extend your stay as per your travel plans.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -150,8 +150,8 @@ Depart from Cox's Bazar or extend your stay as per your travel plans.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -173,7 +173,7 @@ const CoxsBazarSea = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Bangladesh</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Bangladesh</h1>
         <p className="mb-4">
         Bangladesh, situated in South Asia along the Bay of Bengal, is a country known for its captivating landscapes and vibrant culture. The geography of Bangladesh is characterized by lush greenery, extensive river networks, and the renowned Sundarbans, the world's largest mangrove forest and home to the Royal Bengal Tiger. Its tropical monsoon climate brings hot, humid summers and mild winters, shaping the country's agricultural cycles and natural environment.
 

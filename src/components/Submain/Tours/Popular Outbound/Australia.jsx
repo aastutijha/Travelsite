@@ -3,8 +3,8 @@ import React from 'react';
 import australiaImage from '../../../../assets/austr.jpeg';
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -84,8 +84,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Sydney :-</b>
 Arrive in Sydney and check into your accommodation.
@@ -152,7 +152,7 @@ Relax at Cottesloe Beach for sunset.</li>
 Depending on your flight time, explore more of Perth or do last-minute shopping.
 Transfer to Perth Airport for departure.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -173,8 +173,8 @@ Transfer to Perth Airport for departure.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -196,7 +196,7 @@ const Australia = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Australia</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Australia</h1>
         <p className="mb-4">
         Australia, the world's sixth-largest country, is a vast land of diverse landscapes, rich biodiversity, and a unique blend of cultures. Its geography spans from the iconic Outback with its red deserts and rock formations to lush rainforests, pristine beaches, and vibrant cities. The continent-country is surrounded by the Indian and Pacific Oceans, offering spectacular coastal scenery and a haven for marine life.
 

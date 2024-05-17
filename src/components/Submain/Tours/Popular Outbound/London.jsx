@@ -3,8 +3,8 @@ import React from 'react';
 import londanImage from '../../../../assets/londonn.jpg';
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -84,8 +84,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in London :- </b>Arrive in London and check into your hotel.
 Spend the afternoon exploring the immediate area around your hotel to get acquainted with the surroundings.
@@ -111,7 +111,7 @@ Depending on your flight schedule, you may have time for a visit to the Tate Mod
 Transfer to the airport for your departure, concluding your memorable trip to London.</li>
 
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -132,8 +132,8 @@ Transfer to the airport for your departure, concluding your memorable trip to Lo
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -148,15 +148,15 @@ const London = () => {
   return (
     <div>
       <div className="bg-white p-4 rounded-md shadow-md center-box">
-        <div className="mb-4">
+        <div className="mb-4 ">
         <img
             src={londanImage}
             alt="Londan"
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">London</h1>
-        <p className="mb-4">
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">London</h1>
+        <p className="mb-4 ">
         London, the capital city of England and the United Kingdom, is a dynamic and diverse metropolis that seamlessly intertwines rich history with modernity. Renowned for its iconic landmarks, cultural heritage, vibrant arts scene, and global influence, London is a captivating destination for travelers from around the world.
 
 One of London's most famous landmarks is the majestic Tower Bridge, a symbol of the city's engineering prowess and Victorian architecture. Nearby stands the historic Tower of London, a UNESCO World Heritage Site that houses the Crown Jewels and has a storied past as a royal palace, fortress, and prison.
