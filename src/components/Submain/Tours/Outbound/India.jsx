@@ -4,7 +4,7 @@ import indiaImage from '../../../../assets/indiaaa.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -52,8 +52,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -133,8 +133,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Delhi :-</b> 
 Arrive in Delhi, the capital city of India.
@@ -177,7 +177,7 @@ Depart from Mumbai, concluding your India tour.
 Optionally, extend your stay to explore more of Mumbai or nearby destinations like Goa or Aurangabad.
             </li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -198,8 +198,8 @@ Optionally, extend your stay to explore more of Mumbai or nearby destinations li
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -221,7 +221,7 @@ const India = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">India</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">India</h1>
         <p className="mb-4">
         India, a land of diverse cultures and traditions, is a captivating tapestry woven with ancient history, architectural marvels, and natural wonders. From the majestic Himalayas to the tranquil backwaters of Kerala, India's landscapes are as varied as its people. Rich in heritage, India's historical monuments like the Taj Mahal, Red Fort, and Ajanta-Ellora caves narrate tales of bygone eras. Spiritual seekers find solace in holy cities like Varanasi and Bodh Gaya, while wildlife enthusiasts explore the jungles of Ranthambore and Kaziranga. The aroma of spices and flavors of Indian cuisine, from delectable curries to mouthwatering street food, delight the senses. Vibrant festivals like Diwali and Holi paint the country in a riot of colors, showcasing India's unity amid diversity. With modern advancements in technology and a welcoming hospitality culture, India offers a unique blend of tradition and progress, making it a truly incredible destination.
         </p>

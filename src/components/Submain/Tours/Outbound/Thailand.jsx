@@ -4,7 +4,7 @@ import thailandImage from '../../../../assets/bang.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -52,8 +52,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -133,8 +133,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Bangkok :-</b>
 Arrive at Suvarnabhumi Airport in Bangkok and transfer to your hotel.
@@ -165,7 +165,7 @@ Take a day trip to Phi Phi Islands for snorkeling, swimming, and exploring the s
 Visit Phang Nga Bay to see James Bond Island and enjoy a scenic boat tour of the limestone karsts.
 Relax and enjoy the sunset at Promthep Cape before departing from Phuket.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -186,8 +186,8 @@ Relax and enjoy the sunset at Promthep Cape before departing from Phuket.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -210,7 +210,7 @@ const Thailand = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Thailand</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Thailand</h1>
         <p className="mb-4">
         Thailand, known as the "Land of Smiles," is a captivating and diverse country in Southeast Asia that attracts millions of visitors each year with its rich cultural heritage, stunning landscapes, vibrant cities, and warm hospitality. From bustling metropolises to tranquil beaches, ancient temples to modern skyscrapers, Thailand offers a myriad of experiences that appeal to travelers of all interests.
 

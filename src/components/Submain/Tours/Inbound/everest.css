@@ -7,261 +7,220 @@ body {
     height: 100vh;
 }
 
+.text-blue-500 {
+    color: #163457;
+    /* Adjusted blue color */
+}
+
+.text-orange-500 {
+    color: #e68f3f;
+}
+
+
+/* Adjusted blue color */
+
+
+}
 
 /* Container styles */
-
 .flex {
     display: flex;
 }
-
 .flex-col {
     flex-direction: column;
 }
-
 .items-center {
     align-items: center;
     /* Adjusted from 'left' to 'center' */
 }
-
 .mb-4 {
     margin-bottom: 1rem;
 }
 
-
 /* Image styles */
-
 .mb-4 img {
     width: 100%;
     height: auto;
     /* Adjusted to 'auto' for responsive height */
+    
     max-height: 800px;
     /* Adjusted max-height for the image */
 }
 
-
 /* Title styles */
-
 .text-3xl {
     font-size: 1.875rem;
 }
-
 .font-bold {
     font-weight: bold;
 }
 
-
 /* Paragraph styles */
-
 .mb-4 p {
     margin-bottom: 1rem;
 }
 
-
 /* TourRate and AdditionalIncluded container styles */
-
 .grid {
     display: grid;
 }
-
 .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-
 .gap-4 {
     gap: 1rem;
 }
 
-
 /* Styles for the left-aligned rounded-md box */
 
-.left-box {
-    width: 70%;
-    /* Set the width as needed */
-    margin-right: auto;
-    /* Move the box to the left by pushing it to the right */
-    margin-left: 5rem;
-    /* Add some left margin for spacing */
-}
-
-
 /* Add space at the bottom of TourRate, AdditionalIncluded, and EXCLUDED boxes */
-
-.left-box:not(:last-child) {
-    margin-bottom: 2rem;
-    /* Adjust margin as needed for spacing */
+.left-box {
+    width: 90%;
+    /* Increase the width */
+    
+    padding: 2rem;
+    /* Increase the padding for a bigger box */
+    
+    margin-right: auto;
+    margin-left: 5rem;
 }
-
+.center-box {
+    width: 85%;
+    /* Increase the width */
+    
+    padding: 2rem;
+    /* Increase the padding for a bigger box */
+    
+    margin-right: auto;
+    margin-left: 5rem;
+}
 
 /* Adjustments for responsiveness */
-
 @media (max-width: 768px) {
-    .left-box {
+    .center-box {
         width: 90%;
-        /* Adjust width for smaller screens */
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
         margin-left: 1rem;
-        /* Reduce left margin for smaller screens */
     }
 }
 
-
 /* Other existing styles remain unchanged */
-
 
 /* Rest of your CSS styles */
 
-
 /* Background color styles */
-
 .bg-white {
     background-color: #fff;
 }
-
 .bg-gray-100 {
     background-color: #f7fafc;
 }
-
 .bg-orange-500 {
     background-color: #f97316;
 }
 
-
 /* Padding styles */
-
 .p-4 {
     padding: 1rem;
 }
-
 .py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
-
 .px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-
 /* Border radius styles */
-
 .rounded-md {
     border-radius: 0.75rem;
 }
-
 .rounded {
     border-radius: 0.25rem;
 }
 
-
 /* Box shadow styles */
-
 .shadow-md {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .shadow-sm {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-
 /* Text color styles */
-
 .text-white {
     color: #ffffff;
 }
-
 .text-gray-600 {
     color: #718096;
 }
-
 .text-gray-700 {
     color: #4b5563;
 }
-
 .text-gray-800 {
     color: #374151;
 }
 
-
 /* Font styles */
-
 .font-semibold {
     font-weight: 600;
 }
-
 .font-medium {
     font-weight: 500;
 }
 
-
 /* Button styles */
-
 .bg-blue-500 {
     background-color: #3b82f6;
 }
-
 .hover\:bg-blue-700:hover {
     background-color: #1d4ed8;
 }
-
 .bg-gray-300 {
     background-color: #e5e7eb;
 }
-
 .hover\:bg-gray-400:hover {
     background-color: #d1d5db;
 }
-
 .font-bold {
     font-weight: 700;
 }
 
-
 /* Input styles */
-
 .block {
     display: block;
 }
-
 .text-sm {
     font-size: 0.875rem;
 }
-
 .focus\:border-indigo-500:focus {
     border-color: #667eea;
     box-shadow: 0 0 0 0.125rem rgba(99, 102, 241, 0.5);
 }
-
 .focus\:ring-indigo-500:focus {
     box-shadow: 0 0 0 0.125rem rgba(99, 102, 241, 0.5);
 }
-
 .border-gray-300 {
     border-color: #e2e8f0;
 }
 
-
 /* List styles */
-
 .list-disc {
     list-style-type: disc;
     padding-left: 1rem;
 }
-
 .list-inside {
     list-style-position: inside;
 }
 
-
 /* SVG icon styles */
-
 .bg-orange-500 svg {
     fill: #ffffff;
 }
 
-
 /* Contact details styles */
-
 .enquiry-button:hover {
     text-decoration: underline;
 }

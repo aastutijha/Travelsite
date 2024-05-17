@@ -4,7 +4,7 @@ import chinaImage from '../../../../assets/chinna.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -49,8 +49,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -130,8 +130,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Beijing :-</b>
 Arrive at Beijing Capital International Airport and transfer to your hotel.
@@ -173,7 +173,7 @@ Explore Pingjiang Road and Suzhou Silk Museum for cultural insights.</li>
 Depending on your flight schedule, you may have time for last-minute shopping or sightseeing.
 Transfer to Shanghai Pudong International Airport for your departure.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -194,8 +194,8 @@ Transfer to Shanghai Pudong International Airport for your departure.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -217,7 +217,7 @@ const China = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">China</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">China</h1>
         <p className="mb-4">
         China, a vast and diverse country in East Asia, is renowned for its rich history, cultural heritage, stunning landscapes, and modern cities. As one of the world's oldest civilizations, China has a wealth of historical sites, including the Great Wall, the Forbidden City, and the Terracotta Army, which showcase its ancient glory and architectural marvels.
 

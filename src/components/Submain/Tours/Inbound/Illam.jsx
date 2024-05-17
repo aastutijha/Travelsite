@@ -4,7 +4,7 @@ import illamImage from '../../../../assets/teagarden.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -53,8 +53,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -134,8 +134,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Ilam :-</b>
 Arrive at Ilam, either by road from Kathmandu or through nearby airports like Bhadrapur or Biratnagar.
@@ -160,7 +160,14 @@ Spend the day exploring these scenic destinations, capturing memorable moments a
             <li><b>Day 6: Departure from Ilam :-</b>
 Depending on your travel plans, depart from Ilam with fond memories of your tea garden tour, enriched with insights into tea cultivation, breathtaking landscapes, and warm Nepali hospitality.</li>
           </ul>
-      
+          <h2 className="text-lg font-semibold mb-4 text-blue-500 ">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -175,8 +182,8 @@ Depending on your travel plans, depart from Ilam with fond memories of your tea 
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -198,7 +205,7 @@ const Illam = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Illam Tea Garden</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Illam Tea Garden</h1>
         <p className="mb-4">
         Illam, located in eastern Nepal, is renowned for its picturesque tea gardens that produce some of the finest teas in the world. The Illam district, nestled in the foothills of the majestic Himalayas, boasts an ideal climate and fertile soil for tea cultivation, making it a paradise for tea enthusiasts and nature lovers alike.
 

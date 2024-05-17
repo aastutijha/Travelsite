@@ -4,7 +4,7 @@ import lumbiniImage from '../../../../assets/buddha.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -52,8 +52,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -133,8 +133,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Lumbini :-</b>
 Arrive at Gautam Buddha Airport in Bhairahawa or at Lumbini by road from nearby cities like Pokhara or Kathmandu.
@@ -157,7 +157,14 @@ Spend your evening in meditation or attending a discourse on Buddhism, offered b
 Depending on your departure schedule, you may have some free time in the morning to revisit any sites of interest or indulge in souvenir shopping.
 Depart from Lumbini, either by road or air, concluding your spiritual journey to the birthplace of Lord Buddha.</li>
           </ul>
-     
+          <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -172,8 +179,8 @@ Depart from Lumbini, either by road or air, concluding your spiritual journey to
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -195,7 +202,7 @@ const Lumbini = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Lumbini</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Lumbini</h1>
         <p className="mb-4">
         Lumbini is a revered pilgrimage site located in the Rupandehi District of Nepal, renowned as the birthplace of Siddhartha Gautama, who later became known as Lord Buddha. It holds immense significance for Buddhists worldwide and is recognized as a UNESCO World Heritage Site.
 

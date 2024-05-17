@@ -4,7 +4,7 @@ import raraImage from '../../../../assets/Rara-Lake.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -53,8 +53,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -134,8 +134,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Kathmandu to Nepalgunj :-</b>
 Fly from Kathmandu to Nepalgunj, a major city in the western Terai region of Nepal.
@@ -164,7 +164,7 @@ Arrive in Jumla and spend the evening relaxing and reflecting on your Rara Lake 
 Take a morning flight from Jumla to Nepalgunj.
 From Nepalgunj, fly back to Kathmandu, concluding your journey to Rara Lake.</li>        
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
         <li>Access: Surface transport</li>
@@ -186,8 +186,8 @@ From Nepalgunj, fly back to Kathmandu, concluding your journey to Rara Lake.</li
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -209,7 +209,7 @@ const Rara = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Rare Lake Trek</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Rare Lake Trek</h1>
         <p className="mb-4">
         The Rare Lake Trek is a captivating adventure that takes explorers through some of the most pristine and less-traveled landscapes, offering a unique experience away from the usual tourist trails. The trek typically encompasses a journey to remote and lesser-known lakes, often nestled in high-altitude regions surrounded by breathtaking mountain scenery.
 

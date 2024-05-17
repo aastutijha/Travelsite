@@ -198,7 +198,14 @@ Attend a farewell dinner with your trekking team and celebrate the successful Ev
 Depending on your flight schedule, explore more of Kathmandu or relax at your hotel.
 Transfer to Tribhuvan International Airport for your departure, concluding your Everest Base Camp trekking experience.</li>
           </ul>
-      
+          <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>

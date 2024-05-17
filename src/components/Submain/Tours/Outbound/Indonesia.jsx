@@ -4,7 +4,7 @@ import indonesiaImage from '../../../../assets/bali.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -54,8 +54,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -135,8 +135,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Bali :-</b>
 Arrive at Ngurah Rai International Airport in Bali and transfer to your hotel in Kuta or Seminyak.
@@ -170,7 +170,7 @@ Optional: Visit Jakarta's modern attractions like Taman Mini Indonesia Indah or 
 Depending on your flight schedule, explore any remaining attractions or enjoy leisure time at your hotel.
 Transfer to Soekarno-Hatta International Airport for your departure flight.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -191,8 +191,8 @@ Transfer to Soekarno-Hatta International Airport for your departure flight.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -214,7 +214,7 @@ const Indonesia = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Indonesia </h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Indonesia </h1>
         <p className="mb-4">
         Indonesia, an archipelago nation located in Southeast Asia, is renowned for its diverse culture, stunning natural landscapes, rich history, and warm hospitality. With thousands of islands, each offering unique experiences, Indonesia is a paradise for travelers seeking adventure, relaxation, cultural immersion, and natural beauty.
 

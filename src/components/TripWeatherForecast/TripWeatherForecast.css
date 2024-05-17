@@ -6,6 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+.text-orange-500 {
+    color: #e68f3f;
+}
+
 .header {
     text-align: center;
     margin-bottom: 20px;

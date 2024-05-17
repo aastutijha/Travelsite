@@ -4,7 +4,7 @@ import everestImage from '../../../../assets/everest.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -54,8 +54,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -136,8 +136,8 @@ const TourRate = () => {
 const AdditionalIncluded = () => {
   
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Kathmandu :-</b>
 Arrive at Tribhuvan International Airport in Kathmandu.
@@ -199,6 +199,14 @@ Attend a farewell dinner with your trekking team and celebrate the successful Ev
 Depending on your flight schedule, explore more of Kathmandu or relax at your hotel.
 Transfer to Tribhuvan International Airport for your departure, concluding your Everest Base Camp trekking experience.</li>
           </ul>
+          <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -213,8 +221,8 @@ Transfer to Tribhuvan International Airport for your departure, concluding your 
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -228,8 +236,8 @@ const  EXCLUDED = () => {
 const Everest = () => {
   return (
     <div>
-      <div className="bg-white p-4 rounded-md shadow-md center-box">
-        <div className="mb-4"></div>
+      <div className="bg-white p-4 rounded-md shadow-md center-box ">
+       
         <div className="mb-4">
           <img
             src={everestImage}
@@ -237,7 +245,7 @@ const Everest = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">The Best of Everest Base Camp Trek / Kalapathar Trekking</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">The Best of Everest Base Camp Trek / Kalapathar Trekking</h1>
         <p className="mb-4">
         The Everest Base Camp trek is an iconic and challenging journey that attracts adventurers and nature enthusiasts from around the globe. Situated in the heart of the Himalayas, the Everest Base Camp (EBC) serves as the starting point for climbers aiming to conquer Mount Everest, the world's highest peak.
 

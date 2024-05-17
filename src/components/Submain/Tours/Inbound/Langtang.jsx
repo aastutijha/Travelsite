@@ -4,7 +4,7 @@ import langtangImage from '../../../../assets/langtangvalley.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -53,8 +53,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -134,8 +134,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Kathmandu to Syabrubesi :-</b>
 Drive from Kathmandu to Syabrubesi, the starting point of the Langtang trek.
@@ -174,7 +174,14 @@ Drive back from Syabrubesi to Kathmandu, enjoying the scenic route once again.
 Arrive in Kathmandu and transfer to your hotel.
 Relax and unwind in Kathmandu or explore the city's cultural attractions and vibrant markets.</li>
           </ul>
-     
+          <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
+      </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
           <span>For more Enquiry</span>
@@ -189,8 +196,8 @@ Relax and unwind in Kathmandu or explore the city's cultural attractions and vib
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -212,7 +219,7 @@ const  EXCLUDED = () => {
             className="w-full h-auto"
           />
          </div>
-         <h1 className="text-3xl font-bold mb-2">Langtang Trek</h1>
+         <h1 className="text-3xl font-bold mb-2 text-blue-500">Langtang Trek</h1>
          <p className="mb-4">
          The Langtang Trek is a captivating journey through the Langtang Valley in Nepal, offering trekkers a blend of natural beauty, cultural immersion, and stunning Himalayan vistas. This trek is renowned for its accessibility from Kathmandu and the diverse landscapes it traverses, making it a popular choice for adventurers seeking a memorable mountain experience.
 

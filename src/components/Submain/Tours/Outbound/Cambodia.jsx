@@ -4,7 +4,7 @@ import cambodiaImage from '../../../../assets/cambodi.jpg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -52,8 +52,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -133,8 +133,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-       <h2 className="text-lg font-semibold mb-4">YOUR ITINERARY</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+       <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
           <ul className="list-disc pl-6">
             <li><b>Day 1: Arrival in Siem Reap :-</b>
 Arrive at Siem Reap International Airport and transfer to your hotel.
@@ -163,7 +163,7 @@ Reflect on Cambodia's history at the Tuol Sleng Genocide Museum (S-21) and the K
 Depending on your flight schedule, you may have time for additional sightseeing or shopping in Phnom Penh.
 Transfer to Phnom Penh International Airport for your departure.</li>
           </ul>
-      <h2 className="text-lg font-semibold mb-4">ADDITIONAL INCLUDED</h2>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
       <ul className="list-disc list-inside">
         <li>Pick and Drop Services</li>
         <li>1 Meal Per Day</li>
@@ -184,8 +184,8 @@ Transfer to Phnom Penh International Airport for your departure.</li>
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -208,7 +208,7 @@ const Cambodia = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Cambodia</h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Cambodia</h1>
         <p className="mb-4">
         Cambodia, located in Southeast Asia, is a country with a rich cultural heritage, ancient history, and natural beauty. Its most famous attraction is the magnificent Angkor Wat, a UNESCO World Heritage site and one of the largest religious monuments in the world. Built in the early 12th century, Angkor Wat is a symbol of Cambodia's Khmer Empire and is renowned for its intricate carvings, grand architecture, and spiritual significance.
 Cambodia's capital city, Phnom Penh, is a bustling metropolis with a mix of traditional Khmer architecture and modern developments. The Royal Palace, Silver Pagoda, and National Museum are must-visit sites that reflect Cambodia's royal history and artistic heritage. The Tuol Sleng Genocide Museum and Killing Fields of Choeung Ek offer poignant insights into Cambodia's tragic past during the Khmer Rouge regime.

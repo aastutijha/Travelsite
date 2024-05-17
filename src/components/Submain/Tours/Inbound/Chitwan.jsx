@@ -4,7 +4,7 @@ import chitwanImage from '../../../../assets/safarii.jpeg';
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
-      <div className="header">
+      <div className="header text-orange-500 ">
         <h2>Trip Weather Forecast</h2>
       </div>
       <div className="location">
@@ -47,8 +47,8 @@ const TripWeatherForecast = () => {
 };
 const TourRate = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Tour Rate</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
           
@@ -128,8 +128,8 @@ const TourRate = () => {
 
 const AdditionalIncluded = () => {
   return (
-    <div className="bg-white p-4 rounded-md shadow-md left-box">
-      <h2 className="text-lg font-semibold mb-4">Additional Included</h2>
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">YOUR ITINERARY</h2>
       <ul className="list-disc pl-6">
         <li>
           <b>Day 1: Arrival in Chitwan :-</b> Arrive in Chitwan, either by road or air from Kathmandu or Pokhara. Check into your safari lodge or hotel in Sauraha, the main gateway to Chitwan National Park. Rest and freshen up after your journey. In the evening, enjoy a cultural program featuring Tharu traditional dance and music.
@@ -143,6 +143,14 @@ const AdditionalIncluded = () => {
         <li>
           <b>Day 4: Elephant Interaction and Departure :-</b> Participate in an elephant interaction program where you can feed, bathe, and learn about the daily care of elephants from mahouts (elephant keepers). Have a farewell breakfast at your lodge. Check out from your accommodation and depart for your onward journey, whether back to Kathmandu, Pokhara, or another destination.
         </li>
+      </ul>
+      <h2 className="text-lg font-semibold mb-4 text-blue-500">ADDITIONAL INCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Accommodation: Tourist Standard Hotels/Lodges on Full board basis (AP basis) on sharing basis</li>
+        <li>Access: Surface transport</li>
+        <li>Experience Professional Guide</li>
+        <li>Sight-seeing Entrance fees.</li>
+        <li>First aid (Medical kits).</li>
       </ul>
       <div className="flex justify-end mt-4">
         <div className="bg-orange-500 text-white font-bold py-2 px-4 rounded">
@@ -158,8 +166,8 @@ const AdditionalIncluded = () => {
 };
 const  EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md left-box">
-<h2 className="text-lg font-semibold mb-2">WHAT'S EXCLUDED</h2>
+<div className="bg-white p-4 rounded-md shadow-md center-box">
+<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
 <ul className="list-disc list-inside">
   <li>Pick and Drop Services</li>
   <li>1 Meal Per Day</li>
@@ -180,7 +188,7 @@ const Chitwan = () => {
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2">Chitwan Safari </h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Chitwan Safari </h1>
         <p className="mb-4">
         A Chitwan safari offers an exhilarating adventure into the heart of the lush Terai region of Nepal, renowned for its rich biodiversity and stunning natural beauty. The safari typically takes place in the iconic Chitwan National Park, a UNESCO World Heritage Site and one of the best-preserved conservation areas in Asia.
 
