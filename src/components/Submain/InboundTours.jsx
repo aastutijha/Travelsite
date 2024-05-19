@@ -22,7 +22,7 @@ const InboundTours = () => {
   ];
 
   return (
-    <div className="inbound-tours">
+    <div className ="inbound-tours">
       <h2>TOP INBOUND TOURS</h2>
       <p>Spots at the top of our domestic must-go list</p>
       <div className="tour-cards">

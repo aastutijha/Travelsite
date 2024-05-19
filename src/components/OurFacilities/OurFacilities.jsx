@@ -27,7 +27,8 @@ const OurFacilities = () => {
           <i className="fa fa-bookmark"></i>
         </div>
         
-        <h3>Personalized Matching</h3>
+        <h3>Personalized Matching 🛡
+</h3>
         <p>"Tailored experiences to match your travel dreams perfectly."</p>
       </div>
 
@@ -35,7 +36,8 @@ const OurFacilities = () => {
         <div className="facility-icon">
           <i className="fa fa-globe"></i>
         </div>
-        <h3>Wide Variety Of Destinations</h3>
+        <h3>Wide Variety of Destinations🏝
+</h3>
         <p>"Explore an expansive array of diverse destinations for your next adventure."</p>
       </div>
 
@@ -43,7 +45,8 @@ const OurFacilities = () => {
         <div className="facility-icon">
           <i className="fa fa-user-tie"></i>
         </div>
-        <h3>Highly Qualified Service</h3>
+        <h3>Highly Qualified Service 👩🏼‍💻🧑🏻‍💻
+</h3>
         <p>"Experience unparalleled service excellence from our highly skilled and knowledgeable professionals."</p>
       </div>
 
@@ -51,7 +54,8 @@ const OurFacilities = () => {
         <div className="facility-icon">
           <i className="fa fa-umbrella"></i>
         </div>
-        <h3>Best Price Guarantee</h3>
+        <h3>Best Price Guarantee 💰
+</h3>
         <p>"Unlock unbeatable prices and savings with our Best Price Guarantee on all travel packages."</p>
       </div>
 
@@ -59,7 +63,8 @@ const OurFacilities = () => {
         <div className="facility-icon">
           <i className="fa fa-users"></i>
         </div>
-        <h3>24/7 Support</h3>
+        <h3>24/7 Support 🏪
+</h3>
         <p>"Round-the-clock assistance and support to ensure a seamless and worry-free travel experience."</p>
       </div>
     </div>

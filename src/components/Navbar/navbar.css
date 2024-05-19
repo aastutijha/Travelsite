@@ -72,6 +72,41 @@ body,
 .navItem {
     margin: 0 1rem;
     color: #e7a814;
+    position: relative;
+}
+
+
+/* Dropdown styles */
+
+.navItem .navLink {
+    color: #e7a814;
+    text-decoration: none;
+}
+
+.navItem:hover .dropdownMenu {
+    display: block;
+}
+
+.dropdownMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.dropdownItem {
+    padding: 10px 20px;
+    color: #163457;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownItem:hover {
+    background-color: #c25b2f;
 }
 
 .active {

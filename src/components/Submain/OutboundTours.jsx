@@ -21,7 +21,7 @@ const OutboundTours = () => {
   ];
 
   return (
-    <div className="outbound-places">
+    <div className ="outbound-places">
       <h2>TOP OUTBOUND PLACES</h2>
       <p>Spots at the top of our outbound must-go list</p>
       <div className="tour-cards">
