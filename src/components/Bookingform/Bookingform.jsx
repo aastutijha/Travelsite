@@ -49,8 +49,10 @@ const BookingForm = ({ onClose, onSubmit }) => {
         <ThankYouMessage />
       ) : (
         <div className="booking-form">
-          <h2> Book a Tour </h2>
-         
+          <h2>Book a Tour ✈</h2>
+          <button className="close-button" onClick={onClose}>
+              ❌
+            </button>
           <div className="form-group">
             <label>Tour Date</label>
             <input
@@ -105,17 +107,11 @@ const BookingForm = ({ onClose, onSubmit }) => {
               {/* Add more options as needed */}
             </select>
           </div>
-          <div className="total-amount">
-            <span>Total Amount:</span>
-            <span>{calculateTotalAmount()}</span>
-          </div>
           <div className="button-group">
             <button type="submit" onClick={handleSubmit} className="book-now">
               Book Now
             </button>
-            <button className="close-button" onClick={onClose}>
-              Close
-            </button>
+            
           </div>
         </div>
       )}
