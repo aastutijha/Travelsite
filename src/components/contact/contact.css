@@ -8,7 +8,8 @@
     font-family: "Montserrat";
     background-color: #f7f7f7;
     padding: 2rem 0;
-    background-image: url("../../assets/contact.jpg");
+    background: linear-gradient(180deg, #29344e 23.17%, #c17e50);
+    /* background-image: url("../../assets/contact.jpg");
     background-size: cover;
     /* Ensure the background covers the entire element */
     background-position: center;

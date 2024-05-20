@@ -35,7 +35,7 @@ const InformationBar = () => {
         <p>Baneshwor, Kathmandu, Nepal</p>
         <p>Tel: +977-1-4435300 , 4422325</p>
         <p>Cell: 9851243326</p>
-        <p>Email:TravelHolidays@gmail.com</p>
+        <p>Email: TravelHolidays@gmail.com</p>
         <p>Whatapps/Viber : 9851243326</p>
         <button className="quick-inquiry" onClick={handleQuickInquiryClick} >QUICK INQUIRY</button>
       </div>

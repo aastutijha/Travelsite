@@ -2,7 +2,7 @@
 import React from 'react'
 import './App.css'
 import Mains from './components/Mains/Mains.jsx'
-import Login from './components/Login/login.jsx'
+//import Login from './components/Login/login.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 //import Main from './components/Main/Main.jsx'
 import TripWeatherForecast from './components/TripWeatherForecast/TripWeatherForecast.jsx'
@@ -34,7 +34,7 @@ function App() {
     <Contact/>
     <InformationBar/>
     <Footer />
-    <Login/>
+    
     </>
   )
 }
