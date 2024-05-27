@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={`contact ${animate ? 'animate' : ''}`}  style={{ backgroundImage: `url(${backgroundImage})` }}  id="contact">
+    <div className= {`contact ${animate ? 'animate' : ''}`}  style={{ backgroundImage: `url(${backgroundImage})` }}  id="contact" >
       <div className="contactTop">
       <div className="Company name">"Travel holidays"</div>
         <div className="contactLeft">
@@ -61,6 +61,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+    
     </div>
   );
 };

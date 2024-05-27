@@ -7,6 +7,15 @@ body {
     height: 100vh;
 }
 
+.text-blue-500 {
+    color: #163457;
+    /* Adjusted blue color */
+}
+
+.text-orange-500 {
+    color: #e68f3f;
+}
+
 
 /* Container styles */
 
@@ -19,7 +28,8 @@ body {
 }
 
 .items-center {
-    align-items: left;
+    align-items: center;
+    /* Adjusted from 'left' to 'center' */
 }
 
 .mb-4 {
@@ -32,9 +42,9 @@ body {
 .mb-4 img {
     width: 100%;
     height: auto;
-    margin-left: auto;
-    /* Center image */
-    margin-right: auto;
+    /* Adjusted to 'auto' for responsive height */
+    max-height: 800px;
+    /* Adjusted max-height for the image */
 }
 
 
@@ -51,16 +61,13 @@ body {
 
 /* Paragraph styles */
 
+p {
+    text-align: justify;
+    /* Ensure text is justified */
+}
+
 .mb-4 p {
     margin-bottom: 1rem;
-    text-align: justify;
-    /* Align paragraphs in a justified manner */
-    line-height: 1.5;
-    /* Add line spacing of 1.5 */
-    margin-left: 10%;
-    /* Add space on the left side */
-    margin-right: 10%;
-    /* Add space on the right side */
 }
 
 
@@ -81,31 +88,44 @@ body {
 
 /* Styles for the left-aligned rounded-md box */
 
-.left-box {
-    width: 70%;
-    margin-right: auto;
-    margin-left: 5rem;
-    padding: 1rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 
 /* Add space at the bottom of TourRate, AdditionalIncluded, and EXCLUDED boxes */
 
-.left-box:not(:last-child) {
-    margin-bottom: 2rem;
+.left-box {
+    width: 90%;
+    /* Increase the width */
+    padding: 2rem;
+    /* Increase the padding for a bigger box */
+    margin-right: auto;
+    margin-left: 5rem;
+}
+
+.center-box {
+    width: 85%;
+    /* Increase the width */
+    padding: 2rem;
+    /* Increase the padding for a bigger box */
+    margin-right: auto;
+    margin-left: 4rem;
 }
 
 
 /* Adjustments for responsiveness */
 
 @media (max-width: 768px) {
-    .left-box {
+    .center-box {
         width: 90%;
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
         margin-left: 1rem;
     }
 }
+
+
+/* Other existing styles remain unchanged */
+
+
+/* Rest of your CSS styles */
 
 
 /* Background color styles */
@@ -120,6 +140,45 @@ body {
 
 .bg-orange-500 {
     background-color: #f97316;
+}
+
+
+/* Padding styles */
+
+.p-4 {
+    padding: 1rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/* Border radius styles */
+
+.rounded-md {
+    border-radius: 0.75rem;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+
+/* Box shadow styles */
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 
@@ -223,72 +282,4 @@ body {
 
 .enquiry-button:hover {
     text-decoration: underline;
-}
-
-
-/* Tour Rate styles */
-
-.tour-rate {
-    background-color: #f5f5f5;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-
-.tour-rate__header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ff9800;
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-}
-
-.tour-rate__header-item {
-    flex: 1;
-    text-align: center;
-}
-
-.tour-rate__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.tour-rate__input,
-.tour-rate__select {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-}
-
-.tour-rate__total {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.tour-rate__actions {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1rem;
-}
-
-.tour-rate__button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.tour-rate__button--primary {
-    background-color: #2196f3;
-    color: #fff;
-    margin-right: 0.5rem;
-}
-
-.tour-rate__button--secondary {
-    background-color: #e0e0e0;
-    color: #333;
 }

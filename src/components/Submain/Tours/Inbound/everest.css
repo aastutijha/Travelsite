@@ -61,6 +61,11 @@ body {
 
 /* Paragraph styles */
 
+p {
+    text-align: justify;
+    /* Ensure text is justified */
+}
+
 .mb-4 p {
     margin-bottom: 1rem;
 }
