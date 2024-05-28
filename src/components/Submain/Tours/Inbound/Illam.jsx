@@ -1,6 +1,7 @@
 import React from 'react';
 import './everest.css';
 import illamImage from '../../../../assets/teagarden.jpg';
+import Navbar from "../../../Navbar/Navbar.jsx"; // Updated the import path
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -195,7 +196,7 @@ const  EXCLUDED = () => {
 };
 const Illam = () => {
   return (
-    <div>
+    <div><Navbar/>
        <div className="bg-white p-4 rounded-md shadow-md center-box">
         <div className="mb-4"></div>
         <div className="mb-4">

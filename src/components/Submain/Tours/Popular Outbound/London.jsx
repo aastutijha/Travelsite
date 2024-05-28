@@ -1,6 +1,7 @@
 import React from 'react';
 //import './tour.css';
 import londanImage from '../../../../assets/londonn.jpg';
+import Navbar from "../../../Navbar/Navbar.jsx"; // Updated the import path
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md center-box">
@@ -147,6 +148,7 @@ const  EXCLUDED = () => {
 const London = () => {
   return (
     <div>
+      <Navbar/>
       <div className="bg-white p-4 rounded-md shadow-md center-box">
         <div className="mb-4 ">
         <img

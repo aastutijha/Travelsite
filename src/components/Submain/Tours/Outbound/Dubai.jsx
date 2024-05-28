@@ -1,6 +1,7 @@
 import React from 'react';
 import './tour.css';
 import dubaiImage from '../../../../assets/dubaiii.jpg';
+import Navbar from "../../../Navbar/Navbar.jsx"; // Updated the import path
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -201,6 +202,7 @@ const  EXCLUDED = () => {
 const Dubai = () => {
   return (
     <div>
+      <Navbar/>
       <div className="bg-white p-4 rounded-md shadow-md center-box">
         <div className="mb-4">
         <img

@@ -1,6 +1,8 @@
 import React from 'react';
 import './everest.css';
 import everestImage from '../../../../assets/everest.jpg';
+import Navbar from "../../../Navbar/Navbar.jsx"; // Updated the import path
+
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -235,6 +237,7 @@ const  EXCLUDED = () => {
 const Darjelling = () => {
   return (
     <div>
+      <Navbar />
       <div className="flex flex-col items-center">
         <div className="mb-4">
           <img

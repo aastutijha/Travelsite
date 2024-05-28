@@ -1,6 +1,9 @@
-import React ,{usestate} from 'react';
+import React from 'react';
 import './everest.css';
 import chitwanImage from '../../../../assets/safarii.jpeg';
+import Navbar from "../../../Navbar/Navbar.jsx"; // Updated the import path
+
+
 const TripWeatherForecast = () => {
   return (
     <div className="trip-weather-forecast">
@@ -45,13 +48,13 @@ const TripWeatherForecast = () => {
     </div>
   );
 };
+
 const TourRate = () => {
   return (
     <div className="bg-white p-4 rounded-md shadow-md center-box">
       <h2 className="text-lg font-semibold mb-4 text-blue-500">Tour Rate</h2>
       <div className="grid grid-cols-4 gap-4">
         <div>
-          
           <label htmlFor="tourDate" className="block text-sm font-medium text-gray-700">
             Tour Date
           </label>
@@ -75,7 +78,7 @@ const TourRate = () => {
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-             <option value="4">4</option>
+            <option value="4">4</option>
             <option value="5">5</option>
             {/* Add more options as needed */}
           </select>
@@ -109,7 +112,6 @@ const TourRate = () => {
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            
             {/* Add more options as needed */}
           </select>
         </div>
@@ -164,54 +166,64 @@ const AdditionalIncluded = () => {
     </div>
   );
 };
-const  EXCLUDED = () => {
+
+const EXCLUDED = () => {
   return (
-<div className="bg-white p-4 rounded-md shadow-md center-box">
-<h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
-<ul className="list-disc list-inside">
-  <li>Pick and Drop Services</li>
-  <li>1 Meal Per Day</li>
-  <li>Music Event</li>
-  <li>Visit 7 Best Places in the City With Group</li>
-</ul>
-</div>
- );
+    <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <h2 className="text-lg font-semibold mb-2 text-blue-500">WHAT'S EXCLUDED</h2>
+      <ul className="list-disc list-inside">
+        <li>Pick and Drop Services</li>
+        <li>Lunch and dinner while you are in Kathmandu & Pokhara.</li>
+        <li>Travel insurance and emergency evacuation services.</li>
+        <li>International airfare.</li>
+        <li>Tips for guides and porters.</li>
+        <li>Personal expenses such as alcoholic beverages, shopping, and laundry.</li>
+        <li>Optional activities not mentioned in the itinerary.</li>
+      </ul>
+    </div>
+  );
 };
+
 const Chitwan = () => {
   return (
     <div>
-        <div className="bg-white p-4 rounded-md shadow-md center-box">
+      <Navbar />
+      <div className="bg-white p-4 rounded-md shadow-md center-box">
         <div className="mb-4">
-        <img
+          <img
             src={chitwanImage}
             alt="Chitwan Safarii"
             className="w-full h-auto"
           />
         </div>
-        <h1 className="text-3xl font-bold mb-2 text-blue-500">Chitwan Safari </h1>
+        <h1 className="text-3xl font-bold mb-2 text-blue-500">Chitwan Safari</h1>
         <p className="mb-4">
-        A Chitwan safari offers an exhilarating adventure into the heart of the lush Terai region of Nepal, renowned for its rich biodiversity and stunning natural beauty. The safari typically takes place in the iconic Chitwan National Park, a UNESCO World Heritage Site and one of the best-preserved conservation areas in Asia.
-
-Chitwan safaris provide an opportunity to explore the diverse ecosystems of the park, which include dense forests, grasslands, and wetlands. Visitors can embark on thrilling jungle excursions led by experienced guides, either on elephant-back or in four-wheel-drive vehicles, allowing them to traverse through the wilderness and observe the region's incredible wildlife up close.
-
-One of the highlights of a Chitwan safari is the chance to encounter rare and endangered species in their natural habitat. From majestic Bengal tigers and one-horned rhinoceros to Asian elephants and elusive leopards, the park is home to a remarkable array of wildlife. Additionally, visitors can spot various species of deer, monkeys, crocodiles, and over 500 species of birds, making it a paradise for wildlife enthusiasts and birdwatchers alike.
-
-Aside from wildlife viewing, Chitwan safaris offer a range of other exciting activities. Travelers can enjoy serene canoe rides along the Rapti River, where they may spot crocodiles basking on the riverbanks or vibrant birdlife fluttering above. Nature walks through the park's lush trails provide opportunities to learn about the region's flora and fauna from knowledgeable guides.
-
-Chitwan safaris also offer cultural experiences, allowing visitors to interact with the indigenous Tharu communities who call the region home. Travelers can visit Tharu villages, witness traditional dance performances, and learn about the unique customs and traditions of these fascinating people.
-
-Accommodations for Chitwan safaris range from luxury jungle lodges to eco-friendly resorts and budget-friendly guesthouses, ensuring that there are options to suit every traveler's preferences and budget. Whether seeking adventure, wildlife encounters, cultural immersion, or relaxation amidst nature, a Chitwan safari promises an unforgettable journey into the wilderness of Nepal.</p>
-     <div className="flex justify-center items-center h-screen">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <TripWeatherForecast />
-            <TourRate />
-            <AdditionalIncluded />
-            <EXCLUDED />
-          </div>
+          A Chitwan safari offers an exhilarating adventure into the heart of the lush Terai region of Nepal, renowned for its rich biodiversity and stunning natural beauty. The safari typically takes place in the iconic Chitwan National Park, a UNESCO World Heritage Site and one of the best-preserved conservation areas in Asia.
+        </p>
+        <p className="mb-4">
+          Chitwan safaris provide an opportunity to explore the diverse ecosystems of the park, which include dense forests, grasslands, and wetlands. Visitors can embark on thrilling jungle excursions led by experienced guides, either on elephant-back or in four-wheel-drive vehicles, allowing them to traverse through the wilderness and observe the region's incredible wildlife up close.
+        </p>
+        <p className="mb-4">
+          One of the highlights of a Chitwan safari is the chance to encounter rare and endangered species in their natural habitat. From majestic Bengal tigers and one-horned rhinoceros to Asian elephants and elusive leopards, the park is home to a remarkable array of wildlife. Additionally, visitors can spot various species of deer, monkeys, crocodiles, and over 500 species of birds, making it a paradise for wildlife enthusiasts and birdwatchers alike.
+        </p>
+        <p className="mb-4">
+          Aside from wildlife viewing, Chitwan safaris offer a range of other exciting activities. Travelers can enjoy serene canoe rides along the Rapti River, where they may spot crocodiles basking on the riverbanks or vibrant birdlife fluttering above. Nature walks through the park's lush trails provide opportunities to learn about the region's flora and fauna from knowledgeable guides.
+        </p>
+        <p className="mb-4">
+          Chitwan safaris also offer cultural experiences, allowing visitors to interact with the indigenous Tharu communities who call the region home. Travelers can visit Tharu villages, witness traditional dance performances, and learn about the unique customs and traditions of these fascinating people.
+        </p>
+        <p className="mb-4">
+          Accommodations for Chitwan safaris range from luxury jungle lodges to eco-friendly resorts and budget-friendly guesthouses, ensuring that there are options to suit every traveler's preferences and budget. Whether seeking adventure, wildlife encounters, cultural immersion, or relaxation amidst nature, a Chitwan safari promises an unforgettable journey into the wilderness of Nepal.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <TripWeatherForecast />
+          <TourRate />
+          <AdditionalIncluded />
+          <EXCLUDED />
         </div>
       </div>
     </div>
   );
 };
-  export default Chitwan
-  
+
+export default Chitwan;
