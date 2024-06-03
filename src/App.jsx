@@ -12,14 +12,16 @@ import ChoiceCard from './components/ChoiceCard/ChoiceCard.jsx'
 import Contact from './components/contact/contact.jsx'
 import InformationBar from './components/InformationBar/InformationBar.jsx'
 import Footer from './components/Footer/Footer.jsx'
-import SignUp from './components/Authentication/signup.jsx'
-import Login from './components/Authentication/login.jsx'
+import Home from './components/Authentication/components/Home.jsx'
+import Register from './components/Authentication/components/Register.jsx'
+import Login from './components/Authentication/components/Login.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   
   return (
     <>
-    <SignUp />
+    <Home />
+    <Register />
     <Login />
     <Navbar />
     <Mains/>

@@ -24,8 +24,9 @@ import China from './components/Submain/Tours/Outbound/China.jsx';
 import Japan from './components/Submain/Tours/Outbound/Japan.jsx';
 import Thailand from './components/Submain/Tours/Outbound/Thailand.jsx';
 import Cambodia from './components/Submain/Tours/Outbound/Cambodia.jsx';
-import SignUp from './components/Authentication/signup.jsx'
-import Login from './components/Authentication/login.jsx'
+import Home from './components/Authentication/components/Home.jsx'
+import Register from './components/Authentication/components/Register.jsx'
+import Login from './components/Authentication/components/Login.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // eslint-disable-next-line react/no-deprecated
@@ -34,8 +35,9 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path='/register' element={<Register/>} />
+        <Route path='/login' element={<Login/>} />
         <Route path="/TourDetails" element={<TourDetailspage />} />
         <Route path="/tours/Australia" element={<Australia />} />
         <Route path="/tours/CoxsBazarSea" element={<CoxsBazarSea />} />
