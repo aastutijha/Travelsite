@@ -75,7 +75,7 @@
 
 .frame-parent,
 .hero-image-parent {
-    width: 807px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -88,7 +88,7 @@
 .hero-image-parent {
     position: absolute;
     top: 56px;
-    left: 0;
+    left: 1;
     width: 1328px;
     padding: 48px 87px 318px;
     box-sizing: border-box;
@@ -102,9 +102,9 @@
 .marten-bjork-wgu1pzdsm3g-unspl-icon {
     position: absolute;
     top: 100px;
-    left: 880px;
-    width: 300px;
-    height: 310px;
+    left: 1000px;
+    width: auto;
+    height: 400px;
     object-fit: cover;
     z-index: 1;
 }
