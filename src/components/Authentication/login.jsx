@@ -1,54 +1,72 @@
-import { useState } from 'react';
-import { signInWithGoogle, logInWithEmailAndPassword } from 'firebase';
-import { Button, Form, Container, Row, Col } from 'react-bootstrap';
+import  { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { signInWithEmailAndPassword } from "./firebase/auth";
+import InputControl from "./inputcontrol";
+import { auth } from "firebase";
+import styles from "./login.css";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const [values, setValues] = useState({
+    email: "",
+    pass: "",
+  });
+  const [errorMsg, setErrorMsg] = useState("");
+  const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    await logInWithEmailAndPassword(email, password);
+  const handleSubmission = () => {
+    if (!values.email || !values.pass) {
+      setErrorMsg("Fill all fields");
+      return;
+    }
+    setErrorMsg("");
+
+    setSubmitButtonDisabled(true);
+    signInWithEmailAndPassword(auth, values.email, values.pass)
+      .then(async () => {
+        setSubmitButtonDisabled(false);
+        
+        navigate("/");
+      })
+      .catch((err) => {
+        setSubmitButtonDisabled(false);
+        setErrorMsg(err.message);
+      });
   };
-
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-      <Row>
-        <Col md={12}>
-          <h4 className="mb-3">Login</h4>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </Form.Group>
+    <div className={styles.container}>
+      <div className={styles.innerBox}>
+        <h1 className={styles.heading}>Login</h1>
 
-            <Form.Group controlId="formPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </Form.Group>
+        <InputControl
+          label="Email"
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, email: event.target.value }))
+          }
+          placeholder="Enter email address"
+        />
+        <InputControl
+          label="Password"
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, pass: event.target.value }))
+          }
+          placeholder="Enter Password"
+        />
 
-            <Button variant="primary" type="submit" className="mt-3">
-              Login
-            </Button>
-            <Button onClick={signInWithGoogle} variant="secondary" className="mt-3 ml-2">
-              Login with Google
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+        <div className={styles.footer}>
+          <b className={styles.error}>{errorMsg}</b>
+          <button disabled={submitButtonDisabled} onClick={handleSubmission}>
+            Login
+          </button>
+          <p>
+            Already have an account?{" "}
+            <span>
+              <Link to="/signup">Sign up</Link>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -1,64 +1,84 @@
-import { useState } from 'react';
-import { registerWithEmailAndPassword } from 'firebase';
-import { Button, Form, Container, Row, Col } from 'react-bootstrap';
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword, updateProfile } from "./firebase/auth";
+import InputControl from "./inputcontrol";
+import { auth } from "firebase";
+import styles from "./signup.css";
 
-function SignUp() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+function Signup() {
+  const navigate = useNavigate();
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    pass: "",
+  });
+  const [errorMsg, setErrorMsg] = useState("");
+  const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    await registerWithEmailAndPassword(name, email, password);
+  const handleSubmission = () => {
+    if (!values.name || !values.email || !values.pass) {
+      setErrorMsg("Fill all fields");
+      return;
+    }
+    setErrorMsg("");
+    setSubmitButtonDisabled(true);
+    createUserWithEmailAndPassword(auth, values.email, values.pass)
+      .then(async (res) => {
+        setSubmitButtonDisabled(false);
+        const user = res.user;
+        await updateProfile(user, {
+          displayName: values.name,
+        });
+        navigate("/");
+      })
+      .catch((err) => {
+        setSubmitButtonDisabled(false);
+        setErrorMsg(err.message);
+      });
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-      <Row>
-        <Col md={12}>
-          <h4 className="mb-3">Sign Up</h4>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Enter name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </Form.Group>
+    <div className={styles.container}>
+      <div className={styles.innerBox}>
+        <h1 className={styles.heading}>Signup</h1>
 
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </Form.Group>
+        <InputControl
+          label="Name"
+          placeholder="Enter your name"
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, name: event.target.value }))
+          }
+        />
+        <InputControl
+          label="Email"
+          placeholder="Enter email address"
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, email: event.target.value }))
+          }
+        />
+        <InputControl
+          label="Password"
+          placeholder="Enter password"
+          onChange={(event) =>
+            setValues((prev) => ({ ...prev, pass: event.target.value }))
+          }
+        />
 
-            <Form.Group controlId="formPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </Form.Group>
-
-            <Button variant="primary" type="submit" className="mt-3">
-              Sign Up
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+        <div className={styles.footer}>
+          <b className={styles.error}>{errorMsg}</b>
+          <button onClick={handleSubmission} disabled={submitButtonDisabled}>
+            Signup
+          </button>
+          <p>
+            Already have an account?{" "}
+            <span>
+              <Link to="/login">Login</Link>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default SignUp;
+export default Signup;
