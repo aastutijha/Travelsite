@@ -1,18 +1,21 @@
 // src/components/Login.js
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useHistory
 import { auth, googleProvider } from "../firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import "../styles.css";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Redirect or show success message
+      navigate("/home"); 
     } catch (error) {
       console.error("Error logging in:", error);
     }
@@ -21,7 +24,7 @@ const Login = () => {
   const handleGoogleSignIn = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
-      // Redirect or show success message
+      navigate("/home"); 
     } catch (error) {
       console.error("Error with Google Sign-In:", error);
     }

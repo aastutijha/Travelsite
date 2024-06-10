@@ -2,18 +2,20 @@
 
 import { useState } from "react";
 import { auth } from "../firebase";
+import { useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import "../styles.css";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      // Redirect or show success message
+      console.error("Signup Sucessful");
+      navigate("/home"); 
     } catch (error) {
       console.error("Error signing up:", error);
     }
