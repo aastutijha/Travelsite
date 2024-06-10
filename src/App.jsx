@@ -7,8 +7,6 @@ import HomePage from './Homepage.jsx';
 import TripWeatherForecast from "./components/TripWeatherForecast/TripWeatherForecast.jsx";
 import Login from "./components/Authentication/Login.jsx";
 import Signup from "./components/Authentication/Signup.jsx";
-import ProtectedRoute from "./components/Authentication/ProtectedRoute";
-import Dashboard from "./components/Authentication/Dashboard.jsx";
 import TourDetailspage from "./pages/TourDetails.jsx";
 import Australia from "./components/Submain/Tours/Popular Outbound/Australia.jsx";
 import CoxsBazarSea from "./components/Submain/Tours/Popular Outbound/CoxsBazarSea.jsx";
@@ -74,7 +72,7 @@ function App() {
       <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
       <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} />
+      {/* <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} /> */}
     </Routes>
   );
 }
