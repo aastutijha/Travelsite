@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { auth, googleProvider } from "../firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import "../styles.css";
+import { Link } from 'react-router-dom';
 
 const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
@@ -55,8 +56,10 @@ const Login = ({ setIsAuthenticated }) => {
       <button className="google-btn" onClick={handleGoogleSignIn}>
         Sign in with Google
       </button>
+      <Link to="/signup">
+        <button>Go to Signup</button>
+      </Link>
     </div>
   );
-};
-
+}
 export default Login;
