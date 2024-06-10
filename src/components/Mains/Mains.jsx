@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import "./Mains.css";
-import BookingForm from '../Bookingform/Bookingform';
+// import BookingForm from '../Bookingform/Bookingform';
 
 const Mains = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +31,7 @@ const Mains = () => {
         Book Now ✈
       </button>
 
-      {isModalOpen && <BookingForm closeModal={closeModal} />}
+      {/* {isModalOpen && <BookingForm closeModal={closeModal} />} */}
     </div>
   );
 };

@@ -1,12 +1,12 @@
-// src/components/Login.js
+// src/components/Login.jsx
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useHistory
+import { useNavigate } from "react-router-dom";
 import { auth, googleProvider } from "../firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import "../styles.css";
 
-const Login = () => {
+const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -15,7 +15,9 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/home"); 
+      localStorage.setItem("token", "your_auth_token");
+      setIsAuthenticated(true);
+      navigate("/home");
     } catch (error) {
       console.error("Error logging in:", error);
     }
@@ -24,7 +26,9 @@ const Login = () => {
   const handleGoogleSignIn = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
-      navigate("/home"); 
+      localStorage.setItem("token", "your_auth_token");
+      setIsAuthenticated(true);
+      navigate("/home");
     } catch (error) {
       console.error("Error with Google Sign-In:", error);
     }

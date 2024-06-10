@@ -1,7 +1,10 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+// src/App.jsx
+
+import { useState, useEffect } from "react";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import "./App.css";
 import HomePage from './Homepage.jsx';
+import TripWeatherForecast from "./components/TripWeatherForecast/TripWeatherForecast.jsx";
 import Login from "./components/Authentication/Login.jsx";
 import Signup from "./components/Authentication/Signup.jsx";
 import ProtectedRoute from "./components/Authentication/ProtectedRoute";
@@ -28,45 +31,51 @@ import Thailand from "./components/Submain/Tours/Outbound/Thailand.jsx";
 import Cambodia from "./components/Submain/Tours/Outbound/Cambodia.jsx";
 
 function App() {
-  const [isAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      navigate("/home");
+    }
+  }, [isAuthenticated, navigate]);
 
   return (
-    <>
-       {isAuthenticated && (
-        <Routes>
-          <Route path="/home" element={<HomePage />} />
-            <Route path="/TourDetails" element={<TourDetailspage />} />
-            <Route path="/tours/Australia" element={<Australia />} />
-            <Route path="/tours/CoxsBazarSea" element={<CoxsBazarSea />} />
-            <Route path="/tours/London" element={<London />} />
-            <Route path="/tours/Paris" element={<Paris />} />
-            <Route path="/tours/Tokyo" element={<Tokyo />} />
-            <Route path="/tours/inbound/Everest" element={<Everest />} />
-            <Route path="/tours/inbound/Illam" element={<Illam />} />
-            <Route path="/tours/inbound/Langtang" element={<Langtang />} />
-            <Route path="/tours/inbound/Lumbini" element={<Lumbini />} />
-            <Route path="/tours/inbound/Darjelling" element={<Darjelling />} />
-            <Route path="/tours/inbound/Rara" element={<Rara />} />
-            <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
-            <Route path="/tours/outbound/Indonesia" element={<Indonesia />} />
-            <Route path="/tours/outbound/India" element={<India />} />
-            <Route path="/tours/outbound/Dubai" element={<Dubai />} />
-            <Route path="/tours/outbound/China" element={<China />} />
-            <Route path="/tours/outbound/Japan" element={<Japan />} />
-            <Route path="/tours/outbound/Thailand" element={<Thailand />} />
-            <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <ProtectedRoute path="/dashboard" element={<Dashboard />} />
-          </Routes>
-      )}
-      {!isAuthenticated && (
-        <>
-          <Login />
-          <Signup />
-        </>
-      )}
-    </>
+    <Routes>
+      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/TripWeatherForecast" element={<TripWeatherForecast />} />
+      <Route path="/TourDetails" element={<TourDetailspage />} />
+      <Route path="/tours/Australia" element={<Australia />} />
+      <Route path="/tours/CoxsBazarSea" element={<CoxsBazarSea />} />
+      <Route path="/tours/London" element={<London />} />
+      <Route path="/tours/Paris" element={<Paris />} />
+      <Route path="/tours/Tokyo" element={<Tokyo />} />
+      <Route path="/tours/inbound/Everest" element={<Everest />} />
+      <Route path="/tours/inbound/Illam" element={<Illam />} />
+      <Route path="/tours/inbound/Langtang" element={<Langtang />} />
+      <Route path="/tours/inbound/Lumbini" element={<Lumbini />} />
+      <Route path="/tours/inbound/Darjelling" element={<Darjelling />} />
+      <Route path="/tours/inbound/Rara" element={<Rara />} />
+      <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
+      <Route path="/tours/outbound/Indonesia" element={<Indonesia />} />
+      <Route path="/tours/outbound/India" element={<India />} />
+      <Route path="/tours/outbound/Dubai" element={<Dubai />} />
+      <Route path="/tours/outbound/China" element={<China />} />
+      <Route path="/tours/outbound/Japan" element={<Japan />} />
+      <Route path="/tours/outbound/Thailand" element={<Thailand />} />
+      <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
+      <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} />
+    </Routes>
   );
 }
 
