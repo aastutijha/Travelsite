@@ -1,14 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa"; // Import the hamburger icon
 import "./navbar.css";
 import company from "../../assets/logo.png";
-import { Link as RouterLink } from 'react-router-dom'; // Import the Link component from React Router
+import { Link as RouterLink, Navigate } from "react-router-dom"; // Import the Link component from React Router
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
 
-const Navbar = () => {
+const Navbar = ({ setIsAuthenticated }) => {
   const [theme] = useState("light-mode");
   const [showMenu, setShowMenu] = useState(false);
   const [dropdown, setDropdown] = useState(false); // State for dropdown
+  const [navigate, setNavigate] = useState(false); // State for navigation after logout
   const menuRef = useRef();
 
   useEffect(() => {
@@ -38,14 +41,14 @@ const Navbar = () => {
     document.body.classList.toggle("showMenu", showMenu);
   };
 
-  window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
+  window.addEventListener("scroll", function () {
+    var navbar = document.querySelector(".navbar");
     var scrollTop = window.scrollY;
 
     if (scrollTop === 0) {
-      navbar.classList.add('transparent-box');
+      navbar.classList.add("transparent-box");
     } else {
-      navbar.classList.remove('transparent-box');
+      navbar.classList.remove("transparent-box");
     }
   });
 
@@ -53,15 +56,26 @@ const Navbar = () => {
     setDropdown(!dropdown);
   };
 
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      localStorage.removeItem("token");
+      setIsAuthenticated(false);
+      setNavigate(true); // Trigger navigation after logout
+    } catch (error) {
+      console.error("Error logging out:", error);
+    }
+  };
+
+  if (navigate) {
+    return <Navigate to="/login" />;
+  }
+
   return (
     <div className="navbar">
       <div className="left">
         <Link to="main" spy={true} smooth={true} duration={500}>
-          <img
-            src={company}
-            alt="Logo"
-            className="logoImage"
-          />
+          <img src={company} alt="Logo" className="logoImage" />
         </Link>
 
         <div className="name">Travel Holidays</div>
@@ -167,8 +181,8 @@ const Navbar = () => {
           >
             Contact
           </Link>
-          <RouterLink to="/login" className="navItem">
-            Login
+          <RouterLink to="#" onClick={handleLogout} className="navItem">
+            Logout
           </RouterLink>
         </div>
       </div>
