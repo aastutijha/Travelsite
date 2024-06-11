@@ -1,6 +1,4 @@
 body {
     padding-top: 4rem;
-    height: auto;
-    
+    height: auto !important;
 }
-

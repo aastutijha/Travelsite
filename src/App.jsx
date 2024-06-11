@@ -48,7 +48,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
-      <Route path="/home" element={<HomePage />} />
+      <Route path="/home" element={isAuthenticated ? <HomePage /> : <Navigate to="/login" />} />
       <Route path="/TripWeatherForecast" element={<TripWeatherForecast />} />
       <Route path="/TourDetails" element={<TourDetailspage />} />
       <Route path="/tours/Australia" element={<Australia />} />
