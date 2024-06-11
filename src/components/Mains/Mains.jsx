@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import "./Mains.css";
-// import BookingForm from '../Bookingform/Bookingform';
+import ParentComponent from '../BookingForm/Bookingform'
 
 const Mains = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,7 +31,7 @@ const Mains = () => {
         Book Now ✈
       </button>
 
-      {/* {isModalOpen && <BookingForm closeModal={closeModal} />} */}
+      {isModalOpen && <ParentComponent closeModal={closeModal} />}
     </div>
   );
 };
