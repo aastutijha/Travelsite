@@ -1,7 +1,7 @@
 // src/App.jsx
 
 import { useState, useEffect } from "react";
-import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import HomePage from './Homepage.jsx';
 import TripWeatherForecast from "./components/TripWeatherForecast/TripWeatherForecast.jsx";
@@ -28,9 +28,12 @@ import Japan from "./components/Submain/Tours/Outbound/Japan.jsx";
 import Thailand from "./components/Submain/Tours/Outbound/Thailand.jsx";
 import Cambodia from "./components/Submain/Tours/Outbound/Cambodia.jsx";
 
+function ProtectedRoute({ children, isAuthenticated }) {
+  return isAuthenticated ? children : <Navigate to="/login" />;
+}
+
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -39,37 +42,31 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    if (isAuthenticated) {
-      navigate("/home");
-    }
-  }, [isAuthenticated, navigate]);
-
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/login" />} />
-      <Route path="/home" element={isAuthenticated ? <HomePage /> : <Navigate to="/login" />} />
-      <Route path="/TripWeatherForecast" element={<TripWeatherForecast />} />
-      <Route path="/TourDetails" element={<TourDetailspage />} />
-      <Route path="/tours/Australia" element={<Australia />} />
-      <Route path="/tours/CoxsBazarSea" element={<CoxsBazarSea />} />
-      <Route path="/tours/London" element={<London />} />
-      <Route path="/tours/Paris" element={<Paris />} />
-      <Route path="/tours/Tokyo" element={<Tokyo />} />
-      <Route path="/tours/inbound/Everest" element={<Everest />} />
-      <Route path="/tours/inbound/Illam" element={<Illam />} />
-      <Route path="/tours/inbound/Langtang" element={<Langtang />} />
-      <Route path="/tours/inbound/Lumbini" element={<Lumbini />} />
-      <Route path="/tours/inbound/Darjelling" element={<Darjelling />} />
-      <Route path="/tours/inbound/Rara" element={<Rara />} />
-      <Route path="/tours/inbound/Chitwan" element={<Chitwan />} />
-      <Route path="/tours/outbound/Indonesia" element={<Indonesia />} />
-      <Route path="/tours/outbound/India" element={<India />} />
-      <Route path="/tours/outbound/Dubai" element={<Dubai />} />
-      <Route path="/tours/outbound/China" element={<China />} />
-      <Route path="/tours/outbound/Japan" element={<Japan />} />
-      <Route path="/tours/outbound/Thailand" element={<Thailand />} />
-      <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
+      <Route path="/" element={<Navigate to={isAuthenticated ? "/home" : "/login"} />} />
+      <Route path="/home" element={<ProtectedRoute isAuthenticated={isAuthenticated}><HomePage /></ProtectedRoute>} />
+      <Route path="/TripWeatherForecast" element={<ProtectedRoute isAuthenticated={isAuthenticated}><TripWeatherForecast /></ProtectedRoute>} />
+      <Route path="/TourDetails" element={<ProtectedRoute isAuthenticated={isAuthenticated}><TourDetailspage /></ProtectedRoute>} />
+      <Route path="/tours/Australia" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Australia /></ProtectedRoute>} />
+      <Route path="/tours/CoxsBazarSea" element={<ProtectedRoute isAuthenticated={isAuthenticated}><CoxsBazarSea /></ProtectedRoute>} />
+      <Route path="/tours/London" element={<ProtectedRoute isAuthenticated={isAuthenticated}><London /></ProtectedRoute>} />
+      <Route path="/tours/Paris" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Paris /></ProtectedRoute>} />
+      <Route path="/tours/Tokyo" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Tokyo /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Everest" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Everest /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Illam" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Illam /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Langtang" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Langtang /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Lumbini" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Lumbini /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Darjelling" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Darjelling /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Rara" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Rara /></ProtectedRoute>} />
+      <Route path="/tours/inbound/Chitwan" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Chitwan /></ProtectedRoute>} />
+      <Route path="/tours/outbound/Indonesia" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Indonesia /></ProtectedRoute>} />
+      <Route path="/tours/outbound/India" element={<ProtectedRoute isAuthenticated={isAuthenticated}><India /></ProtectedRoute>} />
+      <Route path="/tours/outbound/Dubai" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Dubai /></ProtectedRoute>} />
+      <Route path="/tours/outbound/China" element={<ProtectedRoute isAuthenticated={isAuthenticated}><China /></ProtectedRoute>} />
+      <Route path="/tours/outbound/Japan" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Japan /></ProtectedRoute>} />
+      <Route path="/tours/outbound/Thailand" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Thailand /></ProtectedRoute>} />
+      <Route path="/tours/outbound/Cambodia" element={<ProtectedRoute isAuthenticated={isAuthenticated}><Cambodia /></ProtectedRoute>} />
       <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/signup" element={<Signup />} />
     </Routes>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth, googleProvider } from "../firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import "../styles.css";
+import "./Login.css";
 import { Link } from 'react-router-dom';
 
 const Login = ({ setIsAuthenticated }) => {
@@ -36,30 +36,33 @@ const Login = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="container">
-      <h1>Login</h1>
-      <form onSubmit={handleLogin}>
+    <div className="login-container">
+      <h1 className="login-title">Login</h1>
+      <form className="login-form" onSubmit={handleLogin}>
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="login-input"
         />
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="login-input"
         />
-        <button type="submit">Login</button>
+        <button type="submit" className="login-button">Login</button>
       </form>
-      <button className="google-btn" onClick={handleGoogleSignIn}>
+      <button className="google-button" onClick={handleGoogleSignIn}>
         Sign in with Google
       </button>
       <Link to="/signup">
-        <button>Go to Signup</button>
+        <button className="signup-button">Go to Signup</button>
       </Link>
     </div>
   );
-}
+};
+
 export default Login;

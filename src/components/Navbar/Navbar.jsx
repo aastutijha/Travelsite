@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { FaBars } from "react-icons/fa"; // Import the hamburger icon
 import "./navbar.css";
 import company from "../../assets/logo.png";
-import { Link as RouterLink, Navigate } from "react-router-dom"; // Import the Link component from React Router
+import { Link as RouterLink, useNavigate } from "react-router-dom"; // Import the Link component from React Router and useNavigate hook
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 
@@ -11,8 +11,8 @@ const Navbar = ({ setIsAuthenticated }) => {
   const [theme] = useState("light-mode");
   const [showMenu, setShowMenu] = useState(false);
   const [dropdown, setDropdown] = useState(false); // State for dropdown
-  const [navigate, setNavigate] = useState(false); // State for navigation after logout
   const menuRef = useRef();
+  const navigate = useNavigate(); // Initialize useNavigate hook
 
   useEffect(() => {
     setShowMenu(true);
@@ -61,15 +61,11 @@ const Navbar = ({ setIsAuthenticated }) => {
       await signOut(auth);
       localStorage.removeItem("token");
       setIsAuthenticated(false);
-      setNavigate(true); // Trigger navigation after logout
+      navigate("/login"); // Programmatically navigate to login page
     } catch (error) {
       console.error("Error logging out:", error);
     }
   };
-
-  if (navigate) {
-    return <Navigate to="/login" />;
-  }
 
   return (
     <div className="navbar">
