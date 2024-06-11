@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './InboundTours.css';
@@ -22,9 +21,11 @@ const InboundTours = () => {
   ];
 
   return (
-    <div className ="inbound-tours">
+    <div className="inbound-tours">
       <h2>TOP INBOUND TOURS</h2>
-      <p>Spots at the top of our domestic must-go list</p>
+      <div className="subheading">
+        <h3>Spots at the top of our domestic must-go list</h3>
+      </div>
       <div className="tour-cards">
         {tourCards.map((card, index) => (
           <div className="tour-card" key={index}>

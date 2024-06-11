@@ -23,7 +23,9 @@ const OutboundTours = () => {
   return (
     <div className ="outbound-places">
       <h2>TOP OUTBOUND PLACES</h2>
-      <p>Spots at the top of our outbound must-go list</p>
+      <div className="subheading">
+        <h3>Spots at the top of our outbound must-go list</h3>
+      </div>
       <div className="tour-cards">
         {tourCards.map((card, index) => (
           <div className="tour-card" key={index}>

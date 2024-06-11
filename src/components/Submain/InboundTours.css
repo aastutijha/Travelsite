@@ -4,6 +4,12 @@
     color: #163457;
 }
 
+.subheading {
+    text-align: center;
+    margin: 1rem 0;
+    /* Adjust the margin as needed */
+}
+
 .tour-cards {
     display: flex;
     justify-content: center;
@@ -37,6 +43,8 @@
 
 .card-content {
     padding: 1rem;
+    text-align: center;
+    /* Center text within the card content */
 }
 
 .card-content h3 {
