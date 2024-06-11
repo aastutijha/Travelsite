@@ -13,11 +13,11 @@ import ChoiceCard from "./components/ChoiceCard/ChoiceCard.jsx";
 import Contact from "./components/contact/contact.jsx";
 import InformationBar from "./components/InformationBar/InformationBar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-
+import "./homepage.css";
 const HomePage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar /> 
       <Mains />
       <TripWeatherForecast />
       <SubMain />
@@ -27,7 +27,7 @@ const HomePage = () => {
       <ChoiceCard />
       <Contact />
       <InformationBar />
-      <Footer />
+      <Footer /> 
     </>
   );
 };

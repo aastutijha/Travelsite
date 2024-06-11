@@ -72,7 +72,6 @@ function App() {
       <Route path="/tours/outbound/Cambodia" element={<Cambodia />} />
       <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/signup" element={<Signup />} />
-      {/* <Route path="/dashboard" element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<Dashboard />} />} /> */}
     </Routes>
   );
 }
