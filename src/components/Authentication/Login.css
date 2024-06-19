@@ -1,79 +1,143 @@
-/* src/styles/Login.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-.login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100vw;
-    background-color: #f0f4f8;
-    /* padding: 20px; */
-    box-sizing: border-box;
-  }
-  
-  .login-title {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    gap: 15px;
-  }
-  
-  .login-input {
-    padding: 10px 15px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .login-input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .login-button, .google-button, .signup-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-button {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .google-button {
-    background-color: #db4437;
-    color: #fff;
-    margin-top: 10px;
-  }
-  
-  .signup-button {
-    background-color: #28a745;
-    color: #fff;
-    margin-top: 10px;
-  }
-  
-  .login-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .google-button:hover {
-    background-color: #c23321;
-  }
-  
-  .signup-button:hover {
-    background-color: #218838;
-  }
-  
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 20px 15px 45px;
+}
+
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-box i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 5px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.register-link {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+.google-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 115px;
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px; 
+  height: 30px;
+}
+
+.google-logo {
+  border-radius: 15px;
+  width: 100%; /* Ensure it takes up the button size */
+  height: 100%; /* Ensure it takes up the button size */
+}

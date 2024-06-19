@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@ionic/react": "^8.2.1",
+    "@mui/material": "^5.15.20",
     "@supabase/supabase-js": "^2.43.4",
     "bootstrap": "^5.3.3",
+    "boxicons": "^2.1.4",
     "dotenv": "^16.4.5",
     "firebase": "^10.12.2",
     "ionicons": "^7.4.0",
