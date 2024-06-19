@@ -1,5 +1,5 @@
 body,
-.html {
+html {
     overflow-x: hidden;
 }
 
@@ -42,7 +42,8 @@ body,
 
 .right {
     justify-content: flex-end;
-    margin-right: 25px;
+    margin-right: 50px;
+    /* Increase space at the end of the right side */
 }
 
 .navItem:hover {
@@ -52,7 +53,16 @@ body,
 .logoImage {
     height: 5rem;
     width: 5.5rem;
-    margin-right: 1rem;
+    margin-right: 0.2rem;
+}
+
+.logoutLogo {
+    width: 2rem;
+    /* Adjust the size as needed */
+    height: auto;
+    cursor: pointer;
+    margin-left: 0.1rem;
+    /* Move more to the left */
 }
 
 .name {

@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa"; // Import the hamburger icon
 import "./navbar.css";
 import company from "../../assets/logo.png";
 import { Link as RouterLink, useNavigate } from "react-router-dom"; // Import the Link component from React Router and useNavigate hook
+import logoutLogo from "../../assets/logout.png"; // Import the logout logo
 import { auth } from "../firebase";
 import { signOut } from "firebase/auth";
 
@@ -40,17 +41,6 @@ const Navbar = ({ setIsAuthenticated }) => {
     setShowMenu(!showMenu);
     document.body.classList.toggle("showMenu", showMenu);
   };
-
-  window.addEventListener("scroll", function () {
-    var navbar = document.querySelector(".navbar");
-    var scrollTop = window.scrollY;
-
-    if (scrollTop === 0) {
-      navbar.classList.add("transparent-box");
-    } else {
-      navbar.classList.remove("transparent-box");
-    }
-  });
 
   const toggleDropdown = () => {
     setDropdown(!dropdown);
@@ -178,7 +168,7 @@ const Navbar = ({ setIsAuthenticated }) => {
             Contact
           </Link>
           <RouterLink to="#" onClick={handleLogout} className="navItem">
-            Logout
+          <img src={logoutLogo} alt="Logout" className="logoutLogo" />
           </RouterLink>
         </div>
       </div>
